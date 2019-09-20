@@ -1,0 +1,13 @@
+.//usr/lib64/gstreamer-1.0/libgstmad.so
+.//usr/lib64/gstreamer-1.0/libgstrmdemux.so
+.//usr/lib64/gstreamer-1.0/libgstlame.so
+.//usr/lib64/gstreamer-1.0/libgstxingmux.so
+.//usr/lib64/gstreamer-1.0/libgstsid.so
+.//usr/lib64/gstreamer-1.0/libgstmpg123.so
+.//usr/lib64/gstreamer-1.0/libgstmpeg2dec.so
+.//usr/lib64/gstreamer-1.0/libgstdvdsub.so
+.//usr/lib64/gstreamer-1.0/libgstasf.so
+.//usr/lib64/gstreamer-1.0/libgsttwolame.so
+.//usr/lib64/gstreamer-1.0/libgsta52dec.so
+.//usr/lib64/gstreamer-1.0/libgstdvdlpcmdec.so
+.//usr/lib64/gstreamer-1.0/libgstdvdread.so

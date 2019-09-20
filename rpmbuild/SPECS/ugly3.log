@@ -1,0 +1,43 @@
+warning: Macro expanded in comment on line 53: %{name} = %{version}-%{release}
+
+gstasfdemux.c: In function 'gst_asf_demux_parse_stream_object':
+gstasfdemux.c:2911:39: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+ 2911 |   is_encrypted = ! !((flags & 0x8000) << 15);
+      |                     ~~~~~~~~~~~~~~~~~~^~~~~~
+dvdreadsrc.c: In function 'gst_dvd_read_src_goto_chapter':
+dvdreadsrc.c:394:65: warning: taking address of packed member of 'struct <anonymous>' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  394 |       gst_dvd_read_src_make_clut_change_event (src, src->cur_pgc->palette);
+      |                                                     ~~~~~~~~~~~~^~~~~~~~~
+warning: %makeinstall is deprecated, try %make_install instead
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+/usr/bin/install: cannot stat './html/*.sgml': No such file or directory
+xz: /tmp/tmp.BRcifgidcp: No such file or directory
+objcopy: cannot open: /tmp/tmp.BRcifgidcp.xz: No such file or directory
+1696 blocks
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstmpeg2dec.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+error: File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/share/gstreamer-1.0/presets/GstX264Enc.prs
+error: File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstx264.so
+error: File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstamrnb.so
+error: File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstamrwbdec.so
+error: File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/share/gstreamer-1.0/presets/GstAmrnbEnc.prs
+error: File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstcdio.so
+    Macro expanded in comment on line 53: %{name} = %{version}-%{release}
+
+    File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/share/gstreamer-1.0/presets/GstX264Enc.prs
+    File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstx264.so
+    File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstamrnb.so
+    File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstamrwbdec.so
+    File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/share/gstreamer-1.0/presets/GstAmrnbEnc.prs
+    File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstcdio.so

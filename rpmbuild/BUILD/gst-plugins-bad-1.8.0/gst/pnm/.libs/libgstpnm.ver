@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_pnm_get_desc;
+gst_plugin_pnm_register;
+local: *; };

@@ -1,0 +1,4 @@
+{ global:
+gst_videoaggregator_get_type;
+gst_videoaggregator_pad_get_type;
+local: *; };

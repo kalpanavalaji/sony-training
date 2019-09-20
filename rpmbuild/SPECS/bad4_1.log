@@ -1,0 +1,2126 @@
+warning: Macro expanded in comment on line 191: %{_datadir}/gstreamer-%{majorminor}
+
+warning: Macro expanded in comment on line 223: %{_libdir}/gstreamer-%{majorminor}/libgstivtc.so
+
+warning: Macro expanded in comment on line 256: %{_libdir}/gstreamer-%{majorminor}/libgstdvb.so
+
+warning: Macro expanded in comment on line 257: %{_libdir}/gstreamer-%{majorminor}/libgstvcdsrc.so
+
+warning: Macro expanded in comment on line 264: %{_libdir}/gstreamer-%{majorminor}/libgstdc1394.so
+
+warning: Macro expanded in comment on line 266: %{_libdir}/gstreamer-%{majorminor}/libgstgsm.so
+
+warning: Macro expanded in comment on line 298: %{_datadir}/glib-2.0/schemas/org.freedesktop.gstreamer-0.11.default-elements.gschema.xml
+
+warning: Macro expanded in comment on line 303: %{_libdir}/gstreamer-%{majorminor}/libgstjack.so
+
+warning: Macro expanded in comment on line 304: %{_libdir}/gstreamer-%{majorminor}/libgstmythtvsrc.so
+
+warning: Macro expanded in comment on line 305: %{_libdir}/gstreamer-%{majorminor}/libgstsdl.so
+
+warning: Macro expanded in comment on line 306: %{_libdir}/gstreamer-%{majorminor}/libgstsoundtouch.so
+
+warning: Macro expanded in comment on line 307: %{_libdir}/gstreamer-%{majorminor}/libgsttimidity.so
+
+warning: Macro expanded in comment on line 308: %{_libdir}/gstreamer-%{majorminor}/libgstwildmidi.so
+
+warning: Macro expanded in comment on line 310: %{_libdir}/gstreamer-%{majorminor}/libgstmultifdsink.so
+
+warning: Macro expanded in comment on line 313: %{_libdir}/gstreamer-%{majorminor}/libgstfbdevsink.so
+
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.IhzjIq
++ umask 022
++ cd /home/kalpana/rpmbuild/BUILD
++ cd /home/kalpana/rpmbuild/BUILD
++ rm -rf gst-plugins-bad-1.4.4
++ /usr/bin/xz -dc /home/kalpana/rpmbuild/SOURCES/gst-plugins-bad-1.4.4.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd gst-plugins-bad-1.4.4
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.RAgx6n
++ umask 022
++ cd /home/kalpana/rpmbuild/BUILD
++ cd gst-plugins-bad-1.4.4
++ CFLAGS='-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -I/usr/lib64/gfortran/modules'
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -I/usr/lib64/gfortran/modules'
++ export FCFLAGS
++ LDFLAGS='-Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld'
++ export LDFLAGS
++ '[' 1 = 1 ']'
++++ dirname ./configure
+++ find . -name config.guess -o -name config.sub
++ for i in $(find $(dirname ./configure) -name config.guess -o -name config.sub)
+++ basename ./config.guess
++ '[' -f /usr/lib/rpm/redhat/config.guess ']'
++ /usr/bin/rm -f ./config.guess
+++ basename ./config.guess
++ /usr/bin/cp -fv /usr/lib/rpm/redhat/config.guess ./config.guess
+'/usr/lib/rpm/redhat/config.guess' -> './config.guess'
++ for i in $(find $(dirname ./configure) -name config.guess -o -name config.sub)
+++ basename ./config.sub
++ '[' -f /usr/lib/rpm/redhat/config.sub ']'
++ /usr/bin/rm -f ./config.sub
+++ basename ./config.sub
++ /usr/bin/cp -fv /usr/lib/rpm/redhat/config.sub ./config.sub
+'/usr/lib/rpm/redhat/config.sub' -> './config.sub'
++ '[' 1 = 1 ']'
++ '[' x '!=' 'x-Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' ']'
+++ find . -name ltmain.sh
++ for i in $(find . -name ltmain.sh)
++ /usr/bin/sed -i.backup -e 's~compiler_flags=$~compiler_flags="-Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld"~' ./ltmain.sh
++ ./configure --build=x86_64-redhat-linux-gnu --host=x86_64-redhat-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info '--with-package-name=Fedora gstreamer-plugins-bad package' --with-package-origin=http://gstreamer.freedesktop.org --enable-debug --disable-static --disable-gtk-doc --enable-experimental
+checking build system type... x86_64-redhat-linux-gnu
+checking host system type... x86_64-redhat-linux-gnu
+checking target system type... x86_64-redhat-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking nano version... 0 (release)
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... (cached) yes
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for x86_64-redhat-linux-gnu-gcc... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-redhat-linux-gnu file names to x86_64-redhat-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-redhat-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-redhat-linux-gnu-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-redhat-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-redhat-linux-gnu-ar... no
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for x86_64-redhat-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-redhat-linux-gnu-ranlib... no
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for x86_64-redhat-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... yes
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+DOMAIN = gst-plugins-bad-1.0
+checking for x86_64-redhat-linux-gnu-pkg-config... /usr/bin/x86_64-redhat-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for VALGRIND... no
+configure: Using Fedora gstreamer-plugins-bad package as package name
+configure: Using http://gstreamer.freedesktop.org as package origin
+
+configure: *** checking feature: building of plug-ins with external deps ***
+configure: building external plug-ins
+
+configure: *** checking feature: building of experimental plug-ins ***
+configure: WARNING: building experimental plug-ins
+configure: Using GST_PKG_CONFIG_PATH = $(top_builddir)/pkgconfig::/usr/lib64/pkgconfig:/usr/share/pkgconfig
+checking whether byte ordering is bigendian... no
+checking whether byte ordering is bigendian... (cached) no
+checking for x86_64-redhat-linux-gnu-gcc... gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) none
+checking for gcc option to accept ISO C99... none needed
+checking for gcc option to accept ISO Standard C... (cached) none needed
+checking for x86_64-redhat-linux-gnu-g++... no
+checking for x86_64-redhat-linux-gnu-c++... no
+checking for x86_64-redhat-linux-gnu-gpp... no
+checking for x86_64-redhat-linux-gnu-aCC... no
+checking for x86_64-redhat-linux-gnu-CC... no
+checking for x86_64-redhat-linux-gnu-cxx... no
+checking for x86_64-redhat-linux-gnu-cc++... no
+checking for x86_64-redhat-linux-gnu-cl.exe... no
+checking for x86_64-redhat-linux-gnu-FCC... no
+checking for x86_64-redhat-linux-gnu-KCC... no
+checking for x86_64-redhat-linux-gnu-RCC... no
+checking for x86_64-redhat-linux-gnu-xlC_r... no
+checking for x86_64-redhat-linux-gnu-xlC... no
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for g++... yes
+checking for x86_64-redhat-linux-gnu-gcc... no
+checking for x86_64-redhat-linux-gnu-objcc... no
+checking for x86_64-redhat-linux-gnu-objc... no
+checking for x86_64-redhat-linux-gnu-cc... no
+checking for x86_64-redhat-linux-gnu-CC... no
+checking for gcc... gcc
+checking whether we are using the GNU Objective C compiler... no
+checking whether gcc accepts -g... no
+checking dependency style of gcc... none
+checking for working do while(0) macros... yes
+checking for valgrind... /usr/bin/valgrind
+checking for gobject-introspection... yes
+checking for gtkdoc-check... /usr/bin/gtkdoc-check
+checking for gtkdoc-rebase... /usr/bin/gtkdoc-rebase
+checking for gtkdoc-mkpdf... /usr/bin/gtkdoc-mkpdf
+checking whether to build gtk-doc documentation... no
+checking for python... /usr/bin/python
+checking for python version... 2.7
+checking for python platform... linux2
+checking for python script directory... ${prefix}/lib/python2.7/site-packages
+checking for python extension module directory... ${exec_prefix}/lib64/python2.7/site-packages
+checking whether to build plugin documentation... no (gtk-doc disabled or not available)
+checking for cos in -lm... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for unistd.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for stdint types... stdint.h (shortcircuit)
+make use of stdint.h in _stdint.h (assuming C99 compatible system)
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for FIONREAD in sys/ioctl.h... yes
+checking for gmtime_r... yes
+checking sys/utsname.h usability... yes
+checking sys/utsname.h presence... yes
+checking for sys/utsname.h... yes
+checking for socket... yes
+checking for gethostbyname... yes
+checking for GLIB... yes
+checking for glib-genmarshal... /usr/bin/glib-genmarshal (from pkg-config path)
+checking for glib-mkenums... /usr/bin/glib-mkenums
+checking for GIO... yes
+checking for GST... yes
+configure: using GStreamer tools in /usr/bin
+configure: using GStreamer plug-ins in /usr/lib64/gstreamer-1.0
+checking for GST_BASE... yes
+checking for GST_CHECK... yes
+checking for GST_CONTROLLER... yes
+checking for GST_PLUGINS_BASE... yes
+configure: using GStreamer Base Plugins in /usr/lib64/gstreamer-1.0
+checking whether this is an uninstalled GStreamer setup... no
+checking which gtk+ version to compile examples against (optional)... 2.0 (>= 2.14.0)
+checking for GTK... no
+checking for GTK3... yes
+checking for CLUTTER... no
+checking for CLUTTER_GLX... no
+checking for CLUTTER_X11... no
+checking for XCOMPOSITE... yes
+checking for GRAPHENE... no
+checking for SDL... yes
+checking for GMODULE_EXPORT... yes
+checking for GMODULE_NO_EXPORT... yes
+checking for X11... yes
+checking for EXIF... yes
+checking for ORC... yes
+checking for usable orcc... /usr/bin/orcc
+configure: Using /usr/lib64/gstreamer-1.0 as the plugin install location
+configure: Setting GST_PACKAGE_RELEASE_DATETIME to 2014-11-06
+checking whether to build static plugins or not... no
+checking whether the GStreamer debugging system is enabled... yes
+checking to see if compiler understands -Wall... yes
+checking to see if compiler understands -Wdeclaration-after-statement... yes
+checking to see if compiler understands -Wvla... yes
+checking to see if compiler understands -Wpointer-arith... yes
+checking to see if compiler understands -Wmissing-declarations... yes
+checking to see if compiler understands -Wmissing-prototypes... yes
+checking to see if compiler understands -Wredundant-decls... yes
+checking to see if compiler understands -Wwrite-strings... yes
+checking to see if compiler understands -Wformat-security... yes
+checking to see if compiler understands -Wold-style-definition... yes
+checking to see if compiler understands -Winit-self... yes
+checking to see if compiler understands -Wmissing-include-dirs... yes
+checking to see if compiler understands -Waddress... yes
+checking to see if compiler understands -Wno-multichar... yes
+checking to see if compiler understands -Wnested-externs... yes
+configure: set WARNING_CFLAGS to  -Wall -Wdeclaration-after-statement -Wvla -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wredundant-decls -Wwrite-strings -Wformat-security -Wold-style-definition -Winit-self -Wmissing-include-dirs -Waddress -Wno-multichar -Wnested-externs
+configure: set ERROR_CFLAGS to 
+checking to see if c++ compiler understands ... yes
+checking to see if c++ compiler understands -Wall... yes
+checking to see if c++ compiler understands -Wmissing-declarations... yes
+checking to see if c++ compiler understands -Wredundant-decls... yes
+checking to see if c++ compiler understands -Wwrite-strings... yes
+checking to see if c++ compiler understands -Wformat-nonliteral... yes
+checking to see if c++ compiler understands -Wformat-security... yes
+checking to see if c++ compiler understands -Winit-self... yes
+checking to see if c++ compiler understands -Wmissing-include-dirs... yes
+checking to see if c++ compiler understands -Waddress... yes
+checking to see if c++ compiler understands -Wno-multichar... yes
+configure: set WARNING_CXXFLAGS to  -Wall -Wmissing-declarations -Wredundant-decls -Wwrite-strings -Wformat-nonliteral -Wformat-security -Winit-self -Wmissing-include-dirs -Waddress -Wno-multichar
+configure: set ERROR_CXXFLAGS to 
+checking to see if Objective C compiler understands ... no
+checking to see if Objective C compiler understands -Wall... no
+checking to see if Objective C compiler understands -Wmissing-declarations... no
+checking to see if Objective C compiler understands -Wredundant-decls... no
+checking to see if Objective C compiler understands -Wwrite-strings... no
+checking to see if Objective C compiler understands -Wformat-nonliteral... no
+checking to see if Objective C compiler understands -Wformat-security... no
+checking to see if Objective C compiler understands -Winit-self... no
+checking to see if Objective C compiler understands -Wmissing-include-dirs... no
+checking to see if Objective C compiler understands -Wno-multichar... no
+configure: unsupported compiler flags:  -Wmissing-declarations -Wredundant-decls -Wwrite-strings -Wformat-nonliteral -Wformat-security -Winit-self -Wmissing-include-dirs -Wno-multichar
+configure: set WARNING_OBJCFLAGS to 
+configure: set ERROR_OBJCFLAGS to 
+configure: Using autoaudiosink as default audio sink
+configure: Using alsasrc as default audio source
+configure: Using autovideosink as default video sink
+configure: Using v4l2src as default video source
+configure: Using goom as default visualizer
+checking for AVFoundation/AVFoundation.h... no
+checking for MobileCoreServices/MobileCoreServices.h... no
+checking for VideoToolbox/VideoToolbox.h... no
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking winsock2.h usability... no
+checking winsock2.h presence... no
+checking for winsock2.h... no
+checking for X... libraries , headers 
+checking for gethostbyname... (cached) yes
+checking for connect... yes
+checking for remove... yes
+checking for shmat... yes
+checking for IceConnectionNumber in -lICE... yes
+checking X11/Xlib.h usability... yes
+checking X11/Xlib.h presence... yes
+checking for X11/Xlib.h... yes
+checking for glTexImage2D in -lGL... yes
+checking GL/gl.h usability... yes
+checking GL/gl.h presence... yes
+checking for GL/gl.h... yes
+checking for gluSphere in -lGLU... yes
+checking GL/glu.h usability... yes
+checking GL/glu.h presence... yes
+checking for GL/glu.h... yes
+checking for glTexImage2D in -lGLESv2... yes
+checking GLES2/gl2.h usability... no
+checking GLES2/gl2.h presence... no
+checking for GLES2/gl2.h... no
+checking for eglGetError in -lEGL... yes
+checking EGL/egl.h usability... yes
+checking EGL/egl.h presence... yes
+checking for EGL/egl.h... yes
+checking EGL/fbdev_window.h usability... no
+checking EGL/fbdev_window.h presence... no
+checking for EGL/fbdev_window.h... no
+checking for bcm_host_init in -lbcm_host... no
+checking for WAYLAND_EGL... yes
+checking for gnustep-config... no
+checking for GNUstep... no
+host is x86_64-redhat-linux-gnu
+checking for GLeglImageOES... yes
+checking for GLchar... yes
+checking for GLsizeiptr... yes
+checking for GLintptr... yes
+checking for LIBPNG... yes
+checking for jpeg_set_defaults in -ljpeg-mmx... no
+checking for jpeg_set_defaults in -ljpeg... yes
+
+configure: *** checking feature: DirectSound ***
+configure: *** for plug-ins: directsoundsrc ***
+checking for DirectSound LDFLAGS... no
+configure: *** These plugins will not be built: directsoundsrc
+
+configure: *** checking feature: WASAPI plug-in ***
+configure: *** for plug-ins: wasapi ***
+checking for WASAPI LDFLAGS... no
+configure: *** These plugins will not be built: wasapi
+
+configure: *** checking feature: Direct3D plug-in ***
+configure: *** for plug-ins: direct3dsink ***
+checking for Direct3D LDFLAGS... no
+configure: *** These plugins will not be built: direct3dsink
+
+configure: *** checking feature: DirectDraw plug-in ***
+configure: *** for plug-ins: directdrawsink ***
+configure: WARNING: *** directdrawsink not ported
+configure: *** These plugins will not be built: directdrawsink
+
+configure: *** checking feature: winscreencap plug-in ***
+configure: *** for plug-ins: winscreencap ***
+checking for Direct3D LDFLAGS... no
+configure: *** These plugins will not be built: winscreencap
+
+configure: *** checking feature: Winks plug-in ***
+configure: *** for plug-ins: winks ***
+checking for Winks LDFLAGS... no
+configure: *** These plugins will not be built: winks
+
+configure: *** checking feature: Android Media ***
+configure: *** for plug-ins: androidmedia ***
+configure: *** These plugins will not be built: androidmedia
+
+configure: *** checking feature: Apple video ***
+configure: *** for plug-ins: applemedia ***
+checking SystemConfiguration/SystemConfiguration.h usability... no
+checking SystemConfiguration/SystemConfiguration.h presence... no
+checking for SystemConfiguration/SystemConfiguration.h... no
+checking for VideoToolbox/VideoToolbox.h... (cached) no
+configure: *** These plugins will not be built: applemedia
+
+configure: *** checking feature: Bluez ***
+configure: *** for plug-ins: bluez ***
+checking for BLUEZ... no
+configure: *** These plugins will not be built: bluez
+
+configure: *** checking feature: OSX video ***
+configure: *** for plug-ins: osxvideosrc ***
+configure: WARNING: *** osxvideosrc not ported
+configure: *** These plugins will not be built: osxvideosrc
+
+configure: *** checking feature: AVC Video Services ***
+configure: *** for plug-ins: avcsrc ***
+configure: *** These plugins will not be built: avcsrc
+
+configure: *** checking feature: QuickTime wrapper ***
+configure: *** for plug-ins: qtwrapper ***
+configure: WARNING: *** qtwrapper not ported
+configure: *** These plugins will not be built: qtwrapper
+
+configure: *** checking feature: POSIX shared memory source and sink ***
+configure: *** for plug-ins: shm ***
+checking for shm_open in -lrt... yes
+checking whether MSG_NOSIGNAL is declared... yes
+configure: *** These plugins will be built: shm
+
+configure: *** checking feature: Video CD ***
+configure: *** for plug-ins: vcdsrc ***
+configure: WARNING: *** vcdsrc not ported
+configure: *** These plugins will not be built: vcdsrc
+
+configure: *** checking feature: OpenSL ES ***
+configure: *** for plug-ins: opensl ***
+checking SLES/OpenSLES.h usability... no
+checking SLES/OpenSLES.h presence... no
+checking for SLES/OpenSLES.h... no
+configure: *** These plugins will not be built: opensl
+
+configure: *** checking feature: UVC H264 ***
+configure: *** for plug-ins: uvch264 ***
+checking linux/uvcvideo.h usability... yes
+checking linux/uvcvideo.h presence... yes
+checking for linux/uvcvideo.h... yes
+checking for GST_VIDEO... yes
+checking for G_UDEV... yes
+checking for LIBUSB... yes
+configure: *** These plugins will be built: uvch264
+
+configure: *** checking feature: ASS/SSA renderer ***
+configure: *** for plug-ins: assrender ***
+checking for ASSRENDER... yes
+configure: *** These plugins will be built: assrender
+
+configure: *** checking feature: vo-amrwbenc library ***
+configure: *** for plug-ins: vo-amrwbenc ***
+checking for VOAMRWBENC... no
+configure: Package 'vo-amrwbenc', required by 'virtual:world', not found
+configure: *** These plugins will not be built: vo-amrwbenc
+
+configure: *** checking feature: vo-aacenc library ***
+configure: *** for plug-ins: vo-aacenc ***
+checking for VOAACENC... no
+configure: Package 'vo-aacenc', required by 'virtual:world', not found
+configure: *** These plugins will not be built: vo-aacenc
+
+configure: *** checking feature: AirPort Express Wireless sink ***
+configure: *** for plug-ins: apexsink ***
+configure: WARNING: *** apexsink not ported
+configure: *** These plugins will not be built: apexsink
+
+configure: *** checking feature: bz2 library ***
+configure: *** for plug-ins: bz2 ***
+checking for BZ2_bzlibVersion in -lbz2... yes
+configure: *** These plugins will be built: bz2
+
+configure: *** checking feature: chromaprint ***
+configure: *** for plug-ins: chromaprint ***
+checking for CHROMAPRINT... no
+configure: *** These plugins will not be built: chromaprint
+
+configure: *** checking feature: Curl plugin ***
+configure: *** for plug-ins: curl ***
+checking for CURL... no
+checking for SSH2... no
+configure: *** These plugins will not be built: curl
+
+configure: *** checking feature: DASH plug-in ***
+configure: *** for plug-ins: dash ***
+checking for LIBXML2... yes
+configure: *** These plugins will be built: dash
+
+configure: *** checking feature: libdc1394 ***
+configure: *** for plug-ins: dc1394 ***
+configure: WARNING: *** dc1394 not ported
+configure: *** These plugins will not be built: dc1394
+
+configure: *** checking feature: decklink ***
+configure: *** for plug-ins: decklink ***
+checking for dlopen in -ldl... (cached) yes
+configure: *** These plugins will be built: decklink
+
+configure: *** checking feature: directfb ***
+configure: *** for plug-ins: dfbvideosink  ***
+checking for DIRECTFB... no
+configure: *** These plugins will not be built: dfbvideosink 
+
+configure: *** checking feature: wayland sink ***
+configure: *** for plug-ins: wayland  ***
+checking for WAYLAND... yes
+configure: *** These plugins will be built: wayland 
+checking for wayland-scanner... /usr/bin/wayland-scanner
+
+configure: *** checking feature: WebP ***
+configure: *** for plug-ins: webp  ***
+checking for WEBP... no
+configure: *** These plugins will not be built: webp 
+
+configure: *** checking feature: daala ***
+configure: *** for plug-ins: daala ***
+checking for DAALA... no
+configure: *** These plugins will not be built: daala
+
+configure: *** checking feature: dts library ***
+configure: *** for plug-ins: dtsdec ***
+checking for dca_init in -ldca... yes
+checking dca.h usability... yes
+checking dca.h presence... yes
+checking for dca.h... yes
+configure: *** These plugins will be built: dtsdec
+
+configure: *** checking feature: resindvd plugin ***
+configure: *** for plug-ins: resindvd ***
+checking for DVDNAV... yes
+configure: *** These plugins will be built: resindvd
+
+configure: *** checking feature: AAC encoder plug-in ***
+configure: *** for plug-ins: faac ***
+checking for faacEncOpen in -lfaac... no
+configure: *** These plugins will not be built: faac
+
+configure: *** checking feature: AAC decoder plug-in ***
+configure: *** for plug-ins: faad ***
+checking for faacDecOpen in -lfaad... no
+checking for NeAACDecOpen in -lfaad... yes
+checking neaacdec.h usability... yes
+checking neaacdec.h presence... yes
+checking for neaacdec.h... yes
+checking Checking for FAAD >= 2.0... checking Checking FAAD2 version in neaacdec.h... no idea
+configure: *** These plugins will be built: faad
+
+configure: *** checking feature: linux framebuffer ***
+configure: *** for plug-ins: fbdevsink ***
+checking linux/fb.h usability... yes
+checking linux/fb.h presence... yes
+checking for linux/fb.h... yes
+configure: *** These plugins will be built: fbdevsink
+
+configure: *** checking feature: Flite plugin ***
+configure: *** for plug-ins: flite ***
+checking for flite_init in -lflite... no
+configure: *** These plugins will not be built: flite
+
+configure: *** checking feature: GSM library ***
+configure: *** for plug-ins: gsmenc gsmdec ***
+checking for gsm_create in -lgsm... no
+checking for gsm_create in -lgsm... (cached) no
+configure: *** These plugins will not be built: gsmenc gsmdec
+
+configure: *** checking feature: fluidsynth ***
+configure: *** for plug-ins: fluidsynth ***
+checking for FLUIDSYNTH... no
+configure: *** These plugins will not be built: fluidsynth
+
+configure: *** checking feature: Kate ***
+configure: *** for plug-ins: kate ***
+checking for KATE... yes
+checking for TIGER... no
+configure: *** These plugins will be built: kate
+
+configure: *** checking feature: ladspa ***
+configure: *** for plug-ins: ladspa ***
+checking ladspa.h usability... yes
+checking ladspa.h presence... yes
+checking for ladspa.h... yes
+checking for LRDF... no
+configure: *** These plugins will be built: ladspa
+
+configure: *** checking feature: lv2 ***
+configure: *** for plug-ins: lv2 ***
+configure: WARNING: *** lv2 not ported
+configure: *** These plugins will not be built: lv2
+
+configure: *** checking feature: mms protocol library ***
+configure: *** for plug-ins: libmms ***
+checking for LIBMMS... no
+configure: *** These plugins will not be built: libmms
+
+configure: *** checking feature: srtp library ***
+configure: *** for plug-ins: srtp ***
+checking for srtp_init in -lsrtp... no
+configure: *** These plugins will not be built: srtp
+
+configure: *** checking feature: Linear Systems SDI plugin ***
+configure: *** for plug-ins: linsys ***
+configure: WARNING: *** linsys not ported
+configure: *** These plugins will not be built: linsys
+
+configure: *** checking feature: modplug ***
+configure: *** for plug-ins: modplug ***
+checking for MODPLUG... yes
+configure: *** These plugins will be built: modplug
+
+configure: *** checking feature: libmimic library ***
+configure: *** for plug-ins: mimic ***
+checking for MIMIC... no
+configure: *** These plugins will not be built: mimic
+
+
+configure: *** checking feature: mpeg2enc ***
+configure: *** for plug-ins: mpeg2enc ***
+checking for MPEG2ENC... yes
+checking mpeg2encoder.hh usability... yes
+checking mpeg2encoder.hh presence... yes
+checking for mpeg2encoder.hh... yes
+checking for valid mpeg2enc objects... yes
+checking mpeg2syntaxcodes.h usability... yes
+checking mpeg2syntaxcodes.h presence... yes
+checking for mpeg2syntaxcodes.h... yes
+configure: *** These plugins will be built: mpeg2enc
+
+configure: *** checking feature: mpg123 audio decoder ***
+configure: *** for plug-ins: mpg123 ***
+checking for MPG123... yes
+configure: *** These plugins will be built: mpg123
+
+configure: *** checking feature: mplex ***
+configure: *** for plug-ins: mplex ***
+checking for MPLEX... yes
+checking interact.hpp usability... yes
+checking interact.hpp presence... yes
+checking for interact.hpp... yes
+checking for valid mplex objects... yes
+configure: *** These plugins will be built: mplex
+
+configure: *** checking feature: musepackdec ***
+configure: *** for plug-ins: musepack ***
+configure: WARNING: *** musepack not ported
+configure: *** These plugins will not be built: musepack
+
+configure: *** checking feature: MythTV client plugins ***
+configure: *** for plug-ins: mythtvsrc ***
+configure: WARNING: *** mythtvsrc not ported
+configure: *** These plugins will not be built: mythtvsrc
+
+configure: *** checking feature: nas plug-in ***
+configure: *** for plug-ins: nassink ***
+configure: WARNING: *** nassink not ported
+configure: *** These plugins will not be built: nassink
+
+configure: *** checking feature: neon http client plugins ***
+configure: *** for plug-ins: neonhttpsrc ***
+checking for NEON... no
+configure: *** These plugins will not be built: neonhttpsrc
+
+configure: *** checking feature: ofa plugins ***
+configure: *** for plug-ins: ofa ***
+checking for OFA... yes
+configure: *** These plugins will be built: ofa
+
+configure: *** checking feature: OpenAL plugin ***
+configure: *** for plug-ins: openal ***
+checking for OPENAL... no
+configure: *** These plugins will not be built: openal
+
+configure: *** checking feature: opencv plugins ***
+configure: *** for plug-ins: opencv ***
+checking for OPENCV... no
+configure: *** These plugins will not be built: opencv
+
+configure: *** checking feature: openexr library ***
+configure: *** for plug-ins: openexr ***
+checking for OPENEXR... no
+configure: Package 'OpenEXR', required by 'virtual:world', not found
+configure: *** These plugins will not be built: openexr
+
+configure: *** checking feature: openjpeg library ***
+configure: *** for plug-ins: openjpeg ***
+checking for OPENJPEG... no
+checking for opj_version in -lopenjpeg... no
+configure: *** These plugins will not be built: openjpeg
+
+configure: *** checking feature: openni2 library ***
+configure: *** for plug-ins: openni2 ***
+checking for OPENNI2... no
+configure: *** These plugins will not be built: openni2
+
+configure: *** checking feature: opus ***
+configure: *** for plug-ins: opus ***
+checking for OPUS... no
+configure: *** These plugins will not be built: opus
+
+configure: *** checking feature: pvrvideosink ***
+configure: *** for plug-ins: pvr ***
+checking for PVR... no
+configure: *** These plugins will not be built: pvr
+
+configure: *** checking feature: rsvg decoder ***
+configure: *** for plug-ins: rsvg ***
+checking for RSVG... yes
+checking for RSVG_2_36_2... yes
+configure: *** These plugins will be built: rsvg
+
+configure: *** checking feature: gl elements ***
+configure: *** for plug-ins: gl ***
+configure: *** These plugins will be built: gl
+
+configure: *** checking feature: libvisual visualization library ***
+configure: *** for plug-ins: libvisual ***
+configure: WARNING: *** libvisual not ported
+configure: *** These plugins will not be built: libvisual
+
+configure: *** checking feature: timidity midi soft synth plugin ***
+configure: *** for plug-ins: timidity ***
+configure: WARNING: *** timidity not ported
+configure: *** These plugins will not be built: timidity
+
+configure: *** checking feature: Teletext decoder ***
+configure: *** for plug-ins: teletextdec ***
+configure: WARNING: *** teletextdec not ported
+configure: *** These plugins will not be built: teletextdec
+
+configure: *** checking feature: wildmidi midi soft synth plugin ***
+configure: *** for plug-ins: wildmidi ***
+checking for WildMidi_Init in -lWildMidi... yes
+checking wildmidi_lib.h usability... yes
+checking wildmidi_lib.h presence... yes
+checking for wildmidi_lib.h... yes
+checking for WildMidi_LoadSamples in -lWildMidi... no
+configure: compiling gstWildMidi
+configure: *** These plugins will be built: wildmidi
+
+configure: *** checking feature: SDL plug-in ***
+configure: *** for plug-ins: sdlvideosink sdlaudiosink ***
+configure: WARNING: *** sdlvideosink sdlaudiosink not ported
+configure: *** These plugins will not be built: sdlvideosink sdlaudiosink
+
+configure: *** checking feature: Smooth Streaming plug-in ***
+configure: *** for plug-ins: smoothstreaming ***
+checking for LIBXML2... yes
+configure: *** These plugins will be built: smoothstreaming
+
+configure: *** checking feature: sndfile plug-in ***
+configure: *** for plug-ins: sfdec sfenc ***
+checking for SNDFILE... yes
+configure: *** These plugins will be built: sfdec sfenc
+
+configure: *** checking feature: soundtouch plug-in ***
+configure: *** for plug-ins: soundtouch ***
+checking for SOUNDTOUCH... yes
+configure: *** These plugins will be built: soundtouch
+
+configure: *** checking feature: spc decoder ***
+configure: *** for plug-ins: spc ***
+checking openspc.h usability... no
+checking openspc.h presence... no
+checking for openspc.h... no
+configure: *** These plugins will not be built: spc
+
+configure: *** checking feature: gme decoder ***
+configure: *** for plug-ins: gme ***
+checking gme/gme.h usability... no
+checking gme/gme.h presence... no
+checking for gme/gme.h... no
+configure: *** These plugins will not be built: gme
+
+configure: *** checking feature: xvid plugins ***
+configure: *** for plug-ins: xvid ***
+configure: WARNING: *** xvid not ported
+configure: *** These plugins will not be built: xvid
+
+configure: *** checking feature: DVB Source ***
+configure: *** for plug-ins: dvb ***
+checking Checking for up to date dvb installation... checking linux/dvb/version.h usability... yes
+checking linux/dvb/version.h presence... yes
+checking for linux/dvb/version.h... yes
+checking for up-to-date dvb API... yes
+configure: *** These plugins will be built: dvb
+
+configure: *** checking feature: Windows internet library ***
+configure: *** for plug-ins: wininet ***
+configure: WARNING: *** wininet not ported
+configure: *** These plugins will not be built: wininet
+
+configure: *** checking feature: Windows ACM library ***
+configure: *** for plug-ins: acm ***
+configure: WARNING: *** acm not ported
+configure: *** These plugins will not be built: acm
+
+configure: *** checking feature: VDPAU ***
+configure: *** for plug-ins: vdpau ***
+checking for VDPAU... no
+checking vdpau/vdpau.h usability... no
+checking vdpau/vdpau.h presence... no
+checking for vdpau/vdpau.h... no
+configure: VDPAU header not in standard path. Checking /usr/include/nvidia
+checking vdpau/vdpau.h usability... no
+checking vdpau/vdpau.h presence... no
+checking for vdpau/vdpau.h... no
+checking vdpau/vdpau_x11.h usability... no
+checking vdpau/vdpau_x11.h presence... no
+checking for vdpau/vdpau_x11.h... no
+configure: *** These plugins will not be built: vdpau
+
+configure: *** checking feature: SBC bluetooth audio codec ***
+configure: *** for plug-ins: sbc ***
+checking for SBC... no
+configure: Package 'sbc', required by 'virtual:world', not found
+configure: *** These plugins will not be built: sbc
+
+configure: *** checking feature: Schroedinger video codec ***
+configure: *** for plug-ins: schro ***
+checking for SCHRO... yes
+configure: *** These plugins will be built: schro
+
+configure: *** checking feature: ZBar barcode detector ***
+configure: *** for plug-ins: zbar ***
+checking for ZBAR... yes
+configure: *** These plugins will be built: zbar
+
+configure: *** checking feature: rtmp library ***
+configure: *** for plug-ins: rtmp ***
+checking for RTMP... no
+configure: Package 'librtmp', required by 'virtual:world', not found
+configure: *** These plugins will not be built: rtmp
+
+configure: *** checking feature: Spandsp ***
+configure: *** for plug-ins: spandsp ***
+checking for SPANDSP... no
+configure: *** These plugins will not be built: spandsp
+
+configure: *** checking feature: GSettings plugin ***
+configure: *** for plug-ins: gsettings ***
+configure: WARNING: *** gsettings not ported
+configure: *** These plugins will not be built: gsettings
+
+configure: *** checking feature: sndio audio ***
+configure: *** for plug-ins: sndio ***
+configure: WARNING: *** sndio not ported
+configure: *** These plugins will not be built: sndio
+
+configure: *** checking feature: http live streaming plugin ***
+configure: *** for plug-ins: hls ***
+checking for NETTLE... yes
+configure: *** These plugins will be built: hls
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating common/Makefile
+config.status: creating common/m4/Makefile
+config.status: creating gst-plugins-bad.spec
+config.status: creating gst/Makefile
+config.status: creating gst/accurip/Makefile
+config.status: creating gst/adpcmdec/Makefile
+config.status: creating gst/adpcmenc/Makefile
+config.status: creating gst/aiff/Makefile
+config.status: creating gst/asfmux/Makefile
+config.status: creating gst/audiofxbad/Makefile
+config.status: creating gst/audiomixer/Makefile
+config.status: creating gst/audiovisualizers/Makefile
+config.status: creating gst/autoconvert/Makefile
+config.status: creating gst/bayer/Makefile
+config.status: creating gst/camerabin2/Makefile
+config.status: creating gst/cdxaparse/Makefile
+config.status: creating gst/coloreffects/Makefile
+config.status: creating gst/dataurisrc/Makefile
+config.status: creating gst/dccp/Makefile
+config.status: creating gst/debugutils/Makefile
+config.status: creating gst/dvbsuboverlay/Makefile
+config.status: creating gst/dvdspu/Makefile
+config.status: creating gst/faceoverlay/Makefile
+config.status: creating gst/festival/Makefile
+config.status: creating gst/fieldanalysis/Makefile
+config.status: creating gst/freeverb/Makefile
+config.status: creating gst/frei0r/Makefile
+config.status: creating gst/gaudieffects/Makefile
+config.status: creating gst/geometrictransform/Makefile
+config.status: creating gst/gdp/Makefile
+config.status: creating gst/hdvparse/Makefile
+config.status: creating gst/id3tag/Makefile
+config.status: creating gst/inter/Makefile
+config.status: creating gst/interlace/Makefile
+config.status: creating gst/ivfparse/Makefile
+config.status: creating gst/ivtc/Makefile
+config.status: creating gst/jp2kdecimator/Makefile
+config.status: creating gst/jpegformat/Makefile
+config.status: creating gst/librfb/Makefile
+config.status: creating gst/liveadder/Makefile
+config.status: creating gst/midi/Makefile
+config.status: creating gst/mpegdemux/Makefile
+config.status: creating gst/mpegtsdemux/Makefile
+config.status: creating gst/mpegtsmux/Makefile
+config.status: creating gst/mpegtsmux/tsmux/Makefile
+config.status: creating gst/mpegpsmux/Makefile
+config.status: creating gst/mve/Makefile
+config.status: creating gst/mxf/Makefile
+config.status: creating gst/nuvdemux/Makefile
+config.status: creating gst/patchdetect/Makefile
+config.status: creating gst/pcapparse/Makefile
+config.status: creating gst/pnm/Makefile
+config.status: creating gst/rawparse/Makefile
+config.status: creating gst/real/Makefile
+config.status: creating gst/removesilence/Makefile
+config.status: creating gst/sdi/Makefile
+config.status: creating gst/sdp/Makefile
+config.status: creating gst/segmentclip/Makefile
+config.status: creating gst/siren/Makefile
+config.status: creating gst/smooth/Makefile
+config.status: creating gst/speed/Makefile
+config.status: creating gst/subenc/Makefile
+config.status: creating gst/stereo/Makefile
+config.status: creating gst/tta/Makefile
+config.status: creating gst/videofilters/Makefile
+config.status: creating gst/videomeasure/Makefile
+config.status: creating gst/videoparsers/Makefile
+config.status: creating gst/videosignal/Makefile
+config.status: creating gst/vmnc/Makefile
+config.status: creating gst/y4m/Makefile
+config.status: creating gst/yadif/Makefile
+config.status: creating gst/compositor/Makefile
+config.status: creating gst-libs/Makefile
+config.status: creating gst-libs/gst/Makefile
+config.status: creating gst-libs/gst/basecamerabinsrc/Makefile
+config.status: creating gst-libs/gst/gl/Makefile
+config.status: creating gst-libs/gst/gl/android/Makefile
+config.status: creating gst-libs/gst/gl/cocoa/Makefile
+config.status: creating gst-libs/gst/gl/dispmanx/Makefile
+config.status: creating gst-libs/gst/gl/glprototypes/Makefile
+config.status: creating gst-libs/gst/gl/eagl/Makefile
+config.status: creating gst-libs/gst/gl/egl/Makefile
+config.status: creating gst-libs/gst/gl/wayland/Makefile
+config.status: creating gst-libs/gst/gl/win32/Makefile
+config.status: creating gst-libs/gst/gl/x11/Makefile
+config.status: creating gst-libs/gst/insertbin/Makefile
+config.status: creating gst-libs/gst/interfaces/Makefile
+config.status: creating gst-libs/gst/codecparsers/Makefile
+config.status: creating gst-libs/gst/mpegts/Makefile
+config.status: creating gst-libs/gst/uridownloader/Makefile
+config.status: creating gst-libs/gst/wayland/Makefile
+config.status: creating gst-libs/gst/base/Makefile
+config.status: creating gst-libs/gst/video/Makefile
+config.status: creating sys/Makefile
+config.status: creating sys/dshowdecwrapper/Makefile
+config.status: creating sys/acmenc/Makefile
+config.status: creating sys/acmmp3dec/Makefile
+config.status: creating sys/androidmedia/Makefile
+config.status: creating sys/applemedia/Makefile
+config.status: creating sys/applemedia-nonpublic/Makefile
+config.status: creating sys/avc/Makefile
+config.status: creating sys/bluez/Makefile
+config.status: creating sys/d3dvideosink/Makefile
+config.status: creating sys/decklink/Makefile
+config.status: creating sys/directdraw/Makefile
+config.status: creating sys/directsound/Makefile
+config.status: creating sys/dshowsrcwrapper/Makefile
+config.status: creating sys/dshowvideosink/Makefile
+config.status: creating sys/dvb/Makefile
+config.status: creating sys/fbdev/Makefile
+config.status: creating sys/linsys/Makefile
+config.status: creating sys/opensles/Makefile
+config.status: creating sys/osxvideo/Makefile
+config.status: creating sys/qtwrapper/Makefile
+config.status: creating sys/shm/Makefile
+config.status: creating sys/uvch264/Makefile
+config.status: creating sys/vcd/Makefile
+config.status: creating sys/vdpau/Makefile
+config.status: creating sys/pvr2d/Makefile
+config.status: creating sys/wasapi/Makefile
+config.status: creating sys/wininet/Makefile
+config.status: creating sys/winks/Makefile
+config.status: creating sys/winscreencap/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/check/Makefile
+config.status: creating tests/files/Makefile
+config.status: creating tests/examples/Makefile
+config.status: creating tests/examples/camerabin2/Makefile
+config.status: creating tests/examples/directfb/Makefile
+config.status: creating tests/examples/gl/Makefile
+config.status: creating tests/examples/gl/cocoa/Makefile
+config.status: creating tests/examples/gl/clutter/Makefile
+config.status: creating tests/examples/gl/generic/Makefile
+config.status: creating tests/examples/gl/generic/cube/Makefile
+config.status: creating tests/examples/gl/generic/cubeyuv/Makefile
+config.status: creating tests/examples/gl/generic/doublecube/Makefile
+config.status: creating tests/examples/gl/generic/recordgraphic/Makefile
+config.status: creating tests/examples/gl/gtk/Makefile
+config.status: creating tests/examples/gl/gtk/gtkvideooverlay/Makefile
+config.status: creating tests/examples/gl/gtk/filternovideooverlay/Makefile
+config.status: creating tests/examples/gl/gtk/filtervideooverlay/Makefile
+config.status: creating tests/examples/gl/gtk/fxtest/Makefile
+config.status: creating tests/examples/gl/gtk/switchvideooverlay/Makefile
+config.status: creating tests/examples/gl/qt/Makefile
+config.status: creating tests/examples/gl/sdl/Makefile
+config.status: creating tests/examples/mpegts/Makefile
+config.status: creating tests/examples/mxf/Makefile
+config.status: creating tests/examples/opencv/Makefile
+config.status: creating tests/examples/uvch264/Makefile
+config.status: creating tests/icles/Makefile
+config.status: creating ext/voamrwbenc/Makefile
+config.status: creating ext/voaacenc/Makefile
+config.status: creating ext/assrender/Makefile
+config.status: creating ext/apexsink/Makefile
+config.status: creating ext/bz2/Makefile
+config.status: creating ext/chromaprint/Makefile
+config.status: creating ext/curl/Makefile
+config.status: creating ext/dash/Makefile
+config.status: creating ext/dc1394/Makefile
+config.status: creating ext/directfb/Makefile
+config.status: creating ext/wayland/Makefile
+config.status: creating ext/daala/Makefile
+config.status: creating ext/dts/Makefile
+config.status: creating ext/gl/Makefile
+config.status: creating ext/faac/Makefile
+config.status: creating ext/faad/Makefile
+config.status: creating ext/flite/Makefile
+config.status: creating ext/fluidsynth/Makefile
+config.status: creating ext/gsm/Makefile
+config.status: creating ext/hls/Makefile
+config.status: creating ext/kate/Makefile
+config.status: creating ext/ladspa/Makefile
+config.status: creating ext/lv2/Makefile
+config.status: creating ext/libmms/Makefile
+config.status: creating ext/libvisual/Makefile
+config.status: creating ext/Makefile
+config.status: creating ext/modplug/Makefile
+config.status: creating ext/mpeg2enc/Makefile
+config.status: creating ext/mpg123/Makefile
+config.status: creating ext/mimic/Makefile
+config.status: creating ext/mplex/Makefile
+config.status: creating ext/musepack/Makefile
+config.status: creating ext/mythtv/Makefile
+config.status: creating ext/nas/Makefile
+config.status: creating ext/neon/Makefile
+config.status: creating ext/ofa/Makefile
+config.status: creating ext/openal/Makefile
+config.status: creating ext/opencv/Makefile
+config.status: creating ext/openexr/Makefile
+config.status: creating ext/openjpeg/Makefile
+config.status: creating ext/openni2/Makefile
+config.status: creating ext/opus/Makefile
+config.status: creating ext/rsvg/Makefile
+config.status: creating ext/resindvd/Makefile
+config.status: creating ext/rtmp/Makefile
+config.status: creating ext/sbc/Makefile
+config.status: creating ext/schroedinger/Makefile
+config.status: creating ext/sdl/Makefile
+config.status: creating ext/smoothstreaming/Makefile
+config.status: creating ext/sndfile/Makefile
+config.status: creating ext/soundtouch/Makefile
+config.status: creating ext/spandsp/Makefile
+config.status: creating ext/sndio/Makefile
+config.status: creating ext/srtp/Makefile
+config.status: creating ext/teletextdec/Makefile
+config.status: creating ext/gme/Makefile
+config.status: creating ext/gsettings/Makefile
+config.status: creating ext/gsettings/org.freedesktop.gstreamer.default-elements.gschema.xml
+config.status: creating ext/spc/Makefile
+config.status: creating ext/timidity/Makefile
+config.status: creating ext/webp/Makefile
+config.status: creating ext/xvid/Makefile
+config.status: creating ext/zbar/Makefile
+config.status: creating po/Makefile.in
+config.status: creating docs/Makefile
+config.status: creating docs/plugins/Makefile
+config.status: creating docs/libs/Makefile
+config.status: creating docs/version.entities
+config.status: creating pkgconfig/Makefile
+config.status: creating pkgconfig/gstreamer-plugins-bad.pc
+config.status: creating pkgconfig/gstreamer-plugins-bad-uninstalled.pc
+config.status: creating pkgconfig/gstreamer-codecparsers.pc
+config.status: creating pkgconfig/gstreamer-codecparsers-uninstalled.pc
+config.status: creating pkgconfig/gstreamer-insertbin.pc
+config.status: creating pkgconfig/gstreamer-insertbin-uninstalled.pc
+config.status: creating pkgconfig/gstreamer-gl.pc
+config.status: creating pkgconfig/gstreamer-gl-uninstalled.pc
+config.status: creating pkgconfig/gstreamer-mpegts.pc
+config.status: creating pkgconfig/gstreamer-mpegts-uninstalled.pc
+config.status: creating pkgconfig/gstreamer-wayland.pc
+config.status: creating pkgconfig/gstreamer-wayland-uninstalled.pc
+config.status: creating pkgconfig/gstreamer-bad-base.pc
+config.status: creating pkgconfig/gstreamer-bad-base-uninstalled.pc
+config.status: creating pkgconfig/gstreamer-bad-video.pc
+config.status: creating pkgconfig/gstreamer-bad-video-uninstalled.pc
+config.status: creating tools/Makefile
+config.status: creating m4/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing _stdint.h commands
+config.status: creating _stdint.h : _GST_PLUGINS_BAD__STDINT_H
+config.status: executing gst-libs/gst/gl/gstglconfig.h commands
+configure: *** Plug-ins without external dependencies that will be built:
+	accurip
+	adpcmdec
+	adpcmenc
+	aiff
+	asfmux
+	audiofxbad
+	audiomixer
+	audiovisualizers
+	autoconvert
+	bayer
+	camerabin2
+	coloreffects
+	compositor
+	dataurisrc
+	debugutils
+	dvbsuboverlay
+	dvdspu
+	festival
+	fieldanalysis
+	freeverb
+	frei0r
+	gaudieffects
+	gdp
+	geometrictransform
+	id3tag
+	inter
+	interlace
+	ivfparse
+	ivtc
+	jp2kdecimator
+	jpegformat
+	librfb
+	liveadder
+	midi
+	mpegdemux
+	mpegpsmux
+	mpegtsdemux
+	mpegtsmux
+	mxf
+	pcapparse
+	pnm
+	rawparse
+	removesilence
+	sdp
+	segmentclip
+	siren
+	smooth
+	speed
+	stereo
+	subenc
+	videofilters
+	videoparsers
+	videosignal
+	vmnc
+	y4m
+	yadif
+
+configure: *** Plug-ins without external dependencies that will NOT be built:
+	cdxaparse
+	dccp
+	faceoverlay
+	hdvparse
+	mve
+	nuvdemux
+	patchdetect
+	real
+	sdi
+	tta
+	videomeasure
+
+configure: *** Plug-ins that have NOT been ported:
+	acm
+	apexsink
+	cdxaparse
+	dc1394
+	dccp
+	directdraw
+	faceoverlay
+	gsettings
+	hdvparse
+	libvisual
+	linsys
+	lv2
+	musepack
+	mve
+	mythtv
+	nas
+	nuvdemux
+	osx_video
+	patchdetect
+	quicktime
+	real
+	sdi
+	sdl
+	sndio
+	teletextdec
+	timidity
+	tta
+	vcd
+	videomeasure
+	wininet
+	xvid
+
+configure: *** Plug-ins with dependencies that will be built:
+	assrender
+	bz2
+	dash
+	decklink
+	dtsdec
+	dvb
+	faad
+	fbdevsink
+	gl
+	hls
+	kate
+	ladspa
+	modplug
+	mpeg2enc
+	mpg123
+	mplex
+	ofa
+	resindvd
+	rsvg
+	schro
+	sfdec sfenc
+	shm
+	smoothstreaming
+	soundtouch
+	uvch264
+	wayland 
+	wildmidi
+	zbar
+
+configure: *** Plug-ins with dependencies that will NOT be built:
+	acm
+	androidmedia
+	apexsink
+	applemedia
+	avcsrc
+	bluez
+	chromaprint
+	curl
+	daala
+	dc1394
+	dfbvideosink 
+	direct3dsink
+	directdrawsink
+	directsoundsrc
+	faac
+	flite
+	fluidsynth
+	gme
+	gsettings
+	gsmenc gsmdec
+	libmms
+	libvisual
+	linsys
+	lv2
+	mimic
+	musepack
+	mythtvsrc
+	nassink
+	neonhttpsrc
+	openal
+	opencv
+	openexr
+	openjpeg
+	openni2
+	opensl
+	opus
+	osxvideosrc
+	pvr
+	qtwrapper
+	rtmp
+	sbc
+	sdlvideosink sdlaudiosink
+	sndio
+	spandsp
+	spc
+	srtp
+	teletextdec
+	timidity
+	vcdsrc
+	vdpau
+	vo-aacenc
+	vo-amrwbenc
+	wasapi
+	webp 
+	wininet
+	winks
+	winscreencap
+	xvid
+
+configure: *** Orc acceleration enabled.
+
++ make ERROR_CFLAGS= ERROR_CXXFLAGS=
+make  all-recursive
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4'
+Making all in gst-libs
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs'
+Making all in gst
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst'
+Making all in interfaces
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/interfaces'
+  GEN      photography-enumtypes.c
+  GEN      photography-enumtypes.h
+make  all-am
+make[5]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/interfaces'
+  CC       libgstphotography_1.0_la-photography.lo
+  CC       libgstphotography_1.0_la-photography-enumtypes.lo
+  CCLD     libgstphotography-1.0.la
+make[5]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/interfaces'
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/interfaces'
+Making all in basecamerabinsrc
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/basecamerabinsrc'
+  CC       libgstbasecamerabinsrc_1.0_la-gstcamerabin-enum.lo
+  CC       libgstbasecamerabinsrc_1.0_la-gstcamerabinpreview.lo
+  CC       libgstbasecamerabinsrc_1.0_la-gstbasecamerasrc.lo
+  CCLD     libgstbasecamerabinsrc-1.0.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/basecamerabinsrc'
+Making all in codecparsers
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/codecparsers'
+  CC       libgstcodecparsers_1.0_la-gstmpegvideoparser.lo
+  CC       libgstcodecparsers_1.0_la-gsth264parser.lo
+  CC       libgstcodecparsers_1.0_la-gstvc1parser.lo
+  CC       libgstcodecparsers_1.0_la-gstmpeg4parser.lo
+  CC       libgstcodecparsers_1.0_la-gsth265parser.lo
+  CC       libgstcodecparsers_1.0_la-gstvp8parser.lo
+  CC       libgstcodecparsers_1.0_la-gstvp8rangedecoder.lo
+  CC       libgstcodecparsers_1.0_la-parserutils.lo
+  CC       libgstcodecparsers_1.0_la-nalutils.lo
+  CC       libgstcodecparsers_1.0_la-dboolhuff.lo
+  CC       libgstcodecparsers_1.0_la-vp8utils.lo
+  CC       libgstcodecparsers_1.0_la-gstmpegvideometa.lo
+  CCLD     libgstcodecparsers-1.0.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/codecparsers'
+Making all in insertbin
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin'
+  CC       libgstinsertbin_1.0_la-gstinsertbin.lo
+gstinsertbin.c: In function 'gst_insert_bin_class_init':
+gstinsertbin.c:133:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  133 |   g_type_class_add_private (klass, sizeof (GstInsertBinPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstinsertbin.h:34,
+                 from gstinsertbin.c:47:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libgstinsertbin-1.0.la
+  GEN      GstInsertBin-1.0.gir
+g-ir-scanner: warning: Option --strip-prefix has been deprecated;
+see --identifier-prefix and --symbol-prefix.
+gcc -pthread -E -DGST_USE_UNSTABLE_API -I. -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gstreamer-1.0 -o g-ir-cpp-3ombo0f_.i -C /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin/g-ir-cpp-3ombo0f_.c
+gcc -pthread -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/gstreamer-1.0 -c /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin/tmp-introspect65aqwoo_/GstInsertBin-1.0.c -o /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin/tmp-introspect65aqwoo_/GstInsertBin-1.0.o -Wno-deprecated-declarations -pthread
+/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin/tmp-introspect65aqwoo_/GstInsertBin-1.0.c: In function ‘main’:
+/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin/tmp-introspect65aqwoo_/GstInsertBin-1.0.c:602:3: warning: implicit declaration of function ‘gst_init’; did you mean ‘g_test_init’? [-Wimplicit-function-declaration]
+  602 |   gst_init(NULL,NULL);
+      |   ^~~~~~~~
+      |   g_test_init
+g-ir-scanner: link: ../../../libtool --mode=link --tag=CC cc -o /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin/tmp-introspect65aqwoo_/GstInsertBin-1.0 -export-dynamic -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin/tmp-introspect65aqwoo_/GstInsertBin-1.0.o -L. libgstinsertbin-1.0.la -lgio-2.0 -Wl,--export-dynamic -pthread -lgmodule-2.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -Wl,-z,relro -Wl,--as-needed -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld
+libtool: link: cc -o /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin/tmp-introspect65aqwoo_/.libs/GstInsertBin-1.0 -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin/tmp-introspect65aqwoo_/GstInsertBin-1.0.o -Wl,--export-dynamic -pthread -Wl,-z -Wl,relro -Wl,--as-needed -Wl,-z -Wl,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -Wl,--export-dynamic  -L. ./.libs/libgstinsertbin-1.0.so -lgio-2.0 -lgmodule-2.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -pthread -Wl,-rpath -Wl,/usr/lib64
+gstinsertbin.c:146: Warning: GstInsertBin: incorrect number of parameters in comment block, parameter annotations will be ignored.
+gstinsertbin.c:165: Warning: GstInsertBin: incorrect number of parameters in comment block, parameter annotations will be ignored.
+gstinsertbin.c:184: Warning: GstInsertBin: incorrect number of parameters in comment block, parameter annotations will be ignored.
+gstinsertbin.c:205: Warning: GstInsertBin: incorrect number of parameters in comment block, parameter annotations will be ignored.
+gstinsertbin.c:228: Warning: GstInsertBin: incorrect number of parameters in comment block, parameter annotations will be ignored.
+  GEN      GstInsertBin-1.0.typelib
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin'
+Making all in uridownloader
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/uridownloader'
+  CC       libgsturidownloader_1.0_la-gstfragment.lo
+gstfragment.c: In function 'gst_fragment_class_init':
+gstfragment.c:119:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  119 |   g_type_class_add_private (klass, sizeof (GstFragmentPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/base/gsttypefindhelper.h:27,
+                 from gstfragment.c:23:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgsturidownloader_1.0_la-gsturidownloader.lo
+gsturidownloader.c: In function 'gst_uri_downloader_class_init':
+gsturidownloader.c:81:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+   81 |   g_type_class_add_private (klass, sizeof (GstUriDownloaderPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from gstfragment.h:25,
+                 from gsturidownloader.c:23:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libgsturidownloader-1.0.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/uridownloader'
+Making all in mpegts
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts'
+  GEN      gstmpegts-enumtypes.c
+  GEN      gstmpegts-enumtypes.h
+make  all-am
+make[5]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts'
+  CC       libgstmpegts_1.0_la-gstmpegtssection.lo
+  CC       libgstmpegts_1.0_la-gstmpegtsdescriptor.lo
+  CC       libgstmpegts_1.0_la-gst-dvb-descriptor.lo
+  CC       libgstmpegts_1.0_la-gst-dvb-section.lo
+  CC       libgstmpegts_1.0_la-gst-atsc-section.lo
+  CC       libgstmpegts_1.0_la-gstmpegts-enumtypes.lo
+  CCLD     libgstmpegts-1.0.la
+  GEN      GstMpegts-1.0.gir
+gcc -pthread -E -DGST_USE_UNSTABLE_API -I. -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -o g-ir-cpp-9n64ga2h.i -C /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts/g-ir-cpp-9n64ga2h.c
+gcc -pthread -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/uuid -I/usr/include/gstreamer-1.0 -I/usr/include/orc-0.4 -c /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts/tmp-introspectqjlr75nf/GstMpegts-1.0.c -o /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts/tmp-introspectqjlr75nf/GstMpegts-1.0.o -Wno-deprecated-declarations -pthread
+/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts/tmp-introspectqjlr75nf/GstMpegts-1.0.c: In function ‘main’:
+/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts/tmp-introspectqjlr75nf/GstMpegts-1.0.c:602:3: warning: implicit declaration of function ‘gst_init’; did you mean ‘g_test_init’? [-Wimplicit-function-declaration]
+  602 |   gst_init(NULL,NULL);
+      |   ^~~~~~~~
+      |   g_test_init
+g-ir-scanner: link: ../../../libtool --mode=link --tag=CC cc -o /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts/tmp-introspectqjlr75nf/GstMpegts-1.0 -export-dynamic -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts/tmp-introspectqjlr75nf/GstMpegts-1.0.o -L. libgstmpegts-1.0.la -lgio-2.0 -Wl,--export-dynamic -pthread -lgmodule-2.0 -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -Wl,-z,relro -Wl,--as-needed -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld
+libtool: link: cc -o /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts/tmp-introspectqjlr75nf/.libs/GstMpegts-1.0 -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts/tmp-introspectqjlr75nf/GstMpegts-1.0.o -Wl,--export-dynamic -pthread -Wl,-z -Wl,relro -Wl,--as-needed -Wl,-z -Wl,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -Wl,--export-dynamic  -L. ./.libs/libgstmpegts-1.0.so -lgio-2.0 -lgmodule-2.0 -lgstvideo-1.0 -lgstbase-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 -pthread -Wl,-rpath -Wl,/usr/lib64
+  GEN      GstMpegts-1.0.typelib
+make[5]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts'
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts'
+Making all in base
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/base'
+  CC       libgstbadbase_1.0_la-gstaggregator.lo
+gstaggregator.c: In function 'gst_aggregator_class_init':
+gstaggregator.c:1082:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+ 1082 |   g_type_class_add_private (klass, sizeof (GstAggregatorPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstaggregator.h:31,
+                 from gstaggregator.c:66:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstaggregator.c: In function 'gst_aggregator_pad_class_init':
+gstaggregator.c:1320:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+ 1320 |   g_type_class_add_private (klass, sizeof (GstAggregatorPadPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstaggregator.h:31,
+                 from gstaggregator.c:66:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libgstbadbase-1.0.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/base'
+Making all in video
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/video'
+  ORCC   tmp-orc.c
+  ORCC   bad-video-orc.h
+make  all-am
+make[5]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/video'
+  CC       libgstbadvideo_1.0_la-videoconvert.lo
+  CC       libgstbadvideo_1.0_la-gstvideoaggregator.lo
+gstvideoaggregator.c: In function 'gst_videoaggregator_pad_class_init':
+gstvideoaggregator.c:163:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  163 |   g_type_class_add_private (klass, sizeof (GstVideoAggregatorPadPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/video/video.h:23,
+                 from videoconvert.h:25,
+                 from gstvideoaggregator.c:43:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstvideoaggregator.c: In function 'gst_videoaggregator_class_init':
+gstvideoaggregator.c:1904:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+ 1904 |   g_type_class_add_private (klass, sizeof (GstVideoAggregatorPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/video/video.h:23,
+                 from videoconvert.h:25,
+                 from gstvideoaggregator.c:43:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstbadvideo_1.0_la-gstcms.lo
+  CC       libgstbadvideo_1.0_la-tmp-orc.lo
+  CCLD     libgstbadvideo-1.0.la
+make[5]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/video'
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/video'
+Making all in gl
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl'
+Making all in glprototypes
+make[5]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl/glprototypes'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl/glprototypes'
+Making all in x11
+make[5]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl/x11'
+  CC       libgstgl_x11_la-gstgldisplay_x11.lo
+  CC       libgstgl_x11_la-gstglwindow_x11.lo
+  CC       libgstgl_x11_la-x11_event_source.lo
+  CC       libgstgl_x11_la-gstglcontext_glx.lo
+  CCLD     libgstgl-x11.la
+make[5]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl/x11'
+Making all in wayland
+make[5]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl/wayland'
+  CC       libgstgl_wayland_la-gstglwindow_wayland_egl.lo
+  CC       libgstgl_wayland_la-wayland_event_source.lo
+  CCLD     libgstgl-wayland.la
+make[5]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl/wayland'
+Making all in egl
+make[5]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl/egl'
+  CC       libgstgl_egl_la-gstgldisplay_egl.lo
+  CC       libgstgl_egl_la-gstglcontext_egl.lo
+  CC       libgstgl_egl_la-gsteglimagememory.lo
+  CCLD     libgstgl-egl.la
+make[5]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl/egl'
+make[5]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl'
+  CC       libgstgl_1.0_la-gstgldisplay.lo
+gstgldisplay.c: In function 'gst_gl_display_class_init':
+gstgldisplay.c:92:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+   92 |   g_type_class_add_private (klass, sizeof (GstGLDisplayPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstgldisplay.c:56:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstgl_1.0_la-gstglcontext.lo
+gstglcontext.c: In function 'gst_gl_context_class_init':
+gstglcontext.c:226:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  226 |   g_type_class_add_private (klass, sizeof (GstGLContextPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglcontext.c:49:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstgl_1.0_la-gstglmemory.lo
+  CC       libgstgl_1.0_la-gstglbufferpool.lo
+gstglbufferpool.c: In function 'gst_gl_buffer_pool_class_init':
+gstglbufferpool.c:318:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  318 |   g_type_class_add_private (klass, sizeof (GstGLBufferPoolPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglbufferpool.c:25:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstgl_1.0_la-gstglfilter.lo
+  CC       libgstgl_1.0_la-gstglshader.lo
+gstglshader.c: In function 'gst_gl_shader_class_init':
+gstglshader.c:221:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  221 |   g_type_class_add_private (klass, sizeof (GstGLShaderPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglshader.c:26:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstgl_1.0_la-gstglshadervariables.lo
+  CC       libgstgl_1.0_la-gstglcolorconvert.lo
+gstglcolorconvert.c: In function 'gst_gl_color_convert_class_init':
+gstglcolorconvert.c:437:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  437 |   g_type_class_add_private (klass, sizeof (GstGLColorConvertPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglcolorconvert.c:27:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstgl_1.0_la-gstgldownload.lo
+gstgldownload.c: In function 'gst_gl_download_class_init':
+gstgldownload.c:82:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+   82 |   g_type_class_add_private (klass, sizeof (GstGLDownloadPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstgldownload.c:27:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstgl_1.0_la-gstglupload.lo
+gstglupload.c: In function 'gst_gl_upload_class_init':
+gstglupload.c:87:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+   87 |   g_type_class_add_private (klass, sizeof (GstGLUploadPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglupload.c:27:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstgl_1.0_la-gstgluploadmeta.lo
+gstgluploadmeta.c: In function 'gst_gl_upload_meta_class_init':
+gstgluploadmeta.c:73:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+   73 |   g_type_class_add_private (klass, sizeof (GstGLUploadMetaPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstgluploadmeta.c:27:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstgl_1.0_la-gstglwindow.lo
+gstglwindow.c: In function 'gst_gl_window_class_init':
+gstglwindow.c:129:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  129 |   g_type_class_add_private (klass, sizeof (GstGLWindowPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglwindow.c:38:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstgl_1.0_la-gstglapi.lo
+  CC       libgstgl_1.0_la-gstglfeature.lo
+  CC       libgstgl_1.0_la-gstglutils.lo
+  CC       libgstgl_1.0_la-gstglframebuffer.lo
+gstglframebuffer.c: In function 'gst_gl_framebuffer_class_init':
+gstglframebuffer.c:53:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+   53 |   g_type_class_add_private (klass, sizeof (GstGLFramebufferPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglframebuffer.c:24:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libgstgl-1.0.la
+make[5]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl'
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/gl'
+Making all in wayland
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/wayland'
+  CC       libgstwayland_1.0_la-wayland.lo
+  CCLD     libgstwayland-1.0.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/wayland'
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs'
+Making all in gst
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst'
+make -C accurip
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/accurip'
+  CC       libgstaccurip_la-gstaccurip.lo
+  CCLD     libgstaccurip.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/accurip'
+make -C adpcmdec
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/adpcmdec'
+  CC       libgstadpcmdec_la-adpcmdec.lo
+  CCLD     libgstadpcmdec.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/adpcmdec'
+make -C adpcmenc
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/adpcmenc'
+  CC       libgstadpcmenc_la-adpcmenc.lo
+  CCLD     libgstadpcmenc.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/adpcmenc'
+make -C aiff
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/aiff'
+  CC       libgstaiff_la-aiff.lo
+  CC       libgstaiff_la-aiffmux.lo
+  CC       libgstaiff_la-aiffparse.lo
+  CCLD     libgstaiff.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/aiff'
+make -C asfmux
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/asfmux'
+  CC       libgstasfmux_la-gstasfmux.lo
+  CC       libgstasfmux_la-gstasfobjects.lo
+  CC       libgstasfmux_la-gstasfparse.lo
+  CC       libgstasfmux_la-gstrtpasfpay.lo
+  CC       libgstasfmux_la-gstasf.lo
+  CCLD     libgstasfmux.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/asfmux'
+make -C audiofxbad
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/audiofxbad'
+  CC       libgstaudiofxbad_la-gstaudiofxbad.lo
+  CC       libgstaudiofxbad_la-gstaudiochannelmix.lo
+  CCLD     libgstaudiofxbad.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/audiofxbad'
+make -C audiomixer
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/audiomixer'
+  ORCC   tmp-orc.c
+  ORCC   gstaudiomixerorc.h
+make  all-am
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/audiomixer'
+  CC       libgstaudiomixer_la-gstaudiomixer.lo
+  CC       libgstaudiomixer_la-tmp-orc.lo
+  CCLD     libgstaudiomixer.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/audiomixer'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/audiomixer'
+make -C compositor
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/compositor'
+  ORCC   tmp-orc.c
+  ORCC   compositororc.h
+make  all-am
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/compositor'
+  CC       libgstcompositor_la-blend.lo
+  CC       libgstcompositor_la-compositor.lo
+  CC       libgstcompositor_la-tmp-orc.lo
+  CCLD     libgstcompositor.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/compositor'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/compositor'
+make -C audiovisualizers
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/audiovisualizers'
+  CC       libgstaudiovisualizers_la-plugin.lo
+  CC       libgstaudiovisualizers_la-gstaudiovisualizer.lo
+gstaudiovisualizer.c: In function 'gst_audio_visualizer_class_init':
+gstaudiovisualizer.c:541:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  541 |   g_type_class_add_private (klass, sizeof (GstAudioVisualizerPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/video/video.h:23,
+                 from gstaudiovisualizer.c:38:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CC       libgstaudiovisualizers_la-gstspacescope.lo
+  CC       libgstaudiovisualizers_la-gstspectrascope.lo
+  CC       libgstaudiovisualizers_la-gstsynaescope.lo
+  CC       libgstaudiovisualizers_la-gstwavescope.lo
+  CCLD     libgstaudiovisualizers.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/audiovisualizers'
+make -C autoconvert
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/autoconvert'
+  CC       libgstautoconvert_la-gstautoconvert.lo
+  CC       libgstautoconvert_la-gstautovideoconvert.lo
+  CC       libgstautoconvert_la-plugin.lo
+  CCLD     libgstautoconvert.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/autoconvert'
+make -C bayer
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/bayer'
+  ORCC   tmp-orc.c
+  ORCC   gstbayerorc.h
+make  all-am
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/bayer'
+  CC       libgstbayer_la-gstbayer.lo
+  CC       libgstbayer_la-gstbayer2rgb.lo
+  CC       libgstbayer_la-gstrgb2bayer.lo
+  CC       libgstbayer_la-tmp-orc.lo
+  CCLD     libgstbayer.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/bayer'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/bayer'
+make -C camerabin2
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/camerabin2'
+  CC       libgstcamerabin2_la-gstviewfinderbin.lo
+  CC       libgstcamerabin2_la-camerabingeneral.lo
+  CC       libgstcamerabin2_la-gstwrappercamerabinsrc.lo
+  CC       libgstcamerabin2_la-gstcamerabin2.lo
+  CC       libgstcamerabin2_la-gstplugin.lo
+  CCLD     libgstcamerabin2.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/camerabin2'
+make -C coloreffects
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/coloreffects'
+  CC       libgstcoloreffects_la-gstplugin.lo
+  CC       libgstcoloreffects_la-gstcoloreffects.lo
+  CC       libgstcoloreffects_la-gstchromahold.lo
+  CCLD     libgstcoloreffects.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/coloreffects'
+make -C dataurisrc
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/dataurisrc'
+  CC       libgstdataurisrc_la-gstdataurisrc.lo
+  CCLD     libgstdataurisrc.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/dataurisrc'
+make -C debugutils
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/debugutils'
+  GEN      debugutils-marshal.c
+INFO: Reading debugutils-marshal.list...
+  GEN      debugutils-marshal.h
+INFO: Reading debugutils-marshal.list...
+make  all-am
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/debugutils'
+  CC       libgstdebugutilsbad_la-gstdebugspy.lo
+  CC       libgstdebugutilsbad_la-debugutilsbad.lo
+  CC       libgstdebugutilsbad_la-fpsdisplaysink.lo
+  CC       libgstdebugutilsbad_la-gstchecksumsink.lo
+  CC       libgstdebugutilsbad_la-gstchopmydata.lo
+  CC       libgstdebugutilsbad_la-gstcompare.lo
+  CC       libgstdebugutilsbad_la-gstwatchdog.lo
+  CC       libgstdebugutilsbad_la-debugutils-marshal.lo
+  CCLD     libgstdebugutilsbad.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/debugutils'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/debugutils'
+make -C dvbsuboverlay
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/dvbsuboverlay'
+  CC       libgstdvbsuboverlay_la-dvb-sub.lo
+  CC       libgstdvbsuboverlay_la-gstdvbsuboverlay.lo
+  CCLD     libgstdvbsuboverlay.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/dvbsuboverlay'
+make -C dvdspu
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/dvdspu'
+  CC       libgstdvdspu_la-gstdvdspu.lo
+  CC       libgstdvdspu_la-gstdvdspu-render.lo
+  CC       libgstdvdspu_la-gstspu-vobsub.lo
+  CC       libgstdvdspu_la-gstspu-vobsub-render.lo
+  CC       libgstdvdspu_la-gstspu-pgs.lo
+  CCLD     libgstdvdspu.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/dvdspu'
+make -C festival
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/festival'
+  CC       libgstfestival_la-gstfestival.lo
+  CCLD     libgstfestival.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/festival'
+make -C fieldanalysis
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/fieldanalysis'
+  ORCC   tmp-orc.c
+  ORCC   gstfieldanalysisorc.h
+make  all-am
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/fieldanalysis'
+  CC       libgstfieldanalysis_la-gstfieldanalysis.lo
+  CC       libgstfieldanalysis_la-tmp-orc.lo
+  CCLD     libgstfieldanalysis.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/fieldanalysis'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/fieldanalysis'
+make -C freeverb
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/freeverb'
+  CC       libgstfreeverb_la-gstfreeverb.lo
+gstfreeverb.c: In function 'gst_freeverb_class_init':
+gstfreeverb.c:390:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  390 |   g_type_class_add_private (klass, sizeof (GstFreeverbPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstfreeverb.c:57:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+  CCLD     libgstfreeverb.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/freeverb'
+make -C frei0r
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/frei0r'
+  CC       libgstfrei0r_la-gstfrei0r.lo
+  CC       libgstfrei0r_la-gstfrei0rfilter.lo
+  CC       libgstfrei0r_la-gstfrei0rsrc.lo
+  CC       libgstfrei0r_la-gstfrei0rmixer.lo
+  CCLD     libgstfrei0r.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/frei0r'
+make -C gaudieffects
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/gaudieffects'
+  ORCC   tmp-orc.c
+  ORCC   gstgaudieffectsorc.h
+make  all-am
+make[4]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/gaudieffects'
+  CC       libgstgaudieffects_la-gstburn.lo
+  CC       libgstgaudieffects_la-gstchromium.lo
+  CC       libgstgaudieffects_la-gstdilate.lo
+  CC       libgstgaudieffects_la-gstdodge.lo
+  CC       libgstgaudieffects_la-gstexclusion.lo
+  CC       libgstgaudieffects_la-gstgaussblur.lo
+  CC       libgstgaudieffects_la-gstsolarize.lo
+  CC       libgstgaudieffects_la-gstplugin.lo
+  CC       libgstgaudieffects_la-tmp-orc.lo
+  CCLD     libgstgaudieffects.la
+make[4]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/gaudieffects'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/gaudieffects'
+make -C geometrictransform
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/geometrictransform'
+  CC       libgstgeometrictransform_la-plugin.lo
+  CC       libgstgeometrictransform_la-gstgeometrictransform.lo
+  CC       libgstgeometrictransform_la-gstcirclegeometrictransform.lo
+  CC       libgstgeometrictransform_la-geometricmath.lo
+  CC       libgstgeometrictransform_la-gstcircle.lo
+  CC       libgstgeometrictransform_la-gstdiffuse.lo
+  CC       libgstgeometrictransform_la-gstkaleidoscope.lo
+  CC       libgstgeometrictransform_la-gstmarble.lo
+  CC       libgstgeometrictransform_la-gstpinch.lo
+  CC       libgstgeometrictransform_la-gstrotate.lo
+  CC       libgstgeometrictransform_la-gstsphere.lo
+  CC       libgstgeometrictransform_la-gsttwirl.lo
+  CC       libgstgeometrictransform_la-gstwaterripple.lo
+  CC       libgstgeometrictransform_la-gststretch.lo
+  CC       libgstgeometrictransform_la-gstbulge.lo
+  CC       libgstgeometrictransform_la-gsttunnel.lo
+  CC       libgstgeometrictransform_la-gstsquare.lo
+  CC       libgstgeometrictransform_la-gstmirror.lo
+  CC       libgstgeometrictransform_la-gstfisheye.lo
+  CC       libgstgeometrictransform_la-gstperspective.lo
+  CCLD     libgstgeometrictransform.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/geometrictransform'
+make -C gdp
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/gdp'
+  CC       libgstgdp_la-dataprotocol.lo
+  CC       libgstgdp_la-gstgdp.lo
+  CC       libgstgdp_la-gstgdppay.lo
+  CC       libgstgdp_la-gstgdpdepay.lo
+  CCLD     libgstgdp.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/gdp'
+make -C id3tag
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/id3tag'
+  CC       libgstid3tag_la-gstid3mux.lo
+  CC       libgstid3tag_la-id3tag.lo
+  CCLD     libgstid3tag.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/id3tag'
+make -C inter
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/inter'
+  CC       libgstinter_la-gstinteraudiosink.lo
+  CC       libgstinter_la-gstinteraudiosrc.lo
+  CC       libgstinter_la-gstintersubsink.lo
+  CC       libgstinter_la-gstintersubsrc.lo
+  CC       libgstinter_la-gstintervideosink.lo
+  CC       libgstinter_la-gstintervideosrc.lo
+  CC       libgstinter_la-gstinter.lo
+  CC       libgstinter_la-gstintersurface.lo
+  CCLD     libgstinter.la
+  CC       gstintertest-gstintertest.o
+  CCLD     gstintertest
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/inter'
+make -C interlace
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/interlace'
+  CC       libgstinterlace_la-gstinterlace.lo
+  CCLD     libgstinterlace.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/interlace'
+make -C ivfparse
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/ivfparse'
+  CC       libgstivfparse_la-gstivfparse.lo
+  CCLD     libgstivfparse.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/ivfparse'
+make -C ivtc
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/ivtc'
+  CC       libgstivtc_la-gstivtc.lo
+In file included from ../../gst-libs/gst/video/gstvideoaggregator.h:31,
+                 from /usr/include/gstreamer-1.0/gst/video/video.h:168,
+                 from gstivtc.c:48:
+gstivtc.c: In function 'gst_ivtc_transform':
+../../gst-libs/gst/base/gstaggregator.h:121:40: error: 'GST_FLOW_NOT_HANDLED' undeclared (first use in this function); did you mean 'GST_FLOW_NOT_LINKED'?
+  121 | #define GST_FLOW_CUSTOM_SUCCESS        GST_FLOW_NOT_HANDLED
+      |                                        ^~~~~~~~~~~~~~~~~~~~
+/usr/include/gstreamer-1.0/gst/base/gstbasetransform.h:72:43: note: in expansion of macro 'GST_FLOW_CUSTOM_SUCCESS'
+   72 | #define GST_BASE_TRANSFORM_FLOW_DROPPED   GST_FLOW_CUSTOM_SUCCESS
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+gstivtc.c:544:12: note: in expansion of macro 'GST_BASE_TRANSFORM_FLOW_DROPPED'
+  544 |     return GST_BASE_TRANSFORM_FLOW_DROPPED;
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../gst-libs/gst/base/gstaggregator.h:121:40: note: each undeclared identifier is reported only once for each function it appears in
+  121 | #define GST_FLOW_CUSTOM_SUCCESS        GST_FLOW_NOT_HANDLED
+      |                                        ^~~~~~~~~~~~~~~~~~~~
+/usr/include/gstreamer-1.0/gst/base/gstbasetransform.h:72:43: note: in expansion of macro 'GST_FLOW_CUSTOM_SUCCESS'
+   72 | #define GST_BASE_TRANSFORM_FLOW_DROPPED   GST_FLOW_CUSTOM_SUCCESS
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~
+gstivtc.c:544:12: note: in expansion of macro 'GST_BASE_TRANSFORM_FLOW_DROPPED'
+  544 |     return GST_BASE_TRANSFORM_FLOW_DROPPED;
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[3]: *** [Makefile:852: libgstivtc_la-gstivtc.lo] Error 1
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst/ivtc'
+make[2]: *** [Makefile:1026: ivtc] Error 2
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst'
+make[1]: *** [Makefile:918: all-recursive] Error 1
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4'
+make: *** [Makefile:846: all] Error 2
+error: Bad exit status from /var/tmp/rpm-tmp.RAgx6n (%build)
+
+
+RPM build errors:
+    Macro expanded in comment on line 191: %{_datadir}/gstreamer-%{majorminor}
+
+    Macro expanded in comment on line 223: %{_libdir}/gstreamer-%{majorminor}/libgstivtc.so
+
+    Macro expanded in comment on line 256: %{_libdir}/gstreamer-%{majorminor}/libgstdvb.so
+
+    Macro expanded in comment on line 257: %{_libdir}/gstreamer-%{majorminor}/libgstvcdsrc.so
+
+    Macro expanded in comment on line 264: %{_libdir}/gstreamer-%{majorminor}/libgstdc1394.so
+
+    Macro expanded in comment on line 266: %{_libdir}/gstreamer-%{majorminor}/libgstgsm.so
+
+    Macro expanded in comment on line 298: %{_datadir}/glib-2.0/schemas/org.freedesktop.gstreamer-0.11.default-elements.gschema.xml
+
+    Macro expanded in comment on line 303: %{_libdir}/gstreamer-%{majorminor}/libgstjack.so
+
+    Macro expanded in comment on line 304: %{_libdir}/gstreamer-%{majorminor}/libgstmythtvsrc.so
+
+    Macro expanded in comment on line 305: %{_libdir}/gstreamer-%{majorminor}/libgstsdl.so
+
+    Macro expanded in comment on line 306: %{_libdir}/gstreamer-%{majorminor}/libgstsoundtouch.so
+
+    Macro expanded in comment on line 307: %{_libdir}/gstreamer-%{majorminor}/libgsttimidity.so
+
+    Macro expanded in comment on line 308: %{_libdir}/gstreamer-%{majorminor}/libgstwildmidi.so
+
+    Macro expanded in comment on line 310: %{_libdir}/gstreamer-%{majorminor}/libgstmultifdsink.so
+
+    Macro expanded in comment on line 313: %{_libdir}/gstreamer-%{majorminor}/libgstfbdevsink.so
+
+    Bad exit status from /var/tmp/rpm-tmp.RAgx6n (%build)

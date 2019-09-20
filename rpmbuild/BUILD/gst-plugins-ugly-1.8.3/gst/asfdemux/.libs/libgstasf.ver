@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_asf_get_desc;
+gst_plugin_asf_register;
+local: *; };

@@ -1,0 +1,19 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/.dwz
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/lib64
+%dir /usr/lib/debug/usr/lib64/gstreamer-1.0
+%dir /usr/lib/debug/usr/bin
+%dir /usr/lib/debug/usr/libexec
+%dir /usr/lib/debug/usr/libexec/gstreamer-1.0
+/usr/lib/debug/.dwz/gstreamer1-1.4.4-1.x86_64
+/usr/lib/debug/usr/lib64/libgstcheck-1.0.so.0.404.0-1.4.4-1.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstreamer-1.0.so.0.404.0-1.4.4-1.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstcontroller-1.0.so.0.404.0-1.4.4-1.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstnet-1.0.so.0.404.0-1.4.4-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstcoreelements.so-1.4.4-1.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstbase-1.0.so.0.404.0-1.4.4-1.x86_64.debug
+/usr/lib/debug/usr/bin/gst-typefind-1.0-1.4.4-1.x86_64.debug
+/usr/lib/debug/usr/bin/gst-launch-1.0-1.4.4-1.x86_64.debug
+/usr/lib/debug/usr/bin/gst-inspect-1.0-1.4.4-1.x86_64.debug
+/usr/lib/debug/usr/libexec/gstreamer-1.0/gst-plugin-scanner-1.4.4-1.x86_64.debug

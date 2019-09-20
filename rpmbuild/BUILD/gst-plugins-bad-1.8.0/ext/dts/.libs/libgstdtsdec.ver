@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_dtsdec_get_desc;
+gst_plugin_dtsdec_register;
+local: *; };

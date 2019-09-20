@@ -1,0 +1,56 @@
+*   Trying 127.0.0.1:8991...
+* TCP_NODELAY set
+* Connected to 127.0.0.1 (127.0.0.1) port 8991 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [88 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [155 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [6 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [1007 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [52 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=NN; O=Edel Curl Arctic Illudium Research Cloud; CN=localhost.nn
+*  start date: Sep  5 23:29:01 2018 GMT
+*  expire date: Nov 22 23:29:01 2026 GMT
+*  issuer: C=NN; O=Edel Curl Arctic Illudium Research Cloud; CN=Northern Nowhere Trust Anchor
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+} [5 bytes data]
+> GET /verifiedserver HTTP/1.1
+> Host: 127.0.0.1:8991
+> User-Agent: curl/7.66.0
+> Accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [57 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [57 bytes data]
+* old SSL session ID is stale, removing
+{ [5 bytes data]
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Content-Length: 16
+< 
+{ [1 bytes data]
+* Connection #0 to host 127.0.0.1 left intact

@@ -1,0 +1,1158 @@
+warning: Macro expanded in comment on line 53: %{name} = %{version}-%{release}
+
+warning: Macro expanded in comment on line 115: %{_datadir}/gstreamer-%{majorminor}/presets/GstX264Enc.prs
+
+warning: Macro expanded in comment on line 116: %{_libdir}/gstreamer-%{majorminor}/libgstx264.so
+
+warning: Macro expanded in comment on line 117: %{_libdir}/gstreamer-%{majorminor}/libgstamrnb.so
+
+warning: Macro expanded in comment on line 118: %{_libdir}/gstreamer-%{majorminor}/libgstamrwbdec.so
+
+warning: Macro expanded in comment on line 119: %{_datadir}/gstreamer-%{majorminor}/presets/GstAmrnbEnc.prs
+
+warning: Macro expanded in comment on line 120: %{_libdir}/gstreamer-%{majorminor}/libgstcdio.so
+
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.wtg83q
++ umask 022
++ cd /home/kalpana/rpmbuild/BUILD
++ cd /home/kalpana/rpmbuild/BUILD
++ rm -rf gst-plugins-ugly-1.8.3
++ /usr/bin/xz -dc /home/kalpana/rpmbuild/SOURCES/gst-plugins-ugly-1.8.3.tar.xz
++ /usr/bin/tar -xof -
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd gst-plugins-ugly-1.8.3
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.wgyqk0
++ umask 022
++ cd /home/kalpana/rpmbuild/BUILD
++ cd gst-plugins-ugly-1.8.3
++ CFLAGS='-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection'
++ export CFLAGS
++ CXXFLAGS='-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection'
++ export CXXFLAGS
++ FFLAGS='-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -I/usr/lib64/gfortran/modules'
++ export FFLAGS
++ FCFLAGS='-O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -I/usr/lib64/gfortran/modules'
++ export FCFLAGS
++ LDFLAGS='-Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld'
++ export LDFLAGS
++ '[' 1 = 1 ']'
++++ dirname ./configure
+++ find . -name config.guess -o -name config.sub
++ for i in $(find $(dirname ./configure) -name config.guess -o -name config.sub)
+++ basename ./config.guess
++ '[' -f /usr/lib/rpm/redhat/config.guess ']'
++ /usr/bin/rm -f ./config.guess
+++ basename ./config.guess
++ /usr/bin/cp -fv /usr/lib/rpm/redhat/config.guess ./config.guess
+'/usr/lib/rpm/redhat/config.guess' -> './config.guess'
++ for i in $(find $(dirname ./configure) -name config.guess -o -name config.sub)
+++ basename ./config.sub
++ '[' -f /usr/lib/rpm/redhat/config.sub ']'
++ /usr/bin/rm -f ./config.sub
+++ basename ./config.sub
++ /usr/bin/cp -fv /usr/lib/rpm/redhat/config.sub ./config.sub
+'/usr/lib/rpm/redhat/config.sub' -> './config.sub'
++ '[' 1 = 1 ']'
++ '[' x '!=' 'x-Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' ']'
+++ find . -name ltmain.sh
++ for i in $(find . -name ltmain.sh)
++ /usr/bin/sed -i.backup -e 's~compiler_flags=$~compiler_flags="-Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld"~' ./ltmain.sh
++ ./configure --build=x86_64-redhat-linux-gnu --host=x86_64-redhat-linux-gnu --program-prefix= --disable-dependency-tracking --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/var/lib --mandir=/usr/share/man --infodir=/usr/share/info --enable-debug --disable-gtk-doc
+checking build system type... x86_64-redhat-linux-gnu
+checking host system type... x86_64-redhat-linux-gnu
+checking target system type... x86_64-redhat-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '1000' is supported by ustar format... yes
+checking whether GID '1000' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking nano version... 0 (release)
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... (cached) yes
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for x86_64-redhat-linux-gnu-gcc... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... none
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-redhat-linux-gnu file names to x86_64-redhat-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-redhat-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-redhat-linux-gnu-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-redhat-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-redhat-linux-gnu-ar... no
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for x86_64-redhat-linux-gnu-strip... no
+checking for strip... strip
+checking for x86_64-redhat-linux-gnu-ranlib... no
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for x86_64-redhat-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... yes
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+DOMAIN = gst-plugins-ugly-1.0
+checking for x86_64-redhat-linux-gnu-pkg-config... /usr/bin/x86_64-redhat-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for VALGRIND... no
+configure: Using GStreamer Ugly Plug-ins source release as package name
+configure: Using Unknown package origin as package origin
+
+configure: *** checking feature: building of plug-ins with external deps ***
+configure: building external plug-ins
+
+configure: *** checking feature: building of experimental plug-ins ***
+configure: not building experimental plug-ins
+checking whether byte ordering is bigendian... no
+checking whether byte ordering is bigendian... (cached) no
+checking for x86_64-redhat-linux-gnu-gcc... gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) none
+checking for gcc option to accept ISO C99... none needed
+checking for gcc option to accept ISO Standard C... (cached) none needed
+checking for x86_64-redhat-linux-gnu-g++... no
+checking for x86_64-redhat-linux-gnu-c++... no
+checking for x86_64-redhat-linux-gnu-gpp... no
+checking for x86_64-redhat-linux-gnu-aCC... no
+checking for x86_64-redhat-linux-gnu-CC... no
+checking for x86_64-redhat-linux-gnu-cxx... no
+checking for x86_64-redhat-linux-gnu-cc++... no
+checking for x86_64-redhat-linux-gnu-cl.exe... no
+checking for x86_64-redhat-linux-gnu-FCC... no
+checking for x86_64-redhat-linux-gnu-KCC... no
+checking for x86_64-redhat-linux-gnu-RCC... no
+checking for x86_64-redhat-linux-gnu-xlC_r... no
+checking for x86_64-redhat-linux-gnu-xlC... no
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for g++... yes
+checking for valgrind... /usr/bin/valgrind
+checking for working do while(0) macros... yes
+checking for gtkdoc-check... /usr/bin/gtkdoc-check
+checking for gtkdoc-rebase... /usr/bin/gtkdoc-rebase
+checking for gtkdoc-mkpdf... /usr/bin/gtkdoc-mkpdf
+checking whether to build gtk-doc documentation... no
+checking for python... /usr/bin/python
+checking for python version... 2.7
+checking for python platform... linux2
+checking for python script directory... ${prefix}/lib/python2.7/site-packages
+checking for python extension module directory... ${exec_prefix}/lib64/python2.7/site-packages
+checking whether to build plugin documentation... no (gtk-doc disabled or not available)
+checking for cos in -lm... yes
+checking for stdint types... stdint.h (shortcircuit)
+make use of stdint.h in _stdint.h (assuming C99 compatible system)
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking whether gcc implements __PRETTY_FUNCTION__... yes
+checking whether gcc implements __FUNCTION__... yes
+checking whether gcc implements __func__... yes
+checking for GLIB... yes
+checking for glib-genmarshal... /usr/bin/glib-genmarshal (from pkg-config path)
+checking for glib-mkenums... /usr/bin/glib-mkenums
+checking for GIO... yes
+checking for ORC... yes
+checking for usable orcc... /usr/bin/orcc
+checking for GST... yes
+configure: using GStreamer tools in /usr/bin
+configure: using GStreamer plug-ins in /usr/lib64/gstreamer-1.0
+checking for GST_BASE... yes
+checking for GST_CHECK... yes
+checking for GST_PLUGINS_BASE... yes
+configure: using GStreamer Base Plugins in /usr/lib64/gstreamer-1.0
+checking for GMODULE_NO_EXPORT... yes
+checking for -Bsymbolic-functions linker flag... yes
+configure: Using /usr/lib64/gstreamer-1.0 as the plugin install location
+configure: Setting GST_PACKAGE_RELEASE_DATETIME to 2016-08-19
+checking whether to build static plugins or not... no
+checking to see if compiler understands -Wall... yes
+checking to see if compiler understands -Wdeclaration-after-statement... yes
+checking to see if compiler understands -Wvla... yes
+checking to see if compiler understands -Wpointer-arith... yes
+checking to see if compiler understands -Wmissing-declarations... yes
+checking to see if compiler understands -Wmissing-prototypes... yes
+checking to see if compiler understands -Wredundant-decls... yes
+checking to see if compiler understands -Wwrite-strings... yes
+checking to see if compiler understands -Wformat-nonliteral... yes
+checking to see if compiler understands -Wformat-security... yes
+checking to see if compiler understands -Wold-style-definition... yes
+checking to see if compiler understands -Winit-self... yes
+checking to see if compiler understands -Wmissing-include-dirs... yes
+checking to see if compiler understands -Waddress... yes
+checking to see if compiler understands -Waggregate-return... yes
+checking to see if compiler understands -Wno-multichar... yes
+checking to see if compiler understands -Wnested-externs... yes
+configure: set WARNING_CFLAGS to  -Wall -Wdeclaration-after-statement -Wvla -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wredundant-decls -Wwrite-strings -Wformat-nonliteral -Wformat-security -Wold-style-definition -Winit-self -Wmissing-include-dirs -Waddress -Waggregate-return -Wno-multichar -Wnested-externs
+configure: set ERROR_CFLAGS to 
+checking to see if c++ compiler understands ... yes
+checking to see if c++ compiler understands -Wall... yes
+checking to see if c++ compiler understands -Wmissing-declarations... yes
+checking to see if c++ compiler understands -Wredundant-decls... yes
+checking to see if c++ compiler understands -Wwrite-strings... yes
+checking to see if c++ compiler understands -Wformat-nonliteral... yes
+checking to see if c++ compiler understands -Wformat-security... yes
+checking to see if c++ compiler understands -Winit-self... yes
+checking to see if c++ compiler understands -Wmissing-include-dirs... yes
+checking to see if c++ compiler understands -Waddress... yes
+checking to see if c++ compiler understands -Waggregate-return... yes
+checking to see if c++ compiler understands -Wno-multichar... yes
+configure: set WARNING_CXXFLAGS to  -Wall -Wmissing-declarations -Wredundant-decls -Wwrite-strings -Wformat-nonliteral -Wformat-security -Winit-self -Wmissing-include-dirs -Waddress -Waggregate-return -Wno-multichar
+configure: set ERROR_CXXFLAGS to 
+configure: Using autoaudiosink as default audio sink
+configure: Using alsasrc as default audio source
+configure: Using autovideosink as default video sink
+configure: Using v4l2src as default video source
+configure: Using goom as default visualizer
+checking winsock2.h usability... no
+checking winsock2.h presence... no
+checking for winsock2.h... no
+
+configure: Checking libraries for plugins in ext/
+
+
+configure: *** checking feature: a52dec ***
+configure: *** for plug-ins: a52dec ***
+checking for a52_init in -la52... yes
+checking a52dec/a52.h usability... yes
+checking a52dec/a52.h presence... yes
+checking for a52dec/a52.h... yes
+configure: *** These plugins will be built: a52dec
+
+configure: *** checking feature: amrnb library ***
+configure: *** for plug-ins: amrnb ***
+checking for AMRNB... no
+configure: Package 'opencore-amrnb', required by 'virtual:world', not found
+configure: *** These plugins will not be built: amrnb
+
+configure: *** checking feature: amrwb library ***
+configure: *** for plug-ins: amrwbdec ***
+checking for AMRWB... no
+configure: Package 'opencore-amrwb', required by 'virtual:world', not found
+configure: *** These plugins will not be built: amrwbdec
+
+configure: *** checking feature: cdio library ***
+configure: *** for plug-ins: cdio ***
+checking for CDIO... no
+configure: Package 'libcdio', required by 'virtual:world', not found
+configure: *** These plugins will not be built: cdio
+
+configure: *** checking feature: dvdread library ***
+configure: *** for plug-ins: dvdreadsrc ***
+checking for DVDOpen in -ldvdread... yes
+checking dvdread/dvd_reader.h usability... yes
+checking dvdread/dvd_reader.h presence... yes
+checking for dvdread/dvd_reader.h... yes
+configure: *** These plugins will be built: dvdreadsrc
+
+configure: *** checking feature: lame mp3 encoder library ***
+configure: *** for plug-ins: lame ***
+checking for lame_init in -lmp3lame... yes
+checking lame/lame.h usability... yes
+checking lame/lame.h presence... yes
+checking for lame/lame.h... yes
+configure: *** These plugins will be built: lame
+
+configure: *** checking feature: mad mp3 decoder ***
+configure: *** for plug-ins: mad ***
+checking for MAD... yes
+configure: *** These plugins will be built: mad
+
+configure: *** checking feature: mpeg2dec ***
+configure: *** for plug-ins: mpeg2dec ***
+checking for MPEG2DEC... yes
+configure: *** These plugins will be built: mpeg2dec
+
+configure: *** checking feature: mpg123 audio decoder ***
+configure: *** for plug-ins: mpg123 ***
+checking for MPG123... yes
+configure: *** These plugins will be built: mpg123
+
+configure: *** checking feature: libsidplay ***
+configure: *** for plug-ins: sid ***
+checking for libsidplay 1.36.x... checking sidplay/player.h usability... yes
+checking sidplay/player.h presence... yes
+checking for sidplay/player.h... yes
+checking whether -lsidplay works... yes
+configure: *** These plugins will be built: sid
+
+configure: *** checking feature: twolame ***
+configure: *** for plug-ins: twolame ***
+checking for TWOLAME... yes
+configure: *** These plugins will be built: twolame
+
+configure: *** checking feature: x264 plug-in ***
+configure: *** for plug-ins: x264 ***
+checking for X264... no
+configure: Package 'x264', required by 'virtual:world', not found
+configure: *** These plugins will not be built: x264
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating common/Makefile
+config.status: creating common/m4/Makefile
+config.status: creating gst-libs/Makefile
+config.status: creating gst-libs/gst/Makefile
+config.status: creating gst/Makefile
+config.status: creating gst/asfdemux/Makefile
+config.status: creating gst/dvdlpcmdec/Makefile
+config.status: creating gst/dvdsub/Makefile
+config.status: creating gst/realmedia/Makefile
+config.status: creating gst/xingmux/Makefile
+config.status: creating ext/Makefile
+config.status: creating ext/a52dec/Makefile
+config.status: creating ext/amrnb/Makefile
+config.status: creating ext/amrwbdec/Makefile
+config.status: creating ext/cdio/Makefile
+config.status: creating ext/dvdread/Makefile
+config.status: creating ext/lame/Makefile
+config.status: creating ext/mad/Makefile
+config.status: creating ext/mpeg2dec/Makefile
+config.status: creating ext/mpg123/Makefile
+config.status: creating ext/sidplay/Makefile
+config.status: creating ext/twolame/Makefile
+config.status: creating ext/x264/Makefile
+config.status: creating docs/Makefile
+config.status: creating docs/plugins/Makefile
+config.status: creating docs/version.entities
+config.status: creating tests/Makefile
+config.status: creating tests/check/Makefile
+config.status: creating tests/files/Makefile
+config.status: creating m4/Makefile
+config.status: creating po/Makefile.in
+config.status: creating pkgconfig/Makefile
+config.status: creating pkgconfig/gstreamer-plugins-ugly-uninstalled.pc
+config.status: creating gst-plugins-ugly.spec
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing _stdint.h commands
+config.status: creating _stdint.h : _GST_PLUGINS_UGLY__STDINT_H
+configure: *** Plug-ins without external dependencies that will be built:
+	asfdemux
+	dvdlpcmdec
+	dvdsub
+	realmedia
+	xingmux
+
+configure: *** Plug-ins without external dependencies that will NOT be built:
+
+configure: *** Plug-ins that have NOT been ported:
+
+configure: *** Plug-ins with dependencies that will be built:
+	a52dec
+	dvdreadsrc
+	lame
+	mad
+	mpeg2dec
+	mpg123
+	sid
+	twolame
+
+configure: *** Plug-ins with dependencies that will NOT be built:
+	amrnb
+	amrwbdec
+	cdio
+	x264
+
+configure: *** Orc acceleration enabled.
+
++ sed -i 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' libtool
++ sed -i 's|^runpath_var=LD_RUN_PATH|runpath_var=DIE_RPATH_DIE|g' libtool
++ make -j2
+make  all-recursive
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3'
+Making all in gst-libs
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs'
+Making all in gst
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs/gst'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs/gst'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs'
+Making all in gst
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst'
+make -C asfdemux
+make -C dvdlpcmdec
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/asfdemux'
+  CC       libgstasf_la-gstasfdemux.lo
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdlpcmdec'
+  CC       libgstdvdlpcmdec_la-gstdvdlpcmdec.lo
+gstasfdemux.c: In function 'gst_asf_demux_parse_stream_object':
+gstasfdemux.c:2911:39: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+ 2911 |   is_encrypted = ! !((flags & 0x8000) << 15);
+      |                     ~~~~~~~~~~~~~~~~~~^~~~~~
+  CCLD     libgstdvdlpcmdec.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdlpcmdec'
+make -C dvdsub
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdsub'
+  CC       libgstdvdsub_la-gstdvdsubdec.lo
+  CC       libgstdvdsub_la-gstdvdsubparse.lo
+  CCLD     libgstdvdsub.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdsub'
+make -C xingmux
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/xingmux'
+  CC       libgstxingmux_la-plugin.lo
+  CC       libgstasf_la-gstasf.lo
+  CC       libgstxingmux_la-gstxingmux.lo
+  CC       libgstasf_la-asfheaders.lo
+  CC       libgstasf_la-asfpacket.lo
+  CCLD     libgstxingmux.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/xingmux'
+make -C realmedia
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/realmedia'
+  CC       libgstrmdemux_la-rademux.lo
+  CC       libgstasf_la-gstrtpasfdepay.lo
+  CC       libgstrmdemux_la-rmdemux.lo
+  CC       libgstasf_la-gstrtspwms.lo
+  CCLD     libgstasf.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/asfdemux'
+  CC       libgstrmdemux_la-rmutils.lo
+  CC       libgstrmdemux_la-rdtdepay.lo
+  CC       libgstrmdemux_la-rdtmanager.lo
+  CC       libgstrmdemux_la-rtspreal.lo
+  CC       libgstrmdemux_la-realhash.lo
+  CC       libgstrmdemux_la-asmrules.lo
+  CC       libgstrmdemux_la-rdtjitterbuffer.lo
+  CC       libgstrmdemux_la-gstrdtbuffer.lo
+  CC       libgstrmdemux_la-pnmsrc.lo
+  CC       libgstrmdemux_la-realmedia.lo
+  CC       asmrules-asmrules.o
+  CCLD     libgstrmdemux.la
+  CCLD     asmrules
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/realmedia'
+Making all in asfdemux
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/asfdemux'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/asfdemux'
+Making all in dvdlpcmdec
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdlpcmdec'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdlpcmdec'
+Making all in dvdsub
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdsub'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdsub'
+Making all in xingmux
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/xingmux'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/xingmux'
+Making all in realmedia
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/realmedia'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/realmedia'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst'
+Making all in ext
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext'
+make -C a52dec
+make -C dvdread
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/a52dec'
+  CC       libgsta52dec_la-gsta52dec.lo
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/dvdread'
+  CC       libgstdvdread_la-dvdreadsrc.lo
+dvdreadsrc.c: In function 'gst_dvd_read_src_goto_chapter':
+dvdreadsrc.c:394:65: warning: taking address of packed member of 'struct <anonymous>' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  394 |       gst_dvd_read_src_make_clut_change_event (src, src->cur_pgc->palette);
+      |                                                     ~~~~~~~~~~~~^~~~~~~~~
+  CCLD     libgsta52dec.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/a52dec'
+make -C lame
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/lame'
+  CC       libgstlame_la-gstlamemp3enc.lo
+  CCLD     libgstdvdread.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/dvdread'
+make -C mad
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mad'
+  CC       libgstmad_la-gstmad.lo
+  CC       libgstlame_la-plugin.lo
+  CCLD     libgstlame.la
+  CCLD     libgstmad.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/lame'
+make -C mpeg2dec
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpeg2dec'
+  CC       libgstmpeg2dec_la-gstmpeg2dec.lo
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mad'
+make -C mpg123
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpg123'
+  CC       libgstmpg123_la-gstmpg123audiodec.lo
+  CCLD     libgstmpg123.la
+  CCLD     libgstmpeg2dec.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpg123'
+make -C sidplay
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/sidplay'
+  CXX      libgstsid_la-gstsiddec.lo
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpeg2dec'
+make -C twolame
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/twolame'
+  CC       libgsttwolame_la-gsttwolamemp2enc.lo
+  CCLD     libgsttwolame.la
+  CXXLD    libgstsid.la
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/twolame'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/sidplay'
+Making all in a52dec
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/a52dec'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/a52dec'
+Making all in dvdread
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/dvdread'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/dvdread'
+Making all in lame
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/lame'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/lame'
+Making all in mad
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mad'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mad'
+Making all in mpeg2dec
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpeg2dec'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpeg2dec'
+Making all in mpg123
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpg123'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpg123'
+Making all in sidplay
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/sidplay'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/sidplay'
+Making all in twolame
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/twolame'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/twolame'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext'
+Making all in docs
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs'
+Making all in plugins
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs/plugins'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs/plugins'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs'
+Making all in m4
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/m4'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/m4'
+Making all in tests
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests'
+Making all in check
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/check'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/check'
+Making all in files
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/files'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/files'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests'
+Making all in common
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common'
+Making all in m4
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common/m4'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common/m4'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common'
+Making all in pkgconfig
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/pkgconfig'
+  CP     gstreamer-plugins-ugly-1.0-uninstalled.pc
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/pkgconfig'
+Making all in po
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/po'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/po'
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3'
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3'
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.AtclGA
++ umask 022
++ cd /home/kalpana/rpmbuild/BUILD
++ '[' /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64 '!=' / ']'
++ rm -rf /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64
+++ dirname /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64
++ mkdir -p /home/kalpana/rpmbuild/BUILDROOT
++ mkdir /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64
++ cd gst-plugins-ugly-1.8.3
++ rm -rf /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64
++ echo 'warning: %makeinstall is deprecated, try %make_install instead'
+warning: %makeinstall is deprecated, try %make_install instead
++ /usr/bin/make prefix=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr exec_prefix=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr bindir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/bin sbindir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/sbin sysconfdir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/etc datadir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share includedir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/include libdir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64 libexecdir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/libexec localstatedir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/var sharedstatedir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/var/lib mandir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/man infodir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/info install
+Making install in gst-libs
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs'
+Making install in gst
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs/gst'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs/gst'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs/gst'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs/gst'
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs'
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst-libs'
+Making install in gst
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst'
+Making install in asfdemux
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/asfdemux'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/asfdemux'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstasf.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstasf.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstasf.so
+libtool: install: /usr/bin/install -c .libs/libgstasf.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstasf.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/asfdemux'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/asfdemux'
+Making install in dvdlpcmdec
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdlpcmdec'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdlpcmdec'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstdvdlpcmdec.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstdvdlpcmdec.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdlpcmdec.so
+libtool: install: /usr/bin/install -c .libs/libgstdvdlpcmdec.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdlpcmdec.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdlpcmdec'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdlpcmdec'
+Making install in dvdsub
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdsub'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdsub'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstdvdsub.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstdvdsub.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdsub.so
+libtool: install: /usr/bin/install -c .libs/libgstdvdsub.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdsub.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdsub'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/dvdsub'
+Making install in xingmux
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/xingmux'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/xingmux'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstxingmux.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstxingmux.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstxingmux.so
+libtool: install: /usr/bin/install -c .libs/libgstxingmux.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstxingmux.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/xingmux'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/xingmux'
+Making install in realmedia
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/realmedia'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/realmedia'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstrmdemux.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstrmdemux.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstrmdemux.so
+libtool: install: /usr/bin/install -c .libs/libgstrmdemux.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstrmdemux.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/realmedia'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst/realmedia'
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst'
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/gst'
+Making install in ext
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext'
+Making install in a52dec
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/a52dec'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/a52dec'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgsta52dec.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgsta52dec.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgsta52dec.so
+libtool: install: /usr/bin/install -c .libs/libgsta52dec.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgsta52dec.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/a52dec'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/a52dec'
+Making install in dvdread
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/dvdread'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/dvdread'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstdvdread.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstdvdread.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdread.so
+libtool: install: /usr/bin/install -c .libs/libgstdvdread.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdread.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/dvdread'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/dvdread'
+Making install in lame
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/lame'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/lame'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstlame.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstlame.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstlame.so
+libtool: install: /usr/bin/install -c .libs/libgstlame.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstlame.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/lame'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/lame'
+Making install in mad
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mad'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mad'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstmad.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstmad.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmad.so
+libtool: install: /usr/bin/install -c .libs/libgstmad.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmad.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mad'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mad'
+Making install in mpeg2dec
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpeg2dec'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpeg2dec'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstmpeg2dec.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstmpeg2dec.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmpeg2dec.so
+libtool: install: /usr/bin/install -c .libs/libgstmpeg2dec.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmpeg2dec.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpeg2dec'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpeg2dec'
+Making install in mpg123
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpg123'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpg123'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstmpg123.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstmpg123.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmpg123.so
+libtool: install: /usr/bin/install -c .libs/libgstmpg123.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmpg123.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpg123'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/mpg123'
+Making install in sidplay
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/sidplay'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/sidplay'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgstsid.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgstsid.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstsid.so
+libtool: install: /usr/bin/install -c .libs/libgstsid.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstsid.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/sidplay'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/sidplay'
+Making install in twolame
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/twolame'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/twolame'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libgsttwolame.la '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0'
+libtool: install: /usr/bin/install -c .libs/libgsttwolame.so /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgsttwolame.so
+libtool: install: /usr/bin/install -c .libs/libgsttwolame.lai /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgsttwolame.la
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/twolame'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext/twolame'
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext'
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/ext'
+Making install in docs
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs'
+Making install in plugins
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs/plugins'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs/plugins'
+make[3]: Nothing to be done for 'install-exec-am'.
+(installfiles=`echo ./html/*.sgml ./html/*.html ./html/*.png ./html/*.css`; \
+if test "$installfiles" = './html/*.sgml ./html/*.html ./html/*.png ./html/*.css'; \
+then echo '-- Nothing to install' ; \
+else \
+  /bin/sh /home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/install-sh -d /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0; \
+  for i in $installfiles; do \
+    echo '-- Installing '$i ; \
+    /usr/bin/install -c -m 644 $i /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0; \
+  done; \
+  pngfiles=`echo ./html/*.png`; \
+  if test "$pngfiles" != './html/*.png'; then \
+    for i in $pngfiles; do \
+      echo '-- Installing '$i ; \
+      /usr/bin/install -c -m 644 $i /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0; \
+    done; \
+  fi; \
+  echo '-- Installing ./html/gst-plugins-ugly-plugins-1.0.devhelp2' ; \
+  if test -e ./html/gst-plugins-ugly-plugins-1.0.devhelp2; then \
+            /usr/bin/install -c -m 644 ./html/gst-plugins-ugly-plugins-1.0.devhelp2 \
+            /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0/gst-plugins-ugly-plugins-1.0.devhelp2; \
+  fi; \
+  /usr/bin/gtkdoc-rebase --relative --dest-dir= --html-dir=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/gtk-doc/html/gst-plugins-ugly-plugins-1.0 || true ; \
+fi)
+-- Installing ./html/*.sgml
+/usr/bin/install: cannot stat './html/*.sgml': No such file or directory
+-- Installing ./html/ch01.html
+-- Installing ./html/ch02.html
+-- Installing ./html/gst-plugins-ugly-plugins-a52dec.html
+-- Installing ./html/gst-plugins-ugly-plugins-amrnbdec.html
+-- Installing ./html/gst-plugins-ugly-plugins-amrnbenc.html
+-- Installing ./html/gst-plugins-ugly-plugins-amrwbdec.html
+-- Installing ./html/gst-plugins-ugly-plugins-cdiocddasrc.html
+-- Installing ./html/gst-plugins-ugly-plugins-lamemp3enc.html
+-- Installing ./html/gst-plugins-ugly-plugins-mad.html
+-- Installing ./html/gst-plugins-ugly-plugins-mpg123audiodec.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-a52dec.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-amrnb.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-amrwbdec.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-asf.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-cdio.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-dvdlpcmdec.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-dvdread.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-dvdsub.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-lame.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-mad.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-mpeg2dec.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-mpg123.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-realmedia.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-siddec.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-twolame.html
+-- Installing ./html/gst-plugins-ugly-plugins-plugin-x264.html
+-- Installing ./html/gst-plugins-ugly-plugins-rademux.html
+-- Installing ./html/gst-plugins-ugly-plugins-rdtmanager.html
+-- Installing ./html/gst-plugins-ugly-plugins-rmdemux.html
+-- Installing ./html/gst-plugins-ugly-plugins-rtspreal.html
+-- Installing ./html/gst-plugins-ugly-plugins-rtspwms.html
+-- Installing ./html/gst-plugins-ugly-plugins-siddec.html
+-- Installing ./html/gst-plugins-ugly-plugins-twolame.html
+-- Installing ./html/gst-plugins-ugly-plugins-x264enc.html
+-- Installing ./html/gst-plugins-ugly-plugins-xingmux.html
+-- Installing ./html/index.html
+-- Installing ./html/home.png
+-- Installing ./html/left-insensitive.png
+-- Installing ./html/left.png
+-- Installing ./html/right-insensitive.png
+-- Installing ./html/right.png
+-- Installing ./html/up-insensitive.png
+-- Installing ./html/up.png
+-- Installing ./html/style.css
+-- Installing ./html/home.png
+-- Installing ./html/left-insensitive.png
+-- Installing ./html/left.png
+-- Installing ./html/right-insensitive.png
+-- Installing ./html/right.png
+-- Installing ./html/up-insensitive.png
+-- Installing ./html/up.png
+-- Installing ./html/gst-plugins-ugly-plugins-1.0.devhelp2
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs/plugins'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs/plugins'
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs'
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/docs'
+Making install in m4
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/m4'
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/m4'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/m4'
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/m4'
+Making install in tests
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests'
+Making install in check
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/check'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/check'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/check'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/check'
+Making install in files
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/files'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/files'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/files'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests/files'
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests'
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/tests'
+Making install in common
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common'
+Making install in m4
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common/m4'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common/m4'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common/m4'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common/m4'
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common'
+make[3]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common'
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common'
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/common'
+Making install in pkgconfig
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/pkgconfig'
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/pkgconfig'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/pkgconfig'
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/pkgconfig'
+Making install in po
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/po'
+/usr/bin/mkdir -p /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share
+installing af.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/af/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing az.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/az/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing bg.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/bg/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing ca.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/ca/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing cs.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/cs/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing da.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/da/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing de.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/de/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing el.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/el/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing en_GB.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/en_GB/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing eo.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/eo/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing es.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/es/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing eu.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/eu/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing fi.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/fi/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing fr.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/fr/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing gl.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/gl/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing hr.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/hr/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing hu.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/hu/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing id.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/id/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing it.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/it/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing ja.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/ja/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing lt.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/lt/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing lv.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/lv/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing ms.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/ms/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing mt.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/mt/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing nb.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/nb/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing nl.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/nl/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing or.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/or/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing pl.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/pl/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing pt_BR.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/pt_BR/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing ro.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/ro/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing ru.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/ru/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing sk.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/sk/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing sl.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/sl/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing sq.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/sq/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing sr.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/sr/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing sv.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/sv/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing tr.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/tr/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing uk.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/uk/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing vi.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/vi/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+installing zh_CN.gmo as /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/locale/zh_CN/LC_MESSAGES/gst-plugins-ugly-1.0.mo
+if test "gst-plugins-ugly" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3/po'
+make[1]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3'
+make[2]: Entering directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3'
+make[1]: Leaving directory '/home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3'
++ rm -f /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgsta52dec.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstasf.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdlpcmdec.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdread.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdsub.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstlame.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmad.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmpeg2dec.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmpg123.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstrmdemux.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstsid.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgsttwolame.la /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstxingmux.la
++ rm -f '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/*.a'
++ rm -f '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/*.a'
++ rm -f '/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/*.la'
++ /usr/lib/rpm/find-lang.sh /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64 gst-plugins-ugly-1.0
++ /usr/lib/rpm/find-debuginfo.sh -j2 --strict-build-id -m -i --build-id-seed 1.8.3-1 --unique-debug-suffix -1.8.3-1.x86_64 --unique-debug-src-base gstreamer1-plugins-ugly-1.8.3-1.x86_64 --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 -S debugsourcefiles.list /home/kalpana/rpmbuild/BUILD/gst-plugins-ugly-1.8.3
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmpeg2dec.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmad.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmad.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmpeg2dec.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdsub.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdsub.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstrmdemux.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstrmdemux.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstasf.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstasf.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstlame.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstlame.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgsttwolame.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgsttwolame.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstxingmux.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstxingmux.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgsta52dec.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgsta52dec.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstsid.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstsid.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdlpcmdec.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdlpcmdec.so
+xz: /tmp/tmp.GxpeLluTxd: No such file or directory
+objcopy: cannot open: /tmp/tmp.GxpeLluTxd.xz: No such file or directory
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmpg123.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstmpg123.so
+explicitly decompress any DWARF compressed ELF sections in /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdread.so
+extracting debug info from /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/lib64/gstreamer-1.0/libgstdvdread.so
+/usr/lib/rpm/sepdebugcrcfix: Updated 13 CRC32s, 0 CRC32s did match.
+1696 blocks
++ '[' '%{buildarch}' = noarch ']'
++ QA_CHECK_RPATHS=1
++ case "${QA_CHECK_RPATHS:-}" in
++ /usr/lib/rpm/check-rpaths
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/redhat/brp-ldconfig
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1 0
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Processing files: gstreamer1-plugins-ugly-1.8.3-1.x86_64
+Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.sSotLn
++ umask 022
++ cd /home/kalpana/rpmbuild/BUILD
++ cd gst-plugins-ugly-1.8.3
++ DOCDIR=/home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/doc/gstreamer1-plugins-ugly
++ export LC_ALL=C
++ LC_ALL=C
++ export DOCDIR
++ /usr/bin/mkdir -p /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/doc/gstreamer1-plugins-ugly
++ cp -pr AUTHORS /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/doc/gstreamer1-plugins-ugly
++ cp -pr COPYING /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/doc/gstreamer1-plugins-ugly
++ cp -pr README /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/doc/gstreamer1-plugins-ugly
++ cp -pr REQUIREMENTS /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/doc/gstreamer1-plugins-ugly
++ cp -pr gst-plugins-ugly.doap /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64/usr/share/doc/gstreamer1-plugins-ugly
++ exit 0
+Provides: gstreamer-a52dec = 1.8.3-1 gstreamer-dvdread = 1.8.3-1 gstreamer-lame = 1.8.3-1 gstreamer-mad = 1.8.3-1 gstreamer-mpeg2dec = 1.8.3-1 gstreamer-sid = 1.8.3-1 gstreamer1(decoder-application/x-rtp)()(64bit) gstreamer1(decoder-audio/ac3)()(64bit) gstreamer1(decoder-audio/mpeg)(mpegversion=1)(layer=1)()(64bit) gstreamer1(decoder-audio/mpeg)(mpegversion=1)(layer=2)()(64bit) gstreamer1(decoder-audio/mpeg)(mpegversion=1)(layer=3)()(64bit) gstreamer1(decoder-audio/x-ac3)()(64bit) gstreamer1(decoder-audio/x-lpcm)()(64bit) gstreamer1(decoder-audio/x-private1-ac3)()(64bit) gstreamer1(decoder-audio/x-private1-lpcm)()(64bit) gstreamer1(decoder-video/mpeg)(mpegversion=1)(systemstream=false)()(64bit) gstreamer1(decoder-video/mpeg)(mpegversion=2)(systemstream=false)()(64bit) gstreamer1(decoder-video/x-ms-asf)()(64bit) gstreamer1(element-a52dec)()(64bit) gstreamer1(element-asfdemux)()(64bit) gstreamer1(element-dvdlpcmdec)()(64bit) gstreamer1(element-dvdreadsrc)()(64bit) gstreamer1(element-dvdsubdec)()(64bit) gstreamer1(element-dvdsubparse)()(64bit) gstreamer1(element-lamemp3enc)()(64bit) gstreamer1(element-mad)()(64bit) gstreamer1(element-mpeg2dec)()(64bit) gstreamer1(element-mpg123audiodec)()(64bit) gstreamer1(element-rtpasfdepay)()(64bit) gstreamer1(element-rtspwms)()(64bit) gstreamer1(element-twolamemp2enc)()(64bit) gstreamer1(element-xingmux)()(64bit) gstreamer1(encoder-audio/mpeg)(mpegversion=1)(layer=1)()(64bit) gstreamer1(encoder-audio/mpeg)(mpegversion=1)(layer=2)()(64bit) gstreamer1(encoder-audio/mpeg)(mpegversion=1)(layer=3)()(64bit) gstreamer1(urisource-dvd)()(64bit) gstreamer1-plugins-ugly = 1.8.3-1 gstreamer1-plugins-ugly(x86-64) = 1.8.3-1 libgsta52dec.so()(64bit) libgstasf.so()(64bit) libgstdvdlpcmdec.so()(64bit) libgstdvdread.so()(64bit) libgstdvdsub.so()(64bit) libgstlame.so()(64bit) libgstmad.so()(64bit) libgstmpeg2dec.so()(64bit) libgstmpg123.so()(64bit) libgstrmdemux.so()(64bit) libgstsid.so()(64bit) libgsttwolame.so()(64bit) libgstxingmux.so()(64bit)
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: liba52.so.0()(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.7)(64bit) libdvdread.so.4()(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libglib-2.0.so.0()(64bit) libgmodule-2.0.so.0()(64bit) libgobject-2.0.so.0()(64bit) libgstaudio-1.0.so.0()(64bit) libgstbase-1.0.so.0()(64bit) libgstpbutils-1.0.so.0()(64bit) libgstreamer-1.0.so.0()(64bit) libgstriff-1.0.so.0()(64bit) libgstrtp-1.0.so.0()(64bit) libgstrtsp-1.0.so.0()(64bit) libgstsdp-1.0.so.0()(64bit) libgsttag-1.0.so.0()(64bit) libgstvideo-1.0.so.0()(64bit) libm.so.6()(64bit) libmad.so.0()(64bit) libmp3lame.so.0()(64bit) libmpeg2.so.0()(64bit) libmpg123.so.0()(64bit) liborc-0.4.so.0()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libsidplay.so.1()(64bit) libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(CXXABI_1.3.9)(64bit) libstdc++.so.6(GLIBCXX_3.4)(64bit) libtwolame.so.0()(64bit) rtld(GNU_HASH)
+Processing files: gstreamer1-plugins-ugly-debugsource-1.8.3-1.x86_64
+Provides: gstreamer1-plugins-ugly-debugsource = 1.8.3-1 gstreamer1-plugins-ugly-debugsource(x86-64) = 1.8.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Processing files: gstreamer1-plugins-ugly-debuginfo-1.8.3-1.x86_64
+Provides: debuginfo(build-id) = 107df93bb0dc18144538fddc14c9ed6f65803a9d debuginfo(build-id) = 171868d5f89c193ccec39199daecd9259b2d6ccd debuginfo(build-id) = 3b4c1437cac7405ce0728ac736419e5bdf4dbc37 debuginfo(build-id) = 53ac7faaac1f278c69d966b65a560329a781613e debuginfo(build-id) = 6923fe02cea5d8ed1ae3440f4b3057663340ef2b debuginfo(build-id) = 711ef527be6b183a112e2b27917aed8063addbde debuginfo(build-id) = 892e8448821e05dd23f045c0d059770e66751882 debuginfo(build-id) = 8fd6e363da7b1dd5df996bcdee930c643931435e debuginfo(build-id) = 94585b0a2d89982564ef83eb3ff9310451326fdd debuginfo(build-id) = 9cb2059e0e112e6674db761eab29c45cc0584b48 debuginfo(build-id) = 9ee467bd33dc5ad80ac74239a2d62571b64d15f6 debuginfo(build-id) = aff8a2cb82545b3948bbaf46758d1524d5819abb debuginfo(build-id) = d5f0529577098bf0e2ee7815d54dec071548670a gstreamer1-plugins-ugly-debuginfo = 1.8.3-1 gstreamer1-plugins-ugly-debuginfo(x86-64) = 1.8.3-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Recommends: gstreamer1-plugins-ugly-debugsource(x86-64) = 1.8.3-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64
+Wrote: /home/kalpana/rpmbuild/RPMS/x86_64/gstreamer1-plugins-ugly-1.8.3-1.x86_64.rpm
+Wrote: /home/kalpana/rpmbuild/RPMS/x86_64/gstreamer1-plugins-ugly-debugsource-1.8.3-1.x86_64.rpm
+Wrote: /home/kalpana/rpmbuild/RPMS/x86_64/gstreamer1-plugins-ugly-debuginfo-1.8.3-1.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.wPuujf
++ umask 022
++ cd /home/kalpana/rpmbuild/BUILD
++ cd gst-plugins-ugly-1.8.3
++ rm -rf /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-ugly-1.8.3-1.x86_64
++ exit 0

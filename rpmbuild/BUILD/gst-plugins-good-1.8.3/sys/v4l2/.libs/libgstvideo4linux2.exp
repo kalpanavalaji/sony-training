@@ -1,0 +1,2 @@
+gst_plugin_video4linux2_get_desc
+gst_plugin_video4linux2_register

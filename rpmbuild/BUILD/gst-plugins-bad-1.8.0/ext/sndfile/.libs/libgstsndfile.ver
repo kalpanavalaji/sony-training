@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_sndfile_get_desc;
+gst_plugin_sndfile_register;
+local: *; };

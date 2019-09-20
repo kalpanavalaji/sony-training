@@ -1,0 +1,15 @@
+prefix=
+exec_prefix=
+libdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/gl/.libs
+includedir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs
+girdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/base
+typelibdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/base
+
+Name: GStreamer OpenGL Plugins Libraries, Uninstalled
+Description: Streaming media framework, OpenGL plugins libraries, uninstalled
+Version: 1.10.4
+Requires: gstreamer-base-1.0 gstreamer-1.0
+
+Libs: -L${libdir} -lgstgl-1.0  -lGL -lX11  -lwayland-cursor -lwayland-egl -lwayland-client  -lEGL -lEGL 
+Cflags: -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs
+

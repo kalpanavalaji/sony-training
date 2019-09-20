@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_rawparse_get_desc;
+gst_plugin_rawparse_register;
+local: *; };

@@ -1,0 +1,12 @@
+GstBin GstChildProxy
+GstPipeline GstChildProxy
+GstVaapiDecodeBin GstChildProxy
+GstVaapiEncode GstPreset
+GstVaapiEncodeH264 GstPreset
+GstVaapiEncodeH265 GstPreset
+GstVaapiEncodeJpeg GstPreset
+GstVaapiEncodeMpeg2 GstPreset
+GstVaapiEncodeVP8 GstPreset
+GstVaapiPostproc GstColorBalance
+GstVaapiSink GstVideoOverlay GstColorBalance GstNavigation
+GstVideoEncoder GstPreset

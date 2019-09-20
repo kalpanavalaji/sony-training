@@ -1,0 +1,16 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs
+girdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs/gst/tag
+typelibdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs/gst/tag
+
+Name: GStreamer Tag Library, Uninstalled
+Description: Tag base classes and helper functions, uninstalled
+Version: 1.4.4
+Requires: gstreamer-1.0
+Libs: /home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs/gst/tag/libgsttag-1.0.la
+Cflags: -I/home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs -I/home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs
+

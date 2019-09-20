@@ -1,0 +1,10 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/.dwz
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/lib64
+%dir /usr/lib/debug/usr/bin
+/usr/lib/debug/.dwz/curlgnutls-7.66.0-1.fc30.x86_64
+/usr/lib/debug/usr/lib64/libcurl.so.4.6.0-7.66.0-1.fc30.x86_64.debug
+/usr/lib/debug/usr/lib64/libcurl.so.4.6.0.minimal-7.66.0-1.fc30.x86_64.debug
+/usr/lib/debug/usr/bin/curl-7.66.0-1.fc30.x86_64.debug
+/usr/lib/debug/usr/bin/curl.minimal-7.66.0-1.fc30.x86_64.debug

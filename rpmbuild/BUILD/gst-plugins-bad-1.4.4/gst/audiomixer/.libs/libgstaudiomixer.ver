@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_audiomixer_get_desc;
+gst_plugin_audiomixer_register;
+local: *; };

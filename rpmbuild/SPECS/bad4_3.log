@@ -1,0 +1,869 @@
+warning: Macro expanded in comment on line 196: %{_datadir}/gstreamer-%{majorminor}
+
+warning: Macro expanded in comment on line 260: %{_libdir}/gstreamer-%{majorminor}/libgstdvb.so
+
+warning: Macro expanded in comment on line 261: %{_libdir}/gstreamer-%{majorminor}/libgstvcdsrc.so
+
+warning: Macro expanded in comment on line 268: %{_libdir}/gstreamer-%{majorminor}/libgstdc1394.so
+
+warning: Macro expanded in comment on line 270: %{_libdir}/gstreamer-%{majorminor}/libgstgsm.so
+
+warning: Macro expanded in comment on line 303: %{_datadir}/glib-2.0/schemas/org.freedesktop.gstreamer-0.11.default-elements.gschema.xml
+
+warning: Macro expanded in comment on line 308: %{_libdir}/gstreamer-%{majorminor}/libgstjack.so
+
+warning: Macro expanded in comment on line 309: %{_libdir}/gstreamer-%{majorminor}/libgstsdl.so
+
+warning: Macro expanded in comment on line 310: %{_libdir}/gstreamer-%{majorminor}/libgstsoundtouch.so
+
+warning: Macro expanded in comment on line 311: %{_libdir}/gstreamer-%{majorminor}/libgsttimidity.so
+
+warning: Macro expanded in comment on line 312: %{_libdir}/gstreamer-%{majorminor}/libgstwildmidi.so
+
+warning: Macro expanded in comment on line 314: %{_libdir}/gstreamer-%{majorminor}/libgstmultifdsink.so
+
+warning: Macro expanded in comment on line 317: %{_libdir}/gstreamer-%{majorminor}/libgstfbdevsink.so
+
+configure: WARNING: building experimental plug-ins
+configure: WARNING: Could not find cuda headers/libraries
+configure: WARNING: Could not find cuda.h
+configure: WARNING: Could not find cuda_runtime_api.h
+configure: WARNING: Could not find cudart library
+configure: WARNING: Could not find cuda library
+configure: WARNING: Could not find nvEncodeAPI.h
+configure: WARNING: Could not find library nvidia-encode
+configure: WARNING: *** apexsink not ported
+configure: WARNING: *** linsys not ported
+configure: WARNING: *** nassink not ported
+configure: WARNING: *** libvisual not ported
+configure: WARNING: *** timidity not ported
+configure: WARNING: *** sdlvideosink sdlaudiosink not ported
+configure: WARNING: *** xvid not ported
+configure: WARNING: *** wininet not ported
+configure: WARNING: *** sndio not ported
+gstinsertbin.c: In function 'gst_insert_bin_class_init':
+gstinsertbin.c:133:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  133 |   g_type_class_add_private (klass, sizeof (GstInsertBinPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstinsertbin.h:34,
+                 from gstinsertbin.c:47:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstfragment.c: In function 'gst_fragment_class_init':
+gstfragment.c:119:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  119 |   g_type_class_add_private (klass, sizeof (GstFragmentPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/base/gsttypefindhelper.h:27,
+                 from gstfragment.c:23:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gsturidownloader.c: In function 'gst_uri_downloader_class_init':
+gsturidownloader.c:85:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+   85 |   g_type_class_add_private (klass, sizeof (GstUriDownloaderPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from gstfragment.h:25,
+                 from gsturidownloader.c:23:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstaggregator.c: In function 'gst_aggregator_class_init':
+gstaggregator.c:1953:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+ 1953 |   g_type_class_add_private (klass, sizeof (GstAggregatorPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstaggregator.h:29,
+                 from gstaggregator.c:72:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstaggregator.c: In function 'gst_aggregator_pad_class_init':
+gstaggregator.c:2452:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+ 2452 |   g_type_class_add_private (klass, sizeof (GstAggregatorPadPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstaggregator.h:29,
+                 from gstaggregator.c:72:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/gstreamer-1.0/gst/video/video.h:168,
+                 from /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/player/gstplayer.h:25,
+                 from /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/player/player.h:24,
+                 from /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/player/g-ir-cpp-_wdnnns0.c:4:
+/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/video/gstvideoaggregator.h:25:2: warning: #warning "The Video library from gst-plugins-bad is unstable API and may change in future." [-Wcpp]
+   25 | #warning "The Video library from gst-plugins-bad is unstable API and may change in future."
+      |  ^~~~~~~
+/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/video/gstvideoaggregator.h:26:2: warning: #warning "You can define GST_USE_UNSTABLE_API to avoid this warning." [-Wcpp]
+   26 | #warning "You can define GST_USE_UNSTABLE_API to avoid this warning."
+      |  ^~~~~~~
+In file included from /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/video/gstvideoaggregator.h:31,
+                 from /usr/include/gstreamer-1.0/gst/video/video.h:168,
+                 from /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/player/gstplayer.h:25,
+                 from /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/player/player.h:24,
+                 from /home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/player/g-ir-cpp-_wdnnns0.c:4:
+/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/base/gstaggregator.h:25:2: warning: #warning "The Base library from gst-plugins-bad is unstable API and may change in future." [-Wcpp]
+   25 | #warning "The Base library from gst-plugins-bad is unstable API and may change in future."
+      |  ^~~~~~~
+/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/base/gstaggregator.h:26:2: warning: #warning "You can define GST_USE_UNSTABLE_API to avoid this warning." [-Wcpp]
+   26 | #warning "You can define GST_USE_UNSTABLE_API to avoid this warning."
+      |  ^~~~~~~
+gstgldisplay.c: In function 'gst_gl_display_class_init':
+gstgldisplay.c:110:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  110 |   g_type_class_add_private (klass, sizeof (GstGLDisplayPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstgldisplay.c:56:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglcontext.c: In function 'gst_gl_context_class_init':
+gstglcontext.c:285:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  285 |   g_type_class_add_private (klass, sizeof (GstGLContextPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglcontext.c:47:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglbufferpool.c: In function 'gst_gl_buffer_pool_class_init':
+gstglbufferpool.c:316:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  316 |   g_type_class_add_private (klass, sizeof (GstGLBufferPoolPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglbufferpool.c:25:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglbasefilter.c: In function 'gst_gl_base_filter_class_init':
+gstglbasefilter.c:98:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+   98 |   g_type_class_add_private (klass, sizeof (GstGLBaseFilterPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/video/gstvideometa.h:23,
+                 from gstglbasefilter.c:25:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglshader.c: In function 'gst_gl_shader_class_init':
+gstglshader.c:176:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  176 |   g_type_class_add_private (klass, sizeof (GstGLShaderPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglshader.c:26:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglslstage.c: In function 'gst_glsl_stage_class_init':
+gstglslstage.c:127:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  127 |   g_type_class_add_private (klass, sizeof (GstGLSLStagePrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from ../../../gst-libs/gst/gl/gl.h:29,
+                 from gstglslstage.c:25:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglcolorconvert.c: In function 'gst_gl_color_convert_class_init':
+gstglcolorconvert.c:454:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  454 |   g_type_class_add_private (klass, sizeof (GstGLColorConvertPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglcolorconvert.c:28:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglupload.c: In function 'gst_gl_upload_class_init':
+gstglupload.c:1224:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+ 1224 |   g_type_class_add_private (klass, sizeof (GstGLUploadPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglupload.c:27:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglwindow.c: In function 'gst_gl_window_class_init':
+gstglwindow.c:190:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  190 |   g_type_class_add_private (klass, sizeof (GstGLWindowPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglwindow.c:38:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglwindow.c: In function 'gst_gl_window_default_send_message_async':
+gstglwindow.c:682:23: warning: unused variable 'priv' [-Wunused-variable]
+  682 |   GstGLWindowPrivate *priv = window->priv;
+      |                       ^~~~
+gstglframebuffer.c: In function 'gst_gl_framebuffer_class_init':
+gstglframebuffer.c:116:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  116 |   g_type_class_add_private (klass, sizeof (GstGLFramebufferPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from gl.h:29,
+                 from gstglframebuffer.c:45:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglviewconvert.c: In function 'gst_gl_view_convert_class_init':
+gstglviewconvert.c:253:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  253 |   g_type_class_add_private (klass, sizeof (GstGLViewConvertPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from ../../../gst-libs/gst/gl/gstgl_fwd.h:24,
+                 from ../../../gst-libs/gst/gl/gl.h:29,
+                 from gstglviewconvert.h:25,
+                 from gstglviewconvert.c:35:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglapi.h:36: Warning: GstGL: symbol='GL_GLEXT_PROTOTYPES': Unknown namespace for symbol 'GL_GLEXT_PROTOTYPES'
+gstglfilter.c:901: Warning: GstGL: gst_gl_filter_filter_texture: unknown parameter 'inbuf' in documentation comment, should be one of 'in_tex', 'out_tex'
+gstglfilter.c:902: Warning: GstGL: gst_gl_filter_filter_texture: unknown parameter 'outbuf' in documentation comment, should be one of 'in_tex', 'out_tex'
+gstglwindow.c:393: Warning: GstGL: gst_gl_window_set_window_handle: unknown parameter 'handle' in documentation comment, should be 'id'
+gstglbasememory.c:725: Warning: GstGL: gst_gl_base_memory_alloc: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglquery.c:197: Warning: GstGL: gst_gl_query_new: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstgldebug.c:169: Warning: GstGL: gst_gl_async_debug_new: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstgldebug.c:169: Warning: GstGL: gst_gl_async_debug_new: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglbasememory.c:582: Warning: GstGL: gst_gl_allocation_params_init: argument copy: Missing (scope) annotation for callback without GDestroyNotify (valid: call, async)
+gstglbasememory.c:725: Warning: GstGL: gst_gl_base_memory_alloc: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglbuffer.c:356: Warning: GstGL: gst_gl_buffer_allocation_params_new: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglbuffer.c:356: Warning: GstGL: gst_gl_buffer_allocation_params_new: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglmemory.c:1062: Warning: GstGL: gst_gl_video_allocation_params_init_full: argument copy: Missing (scope) annotation for callback without GDestroyNotify (valid: call, async)
+gstglmemory.c:1135: Warning: GstGL: gst_gl_video_allocation_params_new: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglmemory.c:1176: Warning: GstGL: gst_gl_video_allocation_params_new_wrapped_data: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglmemory.c:1266: Warning: GstGL: gst_gl_video_allocation_params_new_wrapped_texture: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglmemory.c:1223: Warning: GstGL: gst_gl_video_allocation_params_new_wrapped_gl_handle: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglmemory.c:1135: Warning: GstGL: gst_gl_video_allocation_params_new: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglmemory.c:1176: Warning: GstGL: gst_gl_video_allocation_params_new_wrapped_data: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglmemory.c:1266: Warning: GstGL: gst_gl_video_allocation_params_new_wrapped_texture: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglmemory.c:1223: Warning: GstGL: gst_gl_video_allocation_params_new_wrapped_gl_handle: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglrenderbuffer.c:393: Warning: GstGL: gst_gl_renderbuffer_allocation_params_new: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglrenderbuffer.c:431: Warning: GstGL: gst_gl_renderbuffer_allocation_params_new_wrapped: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglrenderbuffer.c:393: Warning: GstGL: gst_gl_renderbuffer_allocation_params_new: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglrenderbuffer.c:431: Warning: GstGL: gst_gl_renderbuffer_allocation_params_new_wrapped: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstglquery.c:197: Warning: GstGL: gst_gl_query_new: return value: Invalid non-constant return of bare structure or union; register as boxed type or (skip)
+gstadaptivedemux.c: In function 'gst_adaptive_demux_class_init':
+gstadaptivedemux.c:388:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  388 |   g_type_class_add_private (klass, sizeof (GstAdaptiveDemuxPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstadaptivedemux.h:25,
+                 from gstadaptivedemux.c:122:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstvideoaggregator.c: In function 'gst_video_aggregator_pad_class_init':
+gstvideoaggregator.c:322:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  322 |   g_type_class_add_private (klass, sizeof (GstVideoAggregatorPadPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstvideoaggregator.h:29,
+                 from gstvideoaggregator.c:43:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstvideoaggregator.c: In function 'gst_video_aggregator_class_init':
+gstvideoaggregator.c:2110:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+ 2110 |   g_type_class_add_private (klass, sizeof (GstVideoAggregatorPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstvideoaggregator.h:29,
+                 from gstvideoaggregator.c:43:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstaudioaggregator.c: In function 'gst_audio_aggregator_pad_class_init':
+gstaudioaggregator.c:97:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+   97 |   g_type_class_add_private (klass, sizeof (GstAudioAggregatorPadPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstaudioaggregator.h:31,
+                 from gstaudioaggregator.c:39:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstaudioaggregator.c: In function 'gst_audio_aggregator_class_init':
+gstaudioaggregator.c:235:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  235 |   g_type_class_add_private (klass, sizeof (GstAudioAggregatorPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstaudioaggregator.h:31,
+                 from gstaudioaggregator.c:39:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstfreeverb.c: In function 'gst_freeverb_class_init':
+gstfreeverb.c:390:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  390 |   g_type_class_add_private (klass, sizeof (GstFreeverbPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstfreeverb.c:57:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstjpegparse.c: In function 'gst_jpeg_parse_class_init':
+gstjpegparse.c:138:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  138 |   g_type_class_add_private (gobject_class, sizeof (GstJpegParsePrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/base/gstbytereader.h:25,
+                 from gstjpegparse.c:52:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstjifmux.c: In function 'gst_jif_mux_class_init':
+gstjifmux.c:133:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  133 |   g_type_class_add_private (gobject_class, sizeof (GstJifMuxPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/base/gstbytereader.h:25,
+                 from gstjifmux.c:58:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+pesparse.c: In function 'mpegts_parse_pes_header':
+pesparse.c:324:46: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  324 |         (GST_READ_UINT16_BE (data) & 0x1fff) << (val8 & 0x20) ? 10 : 7;
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+gstnetsim.c: In function 'gst_net_sim_class_init':
+gstnetsim.c:401:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  401 |   g_type_class_add_private (klass, sizeof (GstNetSimPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstnetsim.h:28,
+                 from gstnetsim.c:31:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstkmssink.c: In function 'gst_kms_sink_show_frame':
+gstkmssink.c:949:29: warning: 'mems[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  949 |   kmsmem = (GstKMSMemory *) get_cached_kmsmem (mems[0]);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstshmsink.h:25,
+                 from gstshmsink.c:37:
+gstshmsink.c: In function 'gst_shm_sink_allocator_alloc_locked':
+/usr/include/glib-2.0/gobject/gobject.h:512:33: warning: passing argument 3 of 'gst_memory_init' from incompatible pointer type [-Wincompatible-pointer-types]
+  512 | #define g_object_ref(Obj)      ((__typeof__(Obj)) (g_object_ref) (Obj))
+      |                                ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 GstShmSinkAllocator * {aka struct _GstShmSinkAllocator *}
+gstshmsink.c:290:45: note: in expansion of macro 'g_object_ref'
+  290 |     gst_memory_init (memory, params->flags, g_object_ref (self), NULL,
+      |                                             ^~~~~~~~~~~~
+In file included from /usr/include/gstreamer-1.0/gst/gstallocator.h:26,
+                 from /usr/include/gstreamer-1.0/gst/gstbuffer.h:29,
+                 from /usr/include/gstreamer-1.0/gst/gstpad.h:70,
+                 from /usr/include/gstreamer-1.0/gst/gstelement.h:87,
+                 from /usr/include/gstreamer-1.0/gst/gstbin.h:27,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:35,
+                 from gstshmsink.h:25,
+                 from gstshmsink.c:37:
+/usr/include/gstreamer-1.0/gst/gstmemory.h:315:55: note: expected 'GstAllocator *' {aka 'struct _GstAllocator *'} but argument is of type 'GstShmSinkAllocator *' {aka 'struct _GstShmSinkAllocator *'}
+  315 |                                         GstAllocator *allocator, GstMemory *parent,
+      |                                         ~~~~~~~~~~~~~~^~~~~~~~~
+gstuvch264_mjpgdemux.c: In function 'gst_uvc_h264_mjpg_demux_class_init':
+gstuvch264_mjpgdemux.c:187:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  187 |   g_type_class_add_private (gobject_class, sizeof (GstUvcH264MjpgDemuxPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstuvch264_mjpgdemux.h:27,
+                 from gstuvch264_mjpgdemux.c:57:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+Using "code" is deprecated - use private-code or public-code.
+See the help page for details.
+gstglbasemixer.c: In function 'gst_gl_base_mixer_class_init':
+gstglbasemixer.c:394:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  394 |   g_type_class_add_private (klass, sizeof (GstGLBaseMixerPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstglbasemixer.c:26:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglmixerbin.c: In function 'gst_gl_mixer_bin_class_init':
+gstglmixerbin.c:162:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  162 |   g_type_class_add_private (klass, sizeof (GstGLMixerBinPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstglmixerbin.c:26:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstglmixer.c: In function 'gst_gl_mixer_class_init':
+gstglmixer.c:372:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  372 |   g_type_class_add_private (klass, sizeof (GstGLMixerPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstglmixer.c:26:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstgtkbasesink.c: In function 'gst_gtk_base_sink_change_state':
+gstgtkbasesink.c:398:16: warning: assignment to 'GtkWindow *' {aka 'struct _GtkWindow *'} from incompatible pointer type 'GtkWidget *' {aka 'struct _GtkWidget *'} [-Wincompatible-pointer-types]
+  398 |         window = g_object_ref (gtk_sink->window);
+      |                ^
+gtkgstglwidget.c: In function 'gtk_gst_gl_widget_class_init':
+gtkgstglwidget.c:369:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  369 |   g_type_class_add_private (klass, sizeof (GtkGstGLWidgetPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/glib-2.0/gio/gioenums.h:28,
+                 from /usr/include/glib-2.0/gio/giotypes.h:28,
+                 from /usr/include/glib-2.0/gio/gio.h:26,
+                 from /usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h:28,
+                 from /usr/include/gtk-3.0/gdk/gdk.h:32,
+                 from /usr/include/gtk-3.0/gtk/gtk.h:30,
+                 from gtkgstglwidget.h:24,
+                 from gtkgstglwidget.c:27:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstpitch.cc: In function 'void gst_pitch_class_init(GstPitchClass*)':
+gstpitch.cc:134:68: warning: 'void g_type_class_add_private(gpointer, gsize)' is deprecated [-Wdeprecated-declarations]
+  134 |   g_type_class_add_private (gobject_class, sizeof (GstPitchPrivate));
+      |                                                                    ^
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstpitch.cc:36:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstpitch.cc:134:68: warning: 'void g_type_class_add_private(gpointer, gsize)' is deprecated [-Wdeprecated-declarations]
+  134 |   g_type_class_add_private (gobject_class, sizeof (GstPitchPrivate));
+      |                                                                    ^
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstpitch.cc:36:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstbpmdetect.cc: In function 'void gst_bpm_detect_class_init(GstBPMDetectClass*)':
+gstbpmdetect.cc:122:72: warning: 'void g_type_class_add_private(gpointer, gsize)' is deprecated [-Wdeprecated-declarations]
+  122 |   g_type_class_add_private (gobject_class, sizeof (GstBPMDetectPrivate));
+      |                                                                        ^
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/audio/audio.h:25,
+                 from gstbpmdetect.cc:36:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstbpmdetect.cc:122:72: warning: 'void g_type_class_add_private(gpointer, gsize)' is deprecated [-Wdeprecated-declarations]
+  122 |   g_type_class_add_private (gobject_class, sizeof (GstBPMDetectPrivate));
+      |                                                                        ^
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/audio/audio.h:25,
+                 from gstbpmdetect.cc:36:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstdtlsagent.c: In function 'gst_dtls_agent_class_init':
+gstdtlsagent.c:154:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  154 |   g_type_class_add_private (klass, sizeof (GstDtlsAgentPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstdtlsagent.c:30:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstdtlsconnection.c: In function 'gst_dtls_connection_class_init':
+gstdtlsconnection.c:125:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+  125 |   g_type_class_add_private (klass, sizeof (GstDtlsConnectionPrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstdtlsconnection.c:30:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+gstdtlscertificate.c: In function 'gst_dtls_certificate_class_init':
+gstdtlscertificate.c:92:3: warning: 'g_type_class_add_private' is deprecated [-Wdeprecated-declarations]
+   92 |   g_type_class_add_private (klass, sizeof (GstDtlsCertificatePrivate));
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from gstdtlscertificate.c:30:
+/usr/include/glib-2.0/gobject/gtype.h:1303:10: note: declared here
+ 1303 | void     g_type_class_add_private       (gpointer                    g_class,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+elements/adaptive_demux_common.c: In function 'gst_adaptive_demux_test_case_new':
+elements/adaptive_demux_common.c:122:3: warning: 'g_object_newv' is deprecated: Use 'g_object_new_with_properties' instead [-Wdeprecated-declarations]
+  122 |   return g_object_newv (GST_TYPE_ADAPTIVE_DEMUX_TEST_CASE, 0, NULL);
+      |   ^~~~~~
+In file included from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/check/gstcheck.h:32,
+                 from elements/adaptive_demux_common.c:22:
+/usr/include/glib-2.0/gobject/gobject.h:428:13: note: declared here
+  428 | gpointer    g_object_newv        (GType           object_type,
+      |             ^~~~~~~~~~~~~
+elements/dash_demux.c: In function 'gst_dash_demux_test_case_new':
+elements/dash_demux.c:78:3: warning: 'g_object_newv' is deprecated: Use 'g_object_new_with_properties' instead [-Wdeprecated-declarations]
+   78 |   return g_object_newv (GST_TYPE_DASH_DEMUX_TEST_CASE, 0, NULL);
+      |   ^~~~~~
+In file included from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from /usr/include/gstreamer-1.0/gst/gstenumtypes.h:7,
+                 from /usr/include/gstreamer-1.0/gst/gst.h:31,
+                 from /usr/include/gstreamer-1.0/gst/check/gstcheck.h:32,
+                 from elements/dash_demux.c:21:
+/usr/include/glib-2.0/gobject/gobject.h:428:13: note: declared here
+  428 | gpointer    g_object_newv        (GType           object_type,
+      |             ^~~~~~~~~~~~~
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: relinking 'libgstadaptivedemux-1.0.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: relinking 'libgstbadvideo-1.0.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: relinking 'libgstbadaudio-1.0.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: remember to run 'libtool --finish /usr/lib64'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstaudiomixer.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstcompositor.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstcamerabin2.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstmpegtsdemux.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstmpegtsmux.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstmxf.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstvideoparsersbad.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstdvb.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstuvch264.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstdashdemux.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstwaylandsink.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstopengl.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstgtksink.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgstsmoothstreaming.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: relinking 'libgsthls.la'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+libtool: warning: remember to run 'libtool --finish /usr/lib64/gstreamer-1.0'
+/usr/bin/install: cannot stat './html/*.sgml': No such file or directory
+/usr/bin/install: cannot stat './html/*.sgml': No such file or directory
+xz: /tmp/tmp.poiZmXT7p6: No such file or directory
+objcopy: cannot open: /tmp/tmp.poiZmXT7p6.xz: No such file or directory
+xz: /tmp/tmp.LNjJraNzzQ: No such file or directory
+objcopy: cannot open: /tmp/tmp.LNjJraNzzQ.xz: No such file or directory
+xz: /tmp/tmp.m9SB6FUH00: No such file or directory
+objcopy: cannot open: /tmp/tmp.m9SB6FUH00.xz: No such file or directory
+xz: /tmp/tmp.c4ub7FvaaW: No such file or directory
+objcopy: cannot open: /tmp/tmp.c4ub7FvaaW.xz: No such file or directory
+xz: /tmp/tmp.dLNZ9t0KcB: No such file or directory
+objcopy: cannot open: /tmp/tmp.dLNZ9t0KcB.xz: No such file or directory
+22626 blocks
+WARNING 0001: file '/usr/lib64/libgstbadaudio-1.0.so.0.1004.0' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/libgstbadvideo-1.0.so.0.1004.0' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstcompositor.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstopengl.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstsmoothstreaming.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstdashdemux.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstmpegtsmux.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstgtksink.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstdvb.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstwaylandsink.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstmxf.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgsthls.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstmpegtsdemux.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstaudiomixer.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstvideoparsersbad.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstcamerabin2.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/gstreamer-1.0/libgstuvch264.so' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+WARNING 0001: file '/usr/lib64/libgstadaptivedemux-1.0.so.0.1004.0' contains a standard rpath '/usr/lib64' in [/usr/lib64]
+error: File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-bad-1.10.4-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstmms.so
+error: File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-bad-1.10.4-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstfaac.so
+error: File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-bad-1.10.4-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstopenal.so
+error: File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-bad-1.10.4-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstopenjpeg.so
+    Macro expanded in comment on line 196: %{_datadir}/gstreamer-%{majorminor}
+
+    Macro expanded in comment on line 260: %{_libdir}/gstreamer-%{majorminor}/libgstdvb.so
+
+    Macro expanded in comment on line 261: %{_libdir}/gstreamer-%{majorminor}/libgstvcdsrc.so
+
+    Macro expanded in comment on line 268: %{_libdir}/gstreamer-%{majorminor}/libgstdc1394.so
+
+    Macro expanded in comment on line 270: %{_libdir}/gstreamer-%{majorminor}/libgstgsm.so
+
+    Macro expanded in comment on line 303: %{_datadir}/glib-2.0/schemas/org.freedesktop.gstreamer-0.11.default-elements.gschema.xml
+
+    Macro expanded in comment on line 308: %{_libdir}/gstreamer-%{majorminor}/libgstjack.so
+
+    Macro expanded in comment on line 309: %{_libdir}/gstreamer-%{majorminor}/libgstsdl.so
+
+    Macro expanded in comment on line 310: %{_libdir}/gstreamer-%{majorminor}/libgstsoundtouch.so
+
+    Macro expanded in comment on line 311: %{_libdir}/gstreamer-%{majorminor}/libgsttimidity.so
+
+    Macro expanded in comment on line 312: %{_libdir}/gstreamer-%{majorminor}/libgstwildmidi.so
+
+    Macro expanded in comment on line 314: %{_libdir}/gstreamer-%{majorminor}/libgstmultifdsink.so
+
+    Macro expanded in comment on line 317: %{_libdir}/gstreamer-%{majorminor}/libgstfbdevsink.so
+
+    File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-bad-1.10.4-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstmms.so
+    File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-bad-1.10.4-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstfaac.so
+    File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-bad-1.10.4-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstopenal.so
+    File not found: /home/kalpana/rpmbuild/BUILDROOT/gstreamer1-plugins-bad-1.10.4-1.gst.x86_64/usr/lib64/gstreamer-1.0/libgstopenjpeg.so

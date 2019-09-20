@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_kate_get_desc;
+gst_plugin_kate_register;
+local: *; };

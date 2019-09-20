@@ -1,0 +1,45 @@
+10:36:21.070480 signalled to die
+10:36:21.070586 ========> IPv4 sws (port 8990 pid: 22712) exits with signal (15)
+10:36:25.101141 Running HTTP IPv4 version on port 8990
+10:36:25.101284 Wrote pid 22788 to .http_server.pid
+10:36:26.113802 ====> Client connect
+10:36:26.113849 accept_connection 3 returned 4
+10:36:26.113868 accept_connection 3 returned 0
+10:36:26.113969 Read 92 bytes
+10:36:26.113989 Process 92 bytes request
+10:36:26.114003 Got request: GET /verifiedserver HTTP/1.1
+10:36:26.114014 Are-we-friendly question received
+10:36:26.114064 Wrote request (92 bytes) input to log/server.input
+10:36:26.114101 Identifying ourselves as friends
+10:36:26.114180 Response sent (56 bytes) and written to log/server.response
+10:36:26.114194 special request received, no persistency
+10:36:26.114203 ====> Client disconnect 0
+10:36:28.159706 ====> Client connect
+10:36:28.159738 accept_connection 3 returned 4
+10:36:28.159751 accept_connection 3 returned 0
+10:36:28.159844 Read 92 bytes
+10:36:28.159861 Process 92 bytes request
+10:36:28.159873 Got request: GET /verifiedserver HTTP/1.1
+10:36:28.159881 Are-we-friendly question received
+10:36:28.159893 Wrote request (92 bytes) input to log/server.input
+10:36:28.159906 Identifying ourselves as friends
+10:36:28.159941 Response sent (56 bytes) and written to log/server.response
+10:36:28.159951 special request received, no persistency
+10:36:28.159959 ====> Client disconnect 0
+10:36:30.737746 ====> Client connect
+10:36:30.737776 accept_connection 3 returned 4
+10:36:30.737790 accept_connection 3 returned 0
+10:36:30.773075 Read 82 bytes
+10:36:30.773117 Process 82 bytes request
+10:36:30.773130 Got request: GET /3001 HTTP/1.1
+10:36:30.773139 Requested test number 3001 part 0
+10:36:30.773164 - request found to be complete
+10:36:30.773228 Wrote request (82 bytes) input to log/server.input
+10:36:30.773254 Send response test3001 section <data>
+10:36:30.773320 Response sent (103 bytes) and written to log/server.response
+10:36:30.773331 => persistent connection request ended, awaits new request
+
+10:36:30.837886 Connection closed by client
+10:36:30.837936 ====> Client disconnect 0
+10:36:30.935059 signalled to die
+10:36:30.935123 ========> IPv4 sws (port 8990 pid: 22788) exits with signal (15)

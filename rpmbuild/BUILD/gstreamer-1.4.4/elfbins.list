@@ -1,0 +1,10 @@
+.//usr/lib64/libgstcontroller-1.0.so.0.404.0
+.//usr/lib64/libgstcheck-1.0.so.0.404.0
+.//usr/lib64/libgstnet-1.0.so.0.404.0
+.//usr/lib64/gstreamer-1.0/libgstcoreelements.so
+.//usr/bin/gst-typefind-1.0
+.//usr/bin/gst-inspect-1.0
+.//usr/lib64/libgstbase-1.0.so.0.404.0
+.//usr/lib64/libgstreamer-1.0.so.0.404.0
+.//usr/bin/gst-launch-1.0
+.//usr/libexec/gstreamer-1.0/gst-plugin-scanner

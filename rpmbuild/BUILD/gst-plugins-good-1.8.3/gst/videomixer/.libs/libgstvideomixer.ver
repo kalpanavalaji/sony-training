@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_videomixer_get_desc;
+gst_plugin_videomixer_register;
+local: *; };

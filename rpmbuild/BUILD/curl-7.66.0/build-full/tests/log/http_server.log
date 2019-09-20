@@ -1,0 +1,45 @@
+20:33:19.843469 signalled to die
+20:33:19.843578 ========> IPv4 sws (port 8990 pid: 8577) exits with signal (15)
+20:33:25.871782 Running HTTP IPv4 version on port 8990
+20:33:25.871957 Wrote pid 8653 to .http_server.pid
+20:33:26.905647 ====> Client connect
+20:33:26.905698 accept_connection 3 returned 4
+20:33:26.905724 accept_connection 3 returned 0
+20:33:26.905827 Read 92 bytes
+20:33:26.905851 Process 92 bytes request
+20:33:26.905868 Got request: GET /verifiedserver HTTP/1.1
+20:33:26.905880 Are-we-friendly question received
+20:33:26.905937 Wrote request (92 bytes) input to log/server.input
+20:33:26.905970 Identifying ourselves as friends
+20:33:26.906066 Response sent (55 bytes) and written to log/server.response
+20:33:26.906081 special request received, no persistency
+20:33:26.906091 ====> Client disconnect 0
+20:33:28.966884 ====> Client connect
+20:33:28.966914 accept_connection 3 returned 4
+20:33:28.966931 accept_connection 3 returned 0
+20:33:28.967119 Read 92 bytes
+20:33:28.967139 Process 92 bytes request
+20:33:28.967150 Got request: GET /verifiedserver HTTP/1.1
+20:33:28.967159 Are-we-friendly question received
+20:33:28.967170 Wrote request (92 bytes) input to log/server.input
+20:33:28.967182 Identifying ourselves as friends
+20:33:28.967238 Response sent (55 bytes) and written to log/server.response
+20:33:28.967250 special request received, no persistency
+20:33:28.967257 ====> Client disconnect 0
+20:33:31.543302 ====> Client connect
+20:33:31.543334 accept_connection 3 returned 4
+20:33:31.543349 accept_connection 3 returned 0
+20:33:31.578797 Read 82 bytes
+20:33:31.578840 Process 82 bytes request
+20:33:31.578854 Got request: GET /3001 HTTP/1.1
+20:33:31.578864 Requested test number 3001 part 0
+20:33:31.578890 - request found to be complete
+20:33:31.578950 Wrote request (82 bytes) input to log/server.input
+20:33:31.578976 Send response test3001 section <data>
+20:33:31.579047 Response sent (103 bytes) and written to log/server.response
+20:33:31.579058 => persistent connection request ended, awaits new request
+
+20:33:31.644145 Connection closed by client
+20:33:31.644197 ====> Client disconnect 0
+20:33:31.732500 signalled to die
+20:33:31.732573 ========> IPv4 sws (port 8990 pid: 8653) exits with signal (15)

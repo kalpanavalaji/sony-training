@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_audioconvert_get_desc;
+gst_plugin_audioconvert_register;
+local: *; };

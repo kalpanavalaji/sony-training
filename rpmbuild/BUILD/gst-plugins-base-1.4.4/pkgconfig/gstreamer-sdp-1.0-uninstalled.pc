@@ -1,0 +1,17 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs
+girdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs/gst/sdp
+typelibdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs/gst/sdp
+
+Name: GStreamer SDP Library, Uninstalled
+Description: SDP helper functions, uninstalled
+Version: 1.4.4
+Requires: glib-2.0
+Requires.private: gio-2.0
+Libs: /home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs/gst/sdp/libgstsdp-1.0.la
+Cflags: -I/home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs -I/home/kalpana/rpmbuild/BUILD/gst-plugins-base-1.4.4/gst-libs
+

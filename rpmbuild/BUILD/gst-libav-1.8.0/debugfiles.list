@@ -1,0 +1,5 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/lib64
+%dir /usr/lib/debug/usr/lib64/gstreamer-1.0
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstlibav.so-1.8.0-1.x86_64.debug

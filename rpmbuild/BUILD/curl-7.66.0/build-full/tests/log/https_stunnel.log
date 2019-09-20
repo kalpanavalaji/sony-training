@@ -1,0 +1,20 @@
+2019.09.16 20:33:27 LOG5[ui]: stunnel 5.50 on x86_64-redhat-linux-gnu platform
+2019.09.16 20:33:27 LOG5[ui]: Compiled with OpenSSL 1.1.1a FIPS  20 Nov 2018
+2019.09.16 20:33:27 LOG5[ui]: Running  with OpenSSL 1.1.1c FIPS  28 May 2019
+2019.09.16 20:33:27 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6 TLS:ENGINE,FIPS,OCSP,PSK,SNI
+2019.09.16 20:33:27 LOG5[ui]: Reading configuration from file /home/kalpana/rpmbuild/BUILD/curl-7.66.0/build-full/tests/https_stunnel.conf
+2019.09.16 20:33:27 LOG5[ui]: UTF-8 byte order mark not detected
+2019.09.16 20:33:27 LOG5[ui]: FIPS mode disabled
+2019.09.16 20:33:27 LOG5[ui]: Configuration successful
+2019.09.16 20:33:27 LOG5[ui]: Binding service [curltest] to :::8991: Address already in use (98)
+2019.09.16 20:33:28 LOG5[0]: Service [curltest] accepted connection from 127.0.0.1:56490
+2019.09.16 20:33:28 LOG3[0]: s_connect: connect ::1:8990: Connection refused (111)
+2019.09.16 20:33:28 LOG5[0]: s_connect: connected 127.0.0.1:8990
+2019.09.16 20:33:28 LOG5[0]: Service [curltest] connected remote server from 127.0.0.1:58030
+2019.09.16 20:33:28 LOG5[0]: Connection closed: 55 byte(s) sent to TLS, 92 byte(s) sent to socket
+2019.09.16 20:33:30 LOG5[1]: Service [curltest] accepted connection from 127.0.0.1:56498
+2019.09.16 20:33:31 LOG3[1]: s_connect: connect ::1:8990: Connection refused (111)
+2019.09.16 20:33:31 LOG5[1]: s_connect: connected 127.0.0.1:8990
+2019.09.16 20:33:31 LOG5[1]: Service [curltest] connected remote server from 127.0.0.1:58038
+2019.09.16 20:33:31 LOG5[1]: Connection closed: 103 byte(s) sent to TLS, 82 byte(s) sent to socket
+2019.09.16 20:33:31 LOG5[ui]: Terminated

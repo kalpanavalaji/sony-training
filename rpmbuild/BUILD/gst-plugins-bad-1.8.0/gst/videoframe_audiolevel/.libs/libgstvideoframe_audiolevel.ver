@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_videoframe_audiolevel_get_desc;
+gst_plugin_videoframe_audiolevel_register;
+local: *; };

@@ -1,0 +1,3009 @@
+<?xml version="1.0"?>
+<!-- This file was automatically generated from C sources - DO NOT EDIT!
+To affect the contents of this file, edit the original C definitions,
+and/or use gtk-doc annotations.  -->
+<repository version="1.2"
+            xmlns="http://www.gtk.org/introspection/core/1.0"
+            xmlns:c="http://www.gtk.org/introspection/c/1.0"
+            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+  <include name="Gst" version="1.0"/>
+  <package name="gstreamer-mpegts-1.0"/>
+  <c:include name="gst/mpegts/mpegts.h"/>
+  <namespace name="GstMpegts"
+             version="1.0"
+             shared-library="libgstmpegts-1.0.so.0"
+             c:identifier-prefixes="GstMpegTs"
+             c:symbol-prefixes="gst_mpegts,gst">
+    <enumeration name="ATSCDescriptorType"
+                 c:type="GstMpegTsATSCDescriptorType">
+      <doc xml:space="preserve"
+           filename="gstmpegtsdescriptor.h"
+           line="152">These values correspond to the registered descriptor type from
+the various ATSC specifications.
+
+Consult the relevant specifications for more details.</doc>
+      <source-position filename="gstmpegtsdescriptor.h" line="187"/>
+      <member name="stuffing"
+              value="128"
+              c:identifier="GST_MTS_DESC_ATSC_STUFFING">
+      </member>
+      <member name="ac3" value="131" c:identifier="GST_MTS_DESC_ATSC_AC3">
+      </member>
+      <member name="caption_service"
+              value="134"
+              c:identifier="GST_MTS_DESC_ATSC_CAPTION_SERVICE">
+      </member>
+      <member name="content_advisory"
+              value="135"
+              c:identifier="GST_MTS_DESC_ATSC_CONTENT_ADVISORY">
+      </member>
+      <member name="extended_channel_name"
+              value="160"
+              c:identifier="GST_MTS_DESC_ATSC_EXTENDED_CHANNEL_NAME">
+      </member>
+      <member name="service_location"
+              value="161"
+              c:identifier="GST_MTS_DESC_ATSC_SERVICE_LOCATION">
+      </member>
+      <member name="time_shifted_service"
+              value="162"
+              c:identifier="GST_MTS_DESC_ATSC_TIME_SHIFTED_SERVICE">
+      </member>
+      <member name="component_name"
+              value="163"
+              c:identifier="GST_MTS_DESC_ATSC_COMPONENT_NAME">
+      </member>
+      <member name="dcc_departing_request"
+              value="168"
+              c:identifier="GST_MTS_DESC_ATSC_DCC_DEPARTING_REQUEST">
+      </member>
+      <member name="dcc_arriving_request"
+              value="169"
+              c:identifier="GST_MTS_DESC_ATSC_DCC_ARRIVING_REQUEST">
+      </member>
+      <member name="redistribution_control"
+              value="170"
+              c:identifier="GST_MTS_DESC_ATSC_REDISTRIBUTION_CONTROL">
+      </member>
+      <member name="genre" value="171" c:identifier="GST_MTS_DESC_ATSC_GENRE">
+      </member>
+      <member name="private_information"
+              value="173"
+              c:identifier="GST_MTS_DESC_ATSC_PRIVATE_INFORMATION">
+      </member>
+      <member name="enhanced_signaling"
+              value="178"
+              c:identifier="GST_MTS_DESC_ATSC_ENHANCED_SIGNALING">
+      </member>
+      <member name="data_service"
+              value="164"
+              c:identifier="GST_MTS_DESC_ATSC_DATA_SERVICE">
+      </member>
+      <member name="pid_count"
+              value="165"
+              c:identifier="GST_MTS_DESC_ATSC_PID_COUNT">
+      </member>
+      <member name="download_descriptor"
+              value="166"
+              c:identifier="GST_MTS_DESC_ATSC_DOWNLOAD_DESCRIPTOR">
+      </member>
+      <member name="multiprotocol_encapsulation"
+              value="167"
+              c:identifier="GST_MTS_DESC_ATSC_MULTIPROTOCOL_ENCAPSULATION">
+      </member>
+      <member name="module_link"
+              value="180"
+              c:identifier="GST_MTS_DESC_ATSC_MODULE_LINK">
+      </member>
+      <member name="crc32" value="181" c:identifier="GST_MTS_DESC_ATSC_CRC32">
+      </member>
+      <member name="group_link"
+              value="184"
+              c:identifier="GST_MTS_DESC_ATSC_GROUP_LINK">
+      </member>
+    </enumeration>
+    <record name="BAT"
+            c:type="GstMpegTsBAT"
+            glib:type-name="GstMpegTsBAT"
+            glib:get-type="gst_mpegts_bat_get_type"
+            c:symbol-prefix="bat">
+      <doc xml:space="preserve"
+           filename="gst-dvb-section.h"
+           line="184">DVB Bouquet Association Table (EN 300 468)</doc>
+      <source-position filename="gst-dvb-section.h" line="196"/>
+      <field name="descriptors" writable="1">
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="Descriptor"/>
+        </array>
+      </field>
+      <field name="streams" writable="1">
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="BATStream"/>
+        </array>
+      </field>
+    </record>
+    <record name="BATStream"
+            c:type="GstMpegTsBATStream"
+            glib:type-name="GstMpegTsBATStream"
+            glib:get-type="gst_mpegts_bat_stream_get_type"
+            c:symbol-prefix="bat_stream">
+      <source-position filename="gst-dvb-section.h" line="182"/>
+      <field name="transport_stream_id" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="original_network_id" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="descriptors" writable="1">
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="gpointer" c:type="gpointer"/>
+        </array>
+      </field>
+    </record>
+    <record name="CableDeliverySystemDescriptor"
+            c:type="GstMpegTsCableDeliverySystemDescriptor">
+      <doc xml:space="preserve"
+           filename="gst-dvb-descriptor.h"
+           line="218">Cable Delivery System Descriptor (EN 300 468 v.1.13.1)</doc>
+      <source-position filename="gst-dvb-descriptor.h" line="236"/>
+      <field name="frequency" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="220">the frequency in Hz (Hertz)</doc>
+        <type name="guint32" c:type="guint32"/>
+      </field>
+      <field name="outer_fec" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="221">the outer FEC scheme used</doc>
+        <type name="CableOuterFECScheme"
+              c:type="GstMpegTsCableOuterFECScheme"/>
+      </field>
+      <field name="modulation" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="222">Modulation scheme used</doc>
+        <type name="ModulationType" c:type="GstMpegTsModulationType"/>
+      </field>
+      <field name="symbol_rate" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="223">Symbol rate (in symbols per second)</doc>
+        <type name="guint32" c:type="guint32"/>
+      </field>
+      <field name="fec_inner" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="224">inner FEC scheme used</doc>
+        <type name="DVBCodeRate" c:type="GstMpegTsDVBCodeRate"/>
+      </field>
+    </record>
+    <enumeration name="CableOuterFECScheme"
+                 c:type="GstMpegTsCableOuterFECScheme">
+      <source-position filename="gst-dvb-descriptor.h" line="215"/>
+      <member name="undefined"
+              value="0"
+              c:identifier="GST_MPEGTS_CABLE_OUTER_FEC_UNDEFINED">
+      </member>
+      <member name="none"
+              value="1"
+              c:identifier="GST_MPEGTS_CABLE_OUTER_FEC_NONE">
+      </member>
+      <member name="rs_204_188"
+              value="2"
+              c:identifier="GST_MPEGTS_CABLE_OUTER_FEC_RS_204_188">
+      </member>
+    </enumeration>
+    <record name="ComponentDescriptor" c:type="GstMpegTsComponentDescriptor">
+      <source-position filename="gst-dvb-descriptor.h" line="329"/>
+      <field name="stream_content" writable="1">
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="component_type" writable="1">
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="component_tag" writable="1">
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="language_code" writable="1">
+        <array zero-terminated="0" fixed-size="3">
+          <type name="gchar" c:type="gchar"/>
+        </array>
+      </field>
+      <field name="text" writable="1">
+        <type name="utf8" c:type="gchar*"/>
+      </field>
+    </record>
+    <enumeration name="DVBCodeRate" c:type="GstMpegTsDVBCodeRate">
+      <source-position filename="gst-dvb-descriptor.h" line="159"/>
+      <member name="none" value="0" c:identifier="GST_MPEGTS_FEC_NONE">
+      </member>
+      <member name="1_2" value="1" c:identifier="GST_MPEGTS_FEC_1_2">
+      </member>
+      <member name="2_3" value="2" c:identifier="GST_MPEGTS_FEC_2_3">
+      </member>
+      <member name="3_4" value="3" c:identifier="GST_MPEGTS_FEC_3_4">
+      </member>
+      <member name="4_5" value="4" c:identifier="GST_MPEGTS_FEC_4_5">
+      </member>
+      <member name="5_6" value="5" c:identifier="GST_MPEGTS_FEC_5_6">
+      </member>
+      <member name="6_7" value="6" c:identifier="GST_MPEGTS_FEC_6_7">
+      </member>
+      <member name="7_8" value="7" c:identifier="GST_MPEGTS_FEC_7_8">
+      </member>
+      <member name="8_9" value="8" c:identifier="GST_MPEGTS_FEC_8_9">
+      </member>
+      <member name="auto" value="9" c:identifier="GST_MPEGTS_FEC_AUTO">
+      </member>
+      <member name="3_5" value="10" c:identifier="GST_MPEGTS_FEC_3_5">
+      </member>
+      <member name="9_10" value="11" c:identifier="GST_MPEGTS_FEC_9_10">
+      </member>
+      <member name="2_5" value="12" c:identifier="GST_MPEGTS_FEC_2_5">
+      </member>
+    </enumeration>
+    <enumeration name="DVBDescriptorType" c:type="GstMpegTsDVBDescriptorType">
+      <doc xml:space="preserve"
+           filename="gst-dvb-descriptor.h"
+           line="37">The type of #GstMpegTsDescriptor
+
+These values correspond to the registered descriptor type from
+the various DVB specifications.
+
+Consult the relevant specifications for more details.</doc>
+      <source-position filename="gst-dvb-descriptor.h" line="115"/>
+      <member name="network_name"
+              value="64"
+              c:identifier="GST_MTS_DESC_DVB_NETWORK_NAME">
+      </member>
+      <member name="service_list"
+              value="65"
+              c:identifier="GST_MTS_DESC_DVB_SERVICE_LIST">
+      </member>
+      <member name="stuffing"
+              value="66"
+              c:identifier="GST_MTS_DESC_DVB_STUFFING">
+      </member>
+      <member name="satellite_delivery_system"
+              value="67"
+              c:identifier="GST_MTS_DESC_DVB_SATELLITE_DELIVERY_SYSTEM">
+      </member>
+      <member name="cable_delivery_system"
+              value="68"
+              c:identifier="GST_MTS_DESC_DVB_CABLE_DELIVERY_SYSTEM">
+      </member>
+      <member name="vbi_data"
+              value="69"
+              c:identifier="GST_MTS_DESC_DVB_VBI_DATA">
+      </member>
+      <member name="vbi_teletext"
+              value="70"
+              c:identifier="GST_MTS_DESC_DVB_VBI_TELETEXT">
+      </member>
+      <member name="bouquet_name"
+              value="71"
+              c:identifier="GST_MTS_DESC_DVB_BOUQUET_NAME">
+      </member>
+      <member name="service"
+              value="72"
+              c:identifier="GST_MTS_DESC_DVB_SERVICE">
+      </member>
+      <member name="country_availability"
+              value="73"
+              c:identifier="GST_MTS_DESC_DVB_COUNTRY_AVAILABILITY">
+      </member>
+      <member name="linkage"
+              value="74"
+              c:identifier="GST_MTS_DESC_DVB_LINKAGE">
+      </member>
+      <member name="nvod_reference"
+              value="75"
+              c:identifier="GST_MTS_DESC_DVB_NVOD_REFERENCE">
+      </member>
+      <member name="time_shifted_service"
+              value="76"
+              c:identifier="GST_MTS_DESC_DVB_TIME_SHIFTED_SERVICE">
+      </member>
+      <member name="short_event"
+              value="77"
+              c:identifier="GST_MTS_DESC_DVB_SHORT_EVENT">
+      </member>
+      <member name="extended_event"
+              value="78"
+              c:identifier="GST_MTS_DESC_DVB_EXTENDED_EVENT">
+      </member>
+      <member name="time_shifted_event"
+              value="79"
+              c:identifier="GST_MTS_DESC_DVB_TIME_SHIFTED_EVENT">
+      </member>
+      <member name="component"
+              value="80"
+              c:identifier="GST_MTS_DESC_DVB_COMPONENT">
+      </member>
+      <member name="mosaic" value="81" c:identifier="GST_MTS_DESC_DVB_MOSAIC">
+      </member>
+      <member name="stream_identifier"
+              value="82"
+              c:identifier="GST_MTS_DESC_DVB_STREAM_IDENTIFIER">
+      </member>
+      <member name="ca_identifier"
+              value="83"
+              c:identifier="GST_MTS_DESC_DVB_CA_IDENTIFIER">
+      </member>
+      <member name="content"
+              value="84"
+              c:identifier="GST_MTS_DESC_DVB_CONTENT">
+      </member>
+      <member name="parental_rating"
+              value="85"
+              c:identifier="GST_MTS_DESC_DVB_PARENTAL_RATING">
+      </member>
+      <member name="teletext"
+              value="86"
+              c:identifier="GST_MTS_DESC_DVB_TELETEXT">
+      </member>
+      <member name="telephone"
+              value="87"
+              c:identifier="GST_MTS_DESC_DVB_TELEPHONE">
+      </member>
+      <member name="local_time_offset"
+              value="88"
+              c:identifier="GST_MTS_DESC_DVB_LOCAL_TIME_OFFSET">
+      </member>
+      <member name="subtitling"
+              value="89"
+              c:identifier="GST_MTS_DESC_DVB_SUBTITLING">
+      </member>
+      <member name="terrestrial_delivery_system"
+              value="90"
+              c:identifier="GST_MTS_DESC_DVB_TERRESTRIAL_DELIVERY_SYSTEM">
+      </member>
+      <member name="multilingual_network_name"
+              value="91"
+              c:identifier="GST_MTS_DESC_DVB_MULTILINGUAL_NETWORK_NAME">
+      </member>
+      <member name="multilingual_bouquet_name"
+              value="92"
+              c:identifier="GST_MTS_DESC_DVB_MULTILINGUAL_BOUQUET_NAME">
+      </member>
+      <member name="multilingual_service_name"
+              value="93"
+              c:identifier="GST_MTS_DESC_DVB_MULTILINGUAL_SERVICE_NAME">
+      </member>
+      <member name="multilingual_component"
+              value="94"
+              c:identifier="GST_MTS_DESC_DVB_MULTILINGUAL_COMPONENT">
+      </member>
+      <member name="private_data_specifier"
+              value="95"
+              c:identifier="GST_MTS_DESC_DVB_PRIVATE_DATA_SPECIFIER">
+      </member>
+      <member name="service_move"
+              value="96"
+              c:identifier="GST_MTS_DESC_DVB_SERVICE_MOVE">
+      </member>
+      <member name="short_smoothing_buffer"
+              value="97"
+              c:identifier="GST_MTS_DESC_DVB_SHORT_SMOOTHING_BUFFER">
+      </member>
+      <member name="frequency_list"
+              value="98"
+              c:identifier="GST_MTS_DESC_DVB_FREQUENCY_LIST">
+      </member>
+      <member name="partial_transport_stream"
+              value="99"
+              c:identifier="GST_MTS_DESC_DVB_PARTIAL_TRANSPORT_STREAM">
+      </member>
+      <member name="data_broadcast"
+              value="100"
+              c:identifier="GST_MTS_DESC_DVB_DATA_BROADCAST">
+      </member>
+      <member name="scrambling"
+              value="101"
+              c:identifier="GST_MTS_DESC_DVB_SCRAMBLING">
+      </member>
+      <member name="data_broadcast_id"
+              value="102"
+              c:identifier="GST_MTS_DESC_DVB_DATA_BROADCAST_ID">
+      </member>
+      <member name="transport_stream"
+              value="103"
+              c:identifier="GST_MTS_DESC_DVB_TRANSPORT_STREAM">
+      </member>
+      <member name="dsng" value="104" c:identifier="GST_MTS_DESC_DVB_DSNG">
+      </member>
+      <member name="pdc" value="105" c:identifier="GST_MTS_DESC_DVB_PDC">
+      </member>
+      <member name="ac3" value="106" c:identifier="GST_MTS_DESC_DVB_AC3">
+      </member>
+      <member name="ancillary_data"
+              value="107"
+              c:identifier="GST_MTS_DESC_DVB_ANCILLARY_DATA">
+      </member>
+      <member name="cell_list"
+              value="108"
+              c:identifier="GST_MTS_DESC_DVB_CELL_LIST">
+      </member>
+      <member name="cell_frequency_link"
+              value="109"
+              c:identifier="GST_MTS_DESC_DVB_CELL_FREQUENCY_LINK">
+      </member>
+      <member name="announcement_support"
+              value="110"
+              c:identifier="GST_MTS_DESC_DVB_ANNOUNCEMENT_SUPPORT">
+      </member>
+      <member name="application_signalling"
+              value="111"
+              c:identifier="GST_MTS_DESC_DVB_APPLICATION_SIGNALLING">
+      </member>
+      <member name="adaptation_field_data"
+              value="112"
+              c:identifier="GST_MTS_DESC_DVB_ADAPTATION_FIELD_DATA">
+      </member>
+      <member name="service_identifier"
+              value="113"
+              c:identifier="GST_MTS_DESC_DVB_SERVICE_IDENTIFIER">
+      </member>
+      <member name="service_availability"
+              value="114"
+              c:identifier="GST_MTS_DESC_DVB_SERVICE_AVAILABILITY">
+      </member>
+      <member name="default_authority"
+              value="115"
+              c:identifier="GST_MTS_DESC_DVB_DEFAULT_AUTHORITY">
+      </member>
+      <member name="related_content"
+              value="116"
+              c:identifier="GST_MTS_DESC_DVB_RELATED_CONTENT">
+      </member>
+      <member name="tva_id" value="117" c:identifier="GST_MTS_DESC_DVB_TVA_ID">
+      </member>
+      <member name="content_identifier"
+              value="118"
+              c:identifier="GST_MTS_DESC_DVB_CONTENT_IDENTIFIER">
+      </member>
+      <member name="timeslice_fec_identifier"
+              value="119"
+              c:identifier="GST_MTS_DESC_DVB_TIMESLICE_FEC_IDENTIFIER">
+      </member>
+      <member name="ecm_repetition_rate"
+              value="120"
+              c:identifier="GST_MTS_DESC_DVB_ECM_REPETITION_RATE">
+      </member>
+      <member name="s2_satellite_delivery_system"
+              value="121"
+              c:identifier="GST_MTS_DESC_DVB_S2_SATELLITE_DELIVERY_SYSTEM">
+      </member>
+      <member name="enhanced_ac3"
+              value="122"
+              c:identifier="GST_MTS_DESC_DVB_ENHANCED_AC3">
+      </member>
+      <member name="dts" value="123" c:identifier="GST_MTS_DESC_DVB_DTS">
+      </member>
+      <member name="aac" value="124" c:identifier="GST_MTS_DESC_DVB_AAC">
+      </member>
+      <member name="xait_location"
+              value="125"
+              c:identifier="GST_MTS_DESC_DVB_XAIT_LOCATION">
+      </member>
+      <member name="fta_content_management"
+              value="126"
+              c:identifier="GST_MTS_DESC_DVB_FTA_CONTENT_MANAGEMENT">
+      </member>
+      <member name="extension"
+              value="127"
+              c:identifier="GST_MTS_DESC_DVB_EXTENSION">
+      </member>
+    </enumeration>
+    <enumeration name="DVBServiceType" c:type="GstMpegTsDVBServiceType">
+      <doc xml:space="preserve"
+           filename="gst-dvb-descriptor.h"
+           line="242">The type of service of a channel.
+
+As specified in Table 87 of ETSI EN 300 468 v1.13.1</doc>
+      <source-position filename="gst-dvb-descriptor.h" line="282"/>
+      <member name="reserved_00"
+              value="0"
+              c:identifier="GST_DVB_SERVICE_RESERVED_00">
+      </member>
+      <member name="digital_television"
+              value="1"
+              c:identifier="GST_DVB_SERVICE_DIGITAL_TELEVISION">
+      </member>
+      <member name="digital_radio_sound"
+              value="2"
+              c:identifier="GST_DVB_SERVICE_DIGITAL_RADIO_SOUND">
+      </member>
+      <member name="teletext"
+              value="3"
+              c:identifier="GST_DVB_SERVICE_TELETEXT">
+      </member>
+      <member name="nvod_reference"
+              value="4"
+              c:identifier="GST_DVB_SERVICE_NVOD_REFERENCE">
+      </member>
+      <member name="nvod_time_shifted"
+              value="5"
+              c:identifier="GST_DVB_SERVICE_NVOD_TIME_SHIFTED">
+      </member>
+      <member name="mosaic" value="6" c:identifier="GST_DVB_SERVICE_MOSAIC">
+      </member>
+      <member name="fm_radio"
+              value="7"
+              c:identifier="GST_DVB_SERVICE_FM_RADIO">
+      </member>
+      <member name="dvb_srm" value="8" c:identifier="GST_DVB_SERVICE_DVB_SRM">
+      </member>
+      <member name="reserved_09"
+              value="9"
+              c:identifier="GST_DVB_SERVICE_RESERVED_09">
+      </member>
+      <member name="advanced_codec_digital_radio_sound"
+              value="10"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_DIGITAL_RADIO_SOUND">
+      </member>
+      <member name="advanced_codec_mosaic"
+              value="11"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_MOSAIC">
+      </member>
+      <member name="data_broadcast"
+              value="12"
+              c:identifier="GST_DVB_SERVICE_DATA_BROADCAST">
+      </member>
+      <member name="reserved_0d_common_interface"
+              value="13"
+              c:identifier="GST_DVB_SERVICE_RESERVED_0D_COMMON_INTERFACE">
+      </member>
+      <member name="rcs_map" value="14" c:identifier="GST_DVB_SERVICE_RCS_MAP">
+      </member>
+      <member name="rcs_fls" value="15" c:identifier="GST_DVB_SERVICE_RCS_FLS">
+      </member>
+      <member name="dvb_mhp" value="16" c:identifier="GST_DVB_SERVICE_DVB_MHP">
+      </member>
+      <member name="mpeg2_hd_digital_television"
+              value="17"
+              c:identifier="GST_DVB_SERVICE_MPEG2_HD_DIGITAL_TELEVISION">
+      </member>
+      <member name="advanced_codec_sd_digital_television"
+              value="22"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_SD_DIGITAL_TELEVISION">
+      </member>
+      <member name="advanced_codec_sd_nvod_time_shifted"
+              value="23"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_SD_NVOD_TIME_SHIFTED">
+      </member>
+      <member name="advanced_codec_sd_nvod_reference"
+              value="24"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_SD_NVOD_REFERENCE">
+      </member>
+      <member name="advanced_codec_hd_digital_television"
+              value="25"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_HD_DIGITAL_TELEVISION">
+      </member>
+      <member name="advanced_codec_hd_nvod_time_shifted"
+              value="26"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_HD_NVOD_TIME_SHIFTED">
+      </member>
+      <member name="advanced_codec_hd_nvod_reference"
+              value="27"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_HD_NVOD_REFERENCE">
+      </member>
+      <member name="advanced_codec_stereo_hd_digital_television"
+              value="28"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_STEREO_HD_DIGITAL_TELEVISION">
+      </member>
+      <member name="advanced_codec_stereo_hd_nvod_time_shifted"
+              value="29"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_STEREO_HD_NVOD_TIME_SHIFTED">
+      </member>
+      <member name="advanced_codec_stereo_hd_nvod_reference"
+              value="30"
+              c:identifier="GST_DVB_SERVICE_ADVANCED_CODEC_STEREO_HD_NVOD_REFERENCE">
+      </member>
+      <member name="reserved_ff"
+              value="31"
+              c:identifier="GST_DVB_SERVICE_RESERVED_FF">
+      </member>
+    </enumeration>
+    <record name="Descriptor"
+            c:type="GstMpegTsDescriptor"
+            glib:type-name="GstMpegTsDescriptor"
+            glib:get-type="gst_mpegts_descriptor_get_type"
+            c:symbol-prefix="descriptor">
+      <doc xml:space="preserve"
+           filename="gstmpegtsdescriptor.c"
+           line="29">These are the base descriptor types and methods.
+
+For more details, refer to the ITU H.222.0 or ISO/IEC 13818-1 specifications
+and other specifications mentionned in the documentation.</doc>
+      <source-position filename="gstmpegtsdescriptor.h" line="256"/>
+      <field name="tag" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtsdescriptor.h"
+             line="242">the type of descriptor</doc>
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="tag_extension" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtsdescriptor.h"
+             line="243">the extended type (if @descriptor_tag is 0x7f)</doc>
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="length" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtsdescriptor.h"
+             line="244">the length of the descriptor content (excluding tag/length field)</doc>
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="data" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtsdescriptor.h"
+             line="245">the full descriptor data (including tag, extension, length). The first
+two bytes are the @tag and @tag_extension.</doc>
+        <type name="guint8" c:type="const guint8*"/>
+      </field>
+      <method name="parse_cable_delivery_system"
+              c:identifier="gst_mpegts_descriptor_parse_cable_delivery_system">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.c"
+             line="155">Extracts the cable delivery system information from @descriptor.</doc>
+        <source-position filename="gst-dvb-descriptor.h" line="238"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gst-dvb-descriptor.c"
+               line="162">%TRUE if parsing succeeded, else %FALSE.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="descriptor" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="157">a %GST_MTS_DESC_DVB_CABLE_DELIVERY_SYSTEM #GstMpegTsDescriptor</doc>
+            <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+          </instance-parameter>
+          <parameter name="res"
+                     direction="out"
+                     caller-allocates="1"
+                     transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="158">the #GstMpegTsCableDeliverySystemDescriptor to fill</doc>
+            <type name="CableDeliverySystemDescriptor"
+                  c:type="GstMpegTsCableDeliverySystemDescriptor*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="parse_dvb_component"
+              c:identifier="gst_mpegts_descriptor_parse_dvb_component">
+        <source-position filename="gst-dvb-descriptor.h" line="331"/>
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="descriptor" transfer-ownership="none">
+            <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+          </instance-parameter>
+          <parameter name="res" transfer-ownership="none">
+            <type name="ComponentDescriptor"
+                  c:type="GstMpegTsComponentDescriptor*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="parse_dvb_extended_event"
+              c:identifier="gst_mpegts_descriptor_parse_dvb_extended_event">
+        <source-position filename="gst-dvb-descriptor.h" line="316"/>
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="descriptor" transfer-ownership="none">
+            <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+          </instance-parameter>
+          <parameter name="res" transfer-ownership="none">
+            <type name="ExtendedEventDescriptor"
+                  c:type="GstMpegTsExtendedEventDescriptor*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="parse_dvb_network_name"
+              c:identifier="gst_mpegts_descriptor_parse_dvb_network_name">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.c"
+             line="57">Parses out the dvb network name from the @descriptor:</doc>
+        <source-position filename="gst-dvb-descriptor.h" line="121"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gst-dvb-descriptor.c"
+               line="64">%TRUE if the parsing happened correctly, else %FALSE.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="descriptor" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="59">a %GST_MTS_DESC_DVB_NETWORK_NAME #GstMpegTsDescriptor</doc>
+            <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+          </instance-parameter>
+          <parameter name="name"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="60">the extracted name</doc>
+            <type name="utf8" c:type="gchar**"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="parse_dvb_service"
+              c:identifier="gst_mpegts_descriptor_parse_dvb_service">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.c"
+             line="217">Extracts the dvb service information from @descriptor.</doc>
+        <source-position filename="gst-dvb-descriptor.h" line="284"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gst-dvb-descriptor.c"
+               line="226">%TRUE if parsing succeeded, else %FALSE.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="descriptor" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="219">a %GST_MTS_DESC_DVB_SERVICE #GstMpegTsDescriptor</doc>
+            <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+          </instance-parameter>
+          <parameter name="service_type"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full"
+                     optional="1"
+                     allow-none="1">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="220">the service type</doc>
+            <type name="DVBServiceType" c:type="GstMpegTsDVBServiceType*"/>
+          </parameter>
+          <parameter name="service_name"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full"
+                     optional="1"
+                     allow-none="1">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="221">the service name</doc>
+            <type name="utf8" c:type="gchar**"/>
+          </parameter>
+          <parameter name="provider_name"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full"
+                     optional="1"
+                     allow-none="1">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="222">the provider name</doc>
+            <type name="utf8" c:type="gchar**"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="parse_dvb_short_event"
+              c:identifier="gst_mpegts_descriptor_parse_dvb_short_event">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.c"
+             line="253">Extracts the DVB short event information from @descriptor.</doc>
+        <source-position filename="gst-dvb-descriptor.h" line="290"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gst-dvb-descriptor.c"
+               line="262">%TRUE if parsing succeeded, else %FALSE.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="descriptor" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="255">a %GST_MTS_DESC_DVB_SHORT_EVENT #GstMpegTsDescriptor</doc>
+            <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+          </instance-parameter>
+          <parameter name="language_code"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full"
+                     optional="1"
+                     allow-none="1">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="256">the language code</doc>
+            <type name="utf8" c:type="gchar**"/>
+          </parameter>
+          <parameter name="event_name"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full"
+                     optional="1"
+                     allow-none="1">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="257">the event name</doc>
+            <type name="utf8" c:type="gchar**"/>
+          </parameter>
+          <parameter name="text"
+                     direction="out"
+                     caller-allocates="0"
+                     transfer-ownership="full"
+                     optional="1"
+                     allow-none="1">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="258">the event text</doc>
+            <type name="utf8" c:type="gchar**"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="parse_dvb_stream_identifier"
+              c:identifier="gst_mpegts_descriptor_parse_dvb_stream_identifier">
+        <source-position filename="gst-dvb-descriptor.h" line="335"/>
+        <return-value transfer-ownership="none">
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="descriptor" transfer-ownership="none">
+            <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+          </instance-parameter>
+          <parameter name="component_tag" transfer-ownership="none">
+            <type name="guint8" c:type="guint8*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="parse_iso_639_language"
+              c:identifier="gst_mpegts_descriptor_parse_iso_639_language">
+        <doc xml:space="preserve"
+             filename="gstmpegtsdescriptor.c"
+             line="602">Extracts the iso 639-2 language information from @descriptor.
+
+Note: Use #gst_tag_get_language_code if you want to get the the
+ISO 639-1 language code from the returned ISO 639-2 one.</doc>
+        <source-position filename="gstmpegtsdescriptor.h" line="289"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gstmpegtsdescriptor.c"
+               line="612">%TRUE if parsing succeeded, else %FALSE.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="descriptor" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gstmpegtsdescriptor.c"
+                 line="604">a %GST_MTS_DESC_ISO_639_LANGUAGE #GstMpegTsDescriptor</doc>
+            <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+          </instance-parameter>
+          <parameter name="res"
+                     direction="out"
+                     caller-allocates="1"
+                     transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gstmpegtsdescriptor.c"
+                 line="605">the #GstMpegTsISO639LanguageDescriptor to fill</doc>
+            <type name="ISO639LanguageDescriptor"
+                  c:type="GstMpegTsISO639LanguageDescriptor*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="parse_logical_channel"
+              c:identifier="gst_mpegts_descriptor_parse_logical_channel">
+        <doc xml:space="preserve"
+             filename="gstmpegtsdescriptor.c"
+             line="637">Extracts the logical channels from @descriptor.</doc>
+        <source-position filename="gstmpegtsdescriptor.h" line="314"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gstmpegtsdescriptor.c"
+               line="644">%TRUE if parsing succeeded, else %FALSE.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="descriptor" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gstmpegtsdescriptor.c"
+                 line="639">a %GST_MTS_DESC_DTG_LOGICAL_CHANNEL #GstMpegTsDescriptor</doc>
+            <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+          </instance-parameter>
+          <parameter name="res"
+                     direction="out"
+                     caller-allocates="1"
+                     transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gstmpegtsdescriptor.c"
+                 line="640">the #GstMpegTsLogicalChannelDescriptor to fill</doc>
+            <type name="LogicalChannelDescriptor"
+                  c:type="GstMpegTsLogicalChannelDescriptor*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="parse_satellite_delivery_system"
+              c:identifier="gst_mpegts_descriptor_parse_satellite_delivery_system">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.c"
+             line="79">Extracts the satellite delivery system information from @descriptor.</doc>
+        <source-position filename="gst-dvb-descriptor.h" line="206"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gst-dvb-descriptor.c"
+               line="86">%TRUE if parsing succeeded, else %FALSE.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="descriptor" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="81">a %GST_MTS_DESC_DVB_SATELLITE_DELIVERY_SYSTEM #GstMpegTsDescriptor</doc>
+            <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+          </instance-parameter>
+          <parameter name="res"
+                     direction="out"
+                     caller-allocates="1"
+                     transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-descriptor.c"
+                 line="82">the #GstMpegTsSatelliteDeliverySystemDescriptor to fill</doc>
+            <type name="SatelliteDeliverySystemDescriptor"
+                  c:type="GstMpegTsSatelliteDeliverySystemDescriptor*"/>
+          </parameter>
+        </parameters>
+      </method>
+    </record>
+    <enumeration name="DescriptorType" c:type="GstMpegTsDescriptorType">
+      <doc xml:space="preserve"
+           filename="gstmpegtsdescriptor.h"
+           line="62">The type of #GstMpegTsDescriptor
+
+These values correspond to the registered descriptor type from
+the base MPEG-TS specifications (ITU H.222.0 | ISO/IEC 13818-1).
+
+Consult the relevant specifications for more details.</doc>
+      <source-position filename="gstmpegtsdescriptor.h" line="136"/>
+      <member name="reserved_00"
+              value="0"
+              c:identifier="GST_MTS_DESC_RESERVED_00">
+      </member>
+      <member name="reserved_01"
+              value="1"
+              c:identifier="GST_MTS_DESC_RESERVED_01">
+      </member>
+      <member name="video_stream"
+              value="2"
+              c:identifier="GST_MTS_DESC_VIDEO_STREAM">
+      </member>
+      <member name="audio_stream"
+              value="3"
+              c:identifier="GST_MTS_DESC_AUDIO_STREAM">
+      </member>
+      <member name="hierarchy" value="4" c:identifier="GST_MTS_DESC_HIERARCHY">
+      </member>
+      <member name="registration"
+              value="5"
+              c:identifier="GST_MTS_DESC_REGISTRATION">
+      </member>
+      <member name="data_stream_alignment"
+              value="6"
+              c:identifier="GST_MTS_DESC_DATA_STREAM_ALIGNMENT">
+      </member>
+      <member name="target_background_grid"
+              value="7"
+              c:identifier="GST_MTS_DESC_TARGET_BACKGROUND_GRID">
+      </member>
+      <member name="video_window"
+              value="8"
+              c:identifier="GST_MTS_DESC_VIDEO_WINDOW">
+      </member>
+      <member name="ca" value="9" c:identifier="GST_MTS_DESC_CA">
+      </member>
+      <member name="iso_639_language"
+              value="10"
+              c:identifier="GST_MTS_DESC_ISO_639_LANGUAGE">
+      </member>
+      <member name="system_clock"
+              value="11"
+              c:identifier="GST_MTS_DESC_SYSTEM_CLOCK">
+      </member>
+      <member name="multiplex_buffer_utilisation"
+              value="12"
+              c:identifier="GST_MTS_DESC_MULTIPLEX_BUFFER_UTILISATION">
+      </member>
+      <member name="copyright"
+              value="13"
+              c:identifier="GST_MTS_DESC_COPYRIGHT">
+      </member>
+      <member name="maximum_bitrate"
+              value="14"
+              c:identifier="GST_MTS_DESC_MAXIMUM_BITRATE">
+      </member>
+      <member name="private_data_indicator"
+              value="15"
+              c:identifier="GST_MTS_DESC_PRIVATE_DATA_INDICATOR">
+      </member>
+      <member name="smoothing_buffer"
+              value="16"
+              c:identifier="GST_MTS_DESC_SMOOTHING_BUFFER">
+      </member>
+      <member name="std" value="17" c:identifier="GST_MTS_DESC_STD">
+      </member>
+      <member name="ibp" value="18" c:identifier="GST_MTS_DESC_IBP">
+      </member>
+      <member name="dsmcc_carousel_identifier"
+              value="19"
+              c:identifier="GST_MTS_DESC_DSMCC_CAROUSEL_IDENTIFIER">
+      </member>
+      <member name="dsmcc_association_tag"
+              value="20"
+              c:identifier="GST_MTS_DESC_DSMCC_ASSOCIATION_TAG">
+      </member>
+      <member name="dsmcc_deferred_association_tag"
+              value="21"
+              c:identifier="GST_MTS_DESC_DSMCC_DEFERRED_ASSOCIATION_TAG">
+      </member>
+      <member name="dsmcc_npt_reference"
+              value="23"
+              c:identifier="GST_MTS_DESC_DSMCC_NPT_REFERENCE">
+      </member>
+      <member name="dsmcc_npt_endpoint"
+              value="24"
+              c:identifier="GST_MTS_DESC_DSMCC_NPT_ENDPOINT">
+      </member>
+      <member name="dsmcc_stream_mode"
+              value="25"
+              c:identifier="GST_MTS_DESC_DSMCC_STREAM_MODE">
+      </member>
+      <member name="dsmcc_stream_event"
+              value="26"
+              c:identifier="GST_MTS_DESC_DSMCC_STREAM_EVENT">
+      </member>
+      <member name="mpeg4_video"
+              value="27"
+              c:identifier="GST_MTS_DESC_MPEG4_VIDEO">
+      </member>
+      <member name="mpeg4_audio"
+              value="28"
+              c:identifier="GST_MTS_DESC_MPEG4_AUDIO">
+      </member>
+      <member name="iod" value="29" c:identifier="GST_MTS_DESC_IOD">
+      </member>
+      <member name="sl" value="30" c:identifier="GST_MTS_DESC_SL">
+      </member>
+      <member name="fmc" value="31" c:identifier="GST_MTS_DESC_FMC">
+      </member>
+      <member name="external_es_id"
+              value="32"
+              c:identifier="GST_MTS_DESC_EXTERNAL_ES_ID">
+      </member>
+      <member name="mux_code" value="33" c:identifier="GST_MTS_DESC_MUX_CODE">
+      </member>
+      <member name="fmx_buffer_size"
+              value="34"
+              c:identifier="GST_MTS_DESC_FMX_BUFFER_SIZE">
+      </member>
+      <member name="multiplex_buffer"
+              value="35"
+              c:identifier="GST_MTS_DESC_MULTIPLEX_BUFFER">
+      </member>
+      <member name="content_labeling"
+              value="36"
+              c:identifier="GST_MTS_DESC_CONTENT_LABELING">
+      </member>
+      <member name="metadata_pointer"
+              value="37"
+              c:identifier="GST_MTS_DESC_METADATA_POINTER">
+      </member>
+      <member name="metadata" value="38" c:identifier="GST_MTS_DESC_METADATA">
+      </member>
+      <member name="metadata_std"
+              value="39"
+              c:identifier="GST_MTS_DESC_METADATA_STD">
+      </member>
+      <member name="avc_video"
+              value="40"
+              c:identifier="GST_MTS_DESC_AVC_VIDEO">
+      </member>
+      <member name="ipmp" value="41" c:identifier="GST_MTS_DESC_IPMP">
+      </member>
+      <member name="avc_timing_and_hrd"
+              value="42"
+              c:identifier="GST_MTS_DESC_AVC_TIMING_AND_HRD">
+      </member>
+      <member name="mpeg2_aac_audio"
+              value="43"
+              c:identifier="GST_MTS_DESC_MPEG2_AAC_AUDIO">
+      </member>
+      <member name="flex_mux_timing"
+              value="44"
+              c:identifier="GST_MTS_DESC_FLEX_MUX_TIMING">
+      </member>
+      <member name="mpeg4_text"
+              value="45"
+              c:identifier="GST_MTS_DESC_MPEG4_TEXT">
+      </member>
+      <member name="mpeg4_audio_extension"
+              value="46"
+              c:identifier="GST_MTS_DESC_MPEG4_AUDIO_EXTENSION">
+      </member>
+      <member name="auxiliary_video_stream"
+              value="47"
+              c:identifier="GST_MTS_DESC_AUXILIARY_VIDEO_STREAM">
+      </member>
+      <member name="svc_extension"
+              value="48"
+              c:identifier="GST_MTS_DESC_SVC_EXTENSION">
+      </member>
+      <member name="mvc_extension"
+              value="49"
+              c:identifier="GST_MTS_DESC_MVC_EXTENSION">
+      </member>
+      <member name="j2k_video"
+              value="50"
+              c:identifier="GST_MTS_DESC_J2K_VIDEO">
+      </member>
+      <member name="mvc_operation_point"
+              value="51"
+              c:identifier="GST_MTS_DESC_MVC_OPERATION_POINT">
+      </member>
+      <member name="mpeg2_stereoscopic_video_format"
+              value="52"
+              c:identifier="GST_MTS_DESC_MPEG2_STEREOSCOPIC_VIDEO_FORMAT">
+      </member>
+      <member name="stereoscopic_program_info"
+              value="53"
+              c:identifier="GST_MTS_DESC_STEREOSCOPIC_PROGRAM_INFO">
+      </member>
+      <member name="stereoscopic_video_info"
+              value="54"
+              c:identifier="GST_MTS_DESC_STEREOSCOPIC_VIDEO_INFO">
+      </member>
+    </enumeration>
+    <record name="EIT"
+            c:type="GstMpegTsEIT"
+            glib:type-name="GstMpegTsEIT"
+            glib:get-type="gst_mpegts_eit_get_type"
+            c:symbol-prefix="eit">
+      <doc xml:space="preserve"
+           filename="gst-dvb-section.h"
+           line="266">Event Information Table (EN 300 468)</doc>
+      <source-position filename="gst-dvb-section.h" line="282"/>
+      <field name="transport_stream_id" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="original_network_id" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="segment_last_section_number" writable="1">
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="last_table_id" writable="1">
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="actual_stream" writable="1">
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="present_following" writable="1">
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="events" writable="1">
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="gpointer" c:type="gpointer"/>
+        </array>
+      </field>
+    </record>
+    <record name="EITEvent"
+            c:type="GstMpegTsEITEvent"
+            glib:type-name="GstMpegTsEITEvent"
+            glib:get-type="gst_mpegts_eit_event_get_type"
+            c:symbol-prefix="eit_event">
+      <doc xml:space="preserve"
+           filename="gst-dvb-section.h"
+           line="248">Event from a @GstMpegTsEIT</doc>
+      <source-position filename="gst-dvb-section.h" line="264"/>
+      <field name="event_id" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="start_time" writable="1">
+        <type name="Gst.DateTime" c:type="GstDateTime*"/>
+      </field>
+      <field name="duration" writable="1">
+        <type name="guint32" c:type="guint32"/>
+      </field>
+      <field name="running_status" writable="1">
+        <type name="RunningStatus" c:type="GstMpegTsRunningStatus"/>
+      </field>
+      <field name="free_CA_mode" writable="1">
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="descriptors" writable="1">
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="gpointer" c:type="gpointer"/>
+        </array>
+      </field>
+    </record>
+    <record name="ExtendedEventDescriptor"
+            c:type="GstMpegTsExtendedEventDescriptor">
+      <source-position filename="gst-dvb-descriptor.h" line="314"/>
+      <field name="descriptor_number" writable="1">
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="last_descriptor_number" writable="1">
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="language_code" writable="1">
+        <array zero-terminated="0" fixed-size="3">
+          <type name="gchar" c:type="gchar"/>
+        </array>
+      </field>
+      <field name="nb_items" writable="1">
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="items" writable="1">
+        <array zero-terminated="0" fixed-size="128">
+          <type name="ExtendedEventItem" c:type="GstMpegTsExtendedEventItem"/>
+        </array>
+      </field>
+      <field name="text" writable="1">
+        <type name="utf8" c:type="gchar*"/>
+      </field>
+    </record>
+    <record name="ExtendedEventItem" c:type="GstMpegTsExtendedEventItem">
+      <source-position filename="gst-dvb-descriptor.h" line="304"/>
+      <field name="item_description" writable="1">
+        <type name="utf8" c:type="gchar*"/>
+      </field>
+      <field name="item" writable="1">
+        <type name="utf8" c:type="gchar*"/>
+      </field>
+    </record>
+    <enumeration name="ISDBDescriptorType"
+                 c:type="GstMpegTsISDBDescriptorType">
+      <doc xml:space="preserve"
+           filename="gstmpegtsdescriptor.h"
+           line="189">These values correspond to the registered descriptor type from
+the various ISDB specifications.
+
+Consult the relevant specifications for more details.</doc>
+      <source-position filename="gstmpegtsdescriptor.h" line="233"/>
+      <member name="hierarchical_transmission"
+              value="192"
+              c:identifier="GST_MTS_DESC_ISDB_HIERARCHICAL_TRANSMISSION">
+      </member>
+      <member name="digital_copy_control"
+              value="193"
+              c:identifier="GST_MTS_DESC_ISDB_DIGITAL_COPY_CONTROL">
+      </member>
+      <member name="network_identification"
+              value="194"
+              c:identifier="GST_MTS_DESC_ISDB_NETWORK_IDENTIFICATION">
+      </member>
+      <member name="partial_ts_time"
+              value="195"
+              c:identifier="GST_MTS_DESC_ISDB_PARTIAL_TS_TIME">
+      </member>
+      <member name="audio_component"
+              value="196"
+              c:identifier="GST_MTS_DESC_ISDB_AUDIO_COMPONENT">
+      </member>
+      <member name="hyperlink"
+              value="197"
+              c:identifier="GST_MTS_DESC_ISDB_HYPERLINK">
+      </member>
+      <member name="target_region"
+              value="198"
+              c:identifier="GST_MTS_DESC_ISDB_TARGET_REGION">
+      </member>
+      <member name="data_content"
+              value="199"
+              c:identifier="GST_MTS_DESC_ISDB_DATA_CONTENT">
+      </member>
+      <member name="video_decode_control"
+              value="200"
+              c:identifier="GST_MTS_DESC_ISDB_VIDEO_DECODE_CONTROL">
+      </member>
+      <member name="download_content"
+              value="201"
+              c:identifier="GST_MTS_DESC_ISDB_DOWNLOAD_CONTENT">
+      </member>
+      <member name="ca_emm_ts"
+              value="202"
+              c:identifier="GST_MTS_DESC_ISDB_CA_EMM_TS">
+      </member>
+      <member name="ca_contract_information"
+              value="203"
+              c:identifier="GST_MTS_DESC_ISDB_CA_CONTRACT_INFORMATION">
+      </member>
+      <member name="ca_service"
+              value="204"
+              c:identifier="GST_MTS_DESC_ISDB_CA_SERVICE">
+      </member>
+      <member name="ts_information"
+              value="205"
+              c:identifier="GST_MTS_DESC_ISDB_TS_INFORMATION">
+      </member>
+      <member name="extended_broadcaster"
+              value="206"
+              c:identifier="GST_MTS_DESC_ISDB_EXTENDED_BROADCASTER">
+      </member>
+      <member name="logo_transmission"
+              value="207"
+              c:identifier="GST_MTS_DESC_ISDB_LOGO_TRANSMISSION">
+      </member>
+      <member name="basic_local_event"
+              value="208"
+              c:identifier="GST_MTS_DESC_ISDB_BASIC_LOCAL_EVENT">
+      </member>
+      <member name="reference"
+              value="209"
+              c:identifier="GST_MTS_DESC_ISDB_REFERENCE">
+      </member>
+      <member name="node_relation"
+              value="210"
+              c:identifier="GST_MTS_DESC_ISDB_NODE_RELATION">
+      </member>
+      <member name="short_node_information"
+              value="211"
+              c:identifier="GST_MTS_DESC_ISDB_SHORT_NODE_INFORMATION">
+      </member>
+      <member name="stc_reference"
+              value="212"
+              c:identifier="GST_MTS_DESC_ISDB_STC_REFERENCE">
+      </member>
+      <member name="series"
+              value="213"
+              c:identifier="GST_MTS_DESC_ISDB_SERIES">
+      </member>
+      <member name="event_group"
+              value="214"
+              c:identifier="GST_MTS_DESC_ISDB_EVENT_GROUP">
+      </member>
+      <member name="si_parameter"
+              value="215"
+              c:identifier="GST_MTS_DESC_ISDB_SI_PARAMETER">
+      </member>
+      <member name="broadcaster_name"
+              value="216"
+              c:identifier="GST_MTS_DESC_ISDB_BROADCASTER_NAME">
+      </member>
+      <member name="component_group"
+              value="217"
+              c:identifier="GST_MTS_DESC_ISDB_COMPONENT_GROUP">
+      </member>
+      <member name="si_prime_ts"
+              value="218"
+              c:identifier="GST_MTS_DESC_ISDB_SI_PRIME_TS">
+      </member>
+      <member name="board_information"
+              value="219"
+              c:identifier="GST_MTS_DESC_ISDB_BOARD_INFORMATION">
+      </member>
+      <member name="ldt_linkage"
+              value="220"
+              c:identifier="GST_MTS_DESC_ISDB_LDT_LINKAGE">
+      </member>
+      <member name="connected_transmission"
+              value="221"
+              c:identifier="GST_MTS_DESC_ISDB_CONNECTED_TRANSMISSION">
+      </member>
+      <member name="content_availability"
+              value="222"
+              c:identifier="GST_MTS_DESC_ISDB_CONTENT_AVAILABILITY">
+      </member>
+      <member name="service_group"
+              value="224"
+              c:identifier="GST_MTS_DESC_ISDB_SERVICE_GROUP">
+      </member>
+    </enumeration>
+    <record name="ISO639LanguageDescriptor"
+            c:type="GstMpegTsISO639LanguageDescriptor">
+      <source-position filename="gstmpegtsdescriptor.h" line="287"/>
+      <field name="nb_language" writable="1">
+        <type name="guint" c:type="guint"/>
+      </field>
+      <field name="language" writable="1">
+        <array zero-terminated="0" fixed-size="192">
+          <type name="gchar" c:type="gchar"/>
+        </array>
+      </field>
+      <field name="audio_type" writable="1">
+        <array zero-terminated="0" fixed-size="64">
+          <type name="Iso639AudioType" c:type="GstMpegTsIso639AudioType"/>
+        </array>
+      </field>
+    </record>
+    <enumeration name="Iso639AudioType" c:type="GstMpegTsIso639AudioType">
+      <source-position filename="gstmpegtsdescriptor.h" line="276"/>
+      <member name="undefined"
+              value="0"
+              c:identifier="GST_MPEGTS_AUDIO_TYPE_UNDEFINED">
+      </member>
+      <member name="clean_effects"
+              value="1"
+              c:identifier="GST_MPEGTS_AUDIO_TYPE_CLEAN_EFFECTS">
+      </member>
+      <member name="hearing_impaired"
+              value="2"
+              c:identifier="GST_MPEGTS_AUDIO_TYPE_HEARING_IMPAIRED">
+      </member>
+      <member name="visual_impaired_commentary"
+              value="3"
+              c:identifier="GST_MPEGTS_AUDIO_TYPE_VISUAL_IMPAIRED_COMMENTARY">
+      </member>
+    </enumeration>
+    <record name="LogicalChannel" c:type="GstMpegTsLogicalChannel">
+      <source-position filename="gstmpegtsdescriptor.h" line="303"/>
+      <field name="service_id" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="visible_service" writable="1">
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="logical_channel_number" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+    </record>
+    <record name="LogicalChannelDescriptor"
+            c:type="GstMpegTsLogicalChannelDescriptor">
+      <source-position filename="gstmpegtsdescriptor.h" line="309"/>
+      <field name="nb_channels" writable="1">
+        <type name="guint" c:type="guint"/>
+      </field>
+      <field name="channels" writable="1">
+        <array zero-terminated="0" fixed-size="64">
+          <type name="LogicalChannel" c:type="GstMpegTsLogicalChannel"/>
+        </array>
+      </field>
+    </record>
+    <enumeration name="MiscDescriptorType"
+                 c:type="GstMpegTsMiscDescriptorType">
+      <doc xml:space="preserve"
+           filename="gstmpegtsdescriptor.h"
+           line="138">The type of #GstMpegTsDescriptor
+
+These values correspond to miscellaneous descriptor types that are
+not yet identified from known specifications.</doc>
+      <source-position filename="gstmpegtsdescriptor.h" line="150"/>
+      <member name="ac3_audio_stream"
+              value="129"
+              c:identifier="GST_MTS_DESC_AC3_AUDIO_STREAM">
+      </member>
+      <member name="dtg_logical_channel"
+              value="131"
+              c:identifier="GST_MTS_DESC_DTG_LOGICAL_CHANNEL">
+      </member>
+    </enumeration>
+    <enumeration name="ModulationType" c:type="GstMpegTsModulationType">
+      <source-position filename="gst-dvb-descriptor.h" line="143"/>
+      <member name="qpsk" value="0" c:identifier="GST_MPEGTS_MODULATION_QPSK">
+      </member>
+      <member name="qam_16"
+              value="1"
+              c:identifier="GST_MPEGTS_MODULATION_QAM_16">
+      </member>
+      <member name="qam_32"
+              value="2"
+              c:identifier="GST_MPEGTS_MODULATION_QAM_32">
+      </member>
+      <member name="qam_64"
+              value="3"
+              c:identifier="GST_MPEGTS_MODULATION_QAM_64">
+      </member>
+      <member name="qam_128"
+              value="4"
+              c:identifier="GST_MPEGTS_MODULATION_QAM_128">
+      </member>
+      <member name="qam_256"
+              value="5"
+              c:identifier="GST_MPEGTS_MODULATION_QAM_256">
+      </member>
+      <member name="qam_auto"
+              value="6"
+              c:identifier="GST_MPEGTS_MODULATION_QAM_AUTO">
+      </member>
+      <member name="vsb_8"
+              value="7"
+              c:identifier="GST_MPEGTS_MODULATION_VSB_8">
+      </member>
+      <member name="vsb_16"
+              value="8"
+              c:identifier="GST_MPEGTS_MODULATION_VSB_16">
+      </member>
+      <member name="psk_8"
+              value="9"
+              c:identifier="GST_MPEGTS_MODULATION_PSK_8">
+      </member>
+      <member name="apsk_16"
+              value="10"
+              c:identifier="GST_MPEGTS_MODULATION_APSK_16">
+      </member>
+      <member name="apsk_32"
+              value="11"
+              c:identifier="GST_MPEGTS_MODULATION_APSK_32">
+      </member>
+      <member name="dqpsk"
+              value="12"
+              c:identifier="GST_MPEGTS_MODULATION_DQPSK">
+      </member>
+      <member name="qam_4_nr_"
+              value="13"
+              c:identifier="GST_MPEGTS_MODULATION_QAM_4_NR_">
+      </member>
+      <member name="none" value="14" c:identifier="GST_MPEGTS_MODULATION_NONE">
+      </member>
+    </enumeration>
+    <record name="NIT"
+            c:type="GstMpegTsNIT"
+            glib:type-name="GstMpegTsNIT"
+            glib:get-type="gst_mpegts_nit_get_type"
+            c:symbol-prefix="nit">
+      <doc xml:space="preserve"
+           filename="gst-dvb-section.h"
+           line="143">Network Information Table (ISO/IEC 13818-1 / EN 300 468)
+
+The network_id is contained in the subtable_extension field of the
+container #GstMpegTsSection.</doc>
+      <source-position filename="gst-dvb-section.h" line="161"/>
+      <field name="actual_network" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-section.h"
+             line="145">Whether this NIT corresponds to the actual stream</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="descriptors" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-section.h"
+             line="146">the global descriptors</doc>
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="Descriptor"/>
+        </array>
+      </field>
+      <field name="streams" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-section.h"
+             line="147">the streams</doc>
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="NITStream"/>
+        </array>
+      </field>
+    </record>
+    <record name="NITStream"
+            c:type="GstMpegTsNITStream"
+            glib:type-name="GstMpegTsNITStream"
+            glib:get-type="gst_mpegts_nit_stream_get_type"
+            c:symbol-prefix="nit_stream">
+      <source-position filename="gst-dvb-section.h" line="141"/>
+      <field name="transport_stream_id" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="original_network_id" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="descriptors" writable="1">
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="Descriptor"/>
+        </array>
+      </field>
+    </record>
+    <record name="PMT"
+            c:type="GstMpegTsPMT"
+            glib:type-name="GstMpegTsPMT"
+            glib:get-type="gst_mpegts_pmt_get_type"
+            c:symbol-prefix="pmt">
+      <doc xml:space="preserve"
+           filename="gstmpegtssection.h"
+           line="321">Program Map Table (ISO/IEC 13818-1).
+
+The program_number is contained in the subtable_extension field of the
+container #GstMpegTsSection.</doc>
+      <source-position filename="gstmpegtssection.h" line="338"/>
+      <field name="pcr_pid" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="323">PID of the stream containing PCR</doc>
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="descriptors" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="324">array of #GstMpegTsDescriptor</doc>
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="Descriptor"/>
+        </array>
+      </field>
+      <field name="streams" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="325">Array of #GstMpegTsPMTStream</doc>
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="PMTStream"/>
+        </array>
+      </field>
+    </record>
+    <record name="PMTStream"
+            c:type="GstMpegTsPMTStream"
+            glib:type-name="GstMpegTsPMTStream"
+            glib:get-type="gst_mpegts_pmt_stream_get_type"
+            c:symbol-prefix="pmt_stream">
+      <doc xml:space="preserve"
+           filename="gstmpegtssection.h"
+           line="304">An individual stream definition.</doc>
+      <source-position filename="gstmpegtssection.h" line="319"/>
+      <field name="stream_type" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="306">the type of stream. See #GstMpegTsStreamType</doc>
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="pid" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="307">the PID of the stream</doc>
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="descriptors" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="308">the descriptors of the
+stream</doc>
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="Descriptor"/>
+        </array>
+      </field>
+    </record>
+    <record name="PatProgram"
+            c:type="GstMpegTsPatProgram"
+            glib:type-name="GstMpegTsPatProgram"
+            glib:get-type="gst_mpegts_pat_program_get_type"
+            c:symbol-prefix="pat_program">
+      <doc xml:space="preserve"
+           filename="gstmpegtssection.h"
+           line="163">A program entry from a Program Association Table (ITU H.222.0, ISO/IEC 13818-1).</doc>
+      <source-position filename="gstmpegtssection.h" line="174"/>
+      <field name="program_number" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="165">the program number</doc>
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="network_or_program_map_PID" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="166">the network of program map PID</doc>
+        <type name="guint16" c:type="guint16"/>
+      </field>
+    </record>
+    <enumeration name="RunningStatus" c:type="GstMpegTsRunningStatus">
+      <doc xml:space="preserve"
+           filename="gst-dvb-section.h"
+           line="101">Running status of a service.
+
+Corresponds to table 6 of ETSI EN 300 468 (v1.13.0)</doc>
+      <source-position filename="gst-dvb-section.h" line="116"/>
+      <member name="undefined"
+              value="0"
+              c:identifier="GST_MPEGTS_RUNNING_STATUS_UNDEFINED">
+      </member>
+      <member name="not_running"
+              value="1"
+              c:identifier="GST_MPEGTS_RUNNING_STATUS_NOT_RUNNING">
+      </member>
+      <member name="starts_in_few_seconds"
+              value="2"
+              c:identifier="GST_MPEGTS_RUNNING_STATUS_STARTS_IN_FEW_SECONDS">
+      </member>
+      <member name="pausing"
+              value="3"
+              c:identifier="GST_MPEGTS_RUNNING_STATUS_PAUSING">
+      </member>
+      <member name="running"
+              value="4"
+              c:identifier="GST_MPEGTS_RUNNING_STATUS_RUNNING">
+      </member>
+      <member name="off_air"
+              value="5"
+              c:identifier="GST_MPEGTS_RUNNING_STATUS_OFF_AIR">
+      </member>
+    </enumeration>
+    <record name="SDT"
+            c:type="GstMpegTsSDT"
+            glib:type-name="GstMpegTsSDT"
+            glib:get-type="gst_mpegts_sdt_get_type"
+            c:symbol-prefix="sdt">
+      <doc xml:space="preserve"
+           filename="gst-dvb-section.h"
+           line="222">Service Description Table (EN 300 468)</doc>
+      <source-position filename="gst-dvb-section.h" line="233"/>
+      <field name="original_network_id" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="actual_ts" writable="1">
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="services" writable="1">
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="gpointer" c:type="gpointer"/>
+        </array>
+      </field>
+    </record>
+    <record name="SDTService"
+            c:type="GstMpegTsSDTService"
+            glib:type-name="GstMpegTsSDTService"
+            glib:get-type="gst_mpegts_sdt_service_get_type"
+            c:symbol-prefix="sdt_service">
+      <source-position filename="gst-dvb-section.h" line="220"/>
+      <field name="service_id" writable="1">
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="EIT_schedule_flag" writable="1">
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="EIT_present_following_flag" writable="1">
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="running_status" writable="1">
+        <type name="RunningStatus" c:type="GstMpegTsRunningStatus"/>
+      </field>
+      <field name="free_CA_mode" writable="1">
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="descriptors" writable="1">
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="gpointer" c:type="gpointer"/>
+        </array>
+      </field>
+    </record>
+    <record name="SatelliteDeliverySystemDescriptor"
+            c:type="GstMpegTsSatelliteDeliverySystemDescriptor">
+      <doc xml:space="preserve"
+           filename="gst-dvb-descriptor.h"
+           line="176">Satellite Delivery System Descriptor (EN 300 468 v.1.13.1)</doc>
+      <source-position filename="gst-dvb-descriptor.h" line="204"/>
+      <field name="frequency" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="178">the frequency in kHz (kiloHertz)</doc>
+        <type name="guint32" c:type="guint32"/>
+      </field>
+      <field name="orbital_position" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="179">the orbital position in degrees</doc>
+        <type name="gfloat" c:type="gfloat"/>
+      </field>
+      <field name="west_east" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="180">If %TRUE, the satellite is in the eastern part of the orbit,
+else in the western part.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="polarization" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="182">The polarization of the transmitted signal</doc>
+        <type name="SatellitePolarizationType"
+              c:type="GstMpegTsSatellitePolarizationType"/>
+      </field>
+      <field name="roll_off" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="183">Roll-off factor used in DVB-S2</doc>
+        <type name="SatelliteRolloff" c:type="GstMpegTsSatelliteRolloff"/>
+      </field>
+      <field name="modulation_system" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="184">modulation system, %TRUE if DVB-S2, else DVB-S</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="modulation_type" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="185">Modulation scheme used</doc>
+        <type name="ModulationType" c:type="GstMpegTsModulationType"/>
+      </field>
+      <field name="symbol_rate" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="186">Symbol rate (in symbols per second)</doc>
+        <type name="guint32" c:type="guint32"/>
+      </field>
+      <field name="fec_inner" writable="1">
+        <doc xml:space="preserve"
+             filename="gst-dvb-descriptor.h"
+             line="187">inner FEC scheme used</doc>
+        <type name="DVBCodeRate" c:type="GstMpegTsDVBCodeRate"/>
+      </field>
+    </record>
+    <enumeration name="SatellitePolarizationType"
+                 c:type="GstMpegTsSatellitePolarizationType">
+      <source-position filename="gst-dvb-descriptor.h" line="174"/>
+      <member name="linear_horizontal"
+              value="0"
+              c:identifier="GST_MPEGTS_POLARIZATION_LINEAR_HORIZONTAL">
+      </member>
+      <member name="linear_vertical"
+              value="1"
+              c:identifier="GST_MPEGTS_POLARIZATION_LINEAR_VERTICAL">
+      </member>
+      <member name="circular_left"
+              value="2"
+              c:identifier="GST_MPEGTS_POLARIZATION_CIRCULAR_LEFT">
+      </member>
+      <member name="circular_right"
+              value="3"
+              c:identifier="GST_MPEGTS_POLARIZATION_CIRCULAR_RIGHT">
+      </member>
+    </enumeration>
+    <enumeration name="SatelliteRolloff" c:type="GstMpegTsSatelliteRolloff">
+      <source-position filename="gst-dvb-descriptor.h" line="167"/>
+      <member name="35" value="0" c:identifier="GST_MPEGTS_ROLLOFF_35">
+      </member>
+      <member name="20" value="1" c:identifier="GST_MPEGTS_ROLLOFF_20">
+      </member>
+      <member name="25" value="2" c:identifier="GST_MPEGTS_ROLLOFF_25">
+      </member>
+      <member name="reserved"
+              value="3"
+              c:identifier="GST_MPEGTS_ROLLOFF_RESERVED">
+      </member>
+      <member name="auto" value="4" c:identifier="GST_MPEGTS_ROLLOFF_AUTO">
+      </member>
+    </enumeration>
+    <record name="Section"
+            c:type="GstMpegTsSection"
+            glib:type-name="GstMpegTsSection"
+            glib:get-type="gst_mpegts_section_get_type"
+            c:symbol-prefix="section">
+      <doc xml:space="preserve"
+           filename="gstmpegtssection.c"
+           line="45">For more details, refer to the ITU H.222.0 or ISO/IEC 13818-1 specifications
+and other specifications mentionned in the documentation.</doc>
+      <source-position filename="gstmpegtssection.h" line="156"/>
+      <field name="parent" readable="0" private="1">
+        <type name="Gst.MiniObject" c:type="GstMiniObject"/>
+      </field>
+      <field name="section_type" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="106">The type of section</doc>
+        <type name="SectionType" c:type="GstMpegTsSectionType"/>
+      </field>
+      <field name="pid" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="107">The pid on which this section was found</doc>
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="table_id" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="108">The table id of this section</doc>
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="subtable_extension" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="109">This meaning differs per section. See the documentation
+of the parsed section type for the meaning of this field</doc>
+        <type name="guint16" c:type="guint16"/>
+      </field>
+      <field name="version_number" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="111">Version of the section.</doc>
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="current_next_indicator" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="112">Applies to current/next stream or not</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <field name="section_number" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="113">Number of the section (if multiple)</doc>
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="last_section_number" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="114">Number of the last expected section (if multiple)</doc>
+        <type name="guint8" c:type="guint8"/>
+      </field>
+      <field name="crc" writable="1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="115">CRC</doc>
+        <type name="guint32" c:type="guint32"/>
+      </field>
+      <field name="data" readable="0" private="1">
+        <type name="guint8" c:type="guint8*"/>
+      </field>
+      <field name="section_length" readable="0" private="1">
+        <type name="guint" c:type="guint"/>
+      </field>
+      <field name="cached_parsed" readable="0" private="1">
+        <type name="gpointer" c:type="gpointer*"/>
+      </field>
+      <field name="destroy_parsed" readable="0" private="1">
+        <type name="GLib.DestroyNotify" c:type="GDestroyNotify"/>
+      </field>
+      <field name="offset" readable="0" private="1">
+        <type name="guint64" c:type="guint64"/>
+      </field>
+      <field name="short_section" readable="0" private="1">
+        <type name="gboolean" c:type="gboolean"/>
+      </field>
+      <constructor name="new" c:identifier="gst_mpegts_section_new">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.c"
+             line="718">Creates a new #GstMpegTsSection from the provided @data.
+
+Note: Ensuring @data is big enough to contain the full section is the
+responsibility of the caller. If it is not big enough, %NULL will be
+returned.
+
+Note: it is the responsibility of the caller to ensure @data does point
+to the beginning of the section.</doc>
+        <source-position filename="gstmpegtssection.h" line="359"/>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve"
+               filename="gstmpegtssection.c"
+               line="734">A new #GstMpegTsSection if the data was valid,
+else %NULL</doc>
+          <type name="Section" c:type="GstMpegTsSection*"/>
+        </return-value>
+        <parameters>
+          <parameter name="pid" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gstmpegtssection.c"
+                 line="720">the PID to which this section belongs</doc>
+            <type name="guint16" c:type="guint16"/>
+          </parameter>
+          <parameter name="data" transfer-ownership="full">
+            <doc xml:space="preserve"
+                 filename="gstmpegtssection.c"
+                 line="721">a pointer to the beginning of the section (i.e. the first byte
+should contain the table_id field).</doc>
+            <type name="guint8" c:type="guint8*"/>
+          </parameter>
+          <parameter name="data_size" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gstmpegtssection.c"
+                 line="723">size of the @data argument.</doc>
+            <type name="gsize" c:type="gsize"/>
+          </parameter>
+        </parameters>
+      </constructor>
+      <method name="get_bat" c:identifier="gst_mpegts_section_get_bat">
+        <doc xml:space="preserve"
+             filename="gst-dvb-section.c"
+             line="406">Returns the #GstMpegTsBAT contained in the @section.</doc>
+        <source-position filename="gst-dvb-section.h" line="201"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gst-dvb-section.c"
+               line="412">The #GstMpegTsBAT contained in the section, or %NULL if an error
+happened.</doc>
+          <type name="BAT" c:type="const GstMpegTsBAT*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="section" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-section.c"
+                 line="408">a #GstMpegTsSection of type %GST_MPEGTS_SECTION_BAT</doc>
+            <type name="Section" c:type="GstMpegTsSection*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_cat" c:identifier="gst_mpegts_section_get_cat">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.c"
+             line="582">Returns the array of #GstMpegTsDescriptor contained in the Condtional
+Access Table.</doc>
+        <source-position filename="gstmpegtssection.h" line="181"/>
+        <return-value transfer-ownership="container">
+          <doc xml:space="preserve"
+               filename="gstmpegtssection.c"
+               line="589">The
+#GstMpegTsDescriptor contained in the section, or %NULL if an error
+happened. Release with #g_array_unref when done.</doc>
+          <array name="GLib.PtrArray" c:type="GPtrArray*">
+            <type name="Descriptor"/>
+          </array>
+        </return-value>
+        <parameters>
+          <instance-parameter name="section" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gstmpegtssection.c"
+                 line="584">a #GstMpegTsSection of type %GST_MPEGTS_SECTION_CAT</doc>
+            <type name="Section" c:type="GstMpegTsSection*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_eit" c:identifier="gst_mpegts_section_get_eit">
+        <doc xml:space="preserve"
+             filename="gst-dvb-section.c"
+             line="233">Returns the #GstMpegTsEIT contained in the @section.</doc>
+        <source-position filename="gst-dvb-section.h" line="287"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gst-dvb-section.c"
+               line="239">The #GstMpegTsEIT contained in the section, or %NULL if an error
+happened.</doc>
+          <type name="EIT" c:type="const GstMpegTsEIT*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="section" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-section.c"
+                 line="235">a #GstMpegTsSection of type %GST_MPEGTS_SECTION_EIT</doc>
+            <type name="Section" c:type="GstMpegTsSection*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_nit" c:identifier="gst_mpegts_section_get_nit">
+        <doc xml:space="preserve"
+             filename="gst-dvb-section.c"
+             line="584">Returns the #GstMpegTsNIT contained in the @section.</doc>
+        <source-position filename="gst-dvb-section.h" line="166"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gst-dvb-section.c"
+               line="590">The #GstMpegTsNIT contained in the section, or %NULL if an error
+happened.</doc>
+          <type name="NIT" c:type="const GstMpegTsNIT*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="section" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-section.c"
+                 line="586">a #GstMpegTsSection of type %GST_MPEGTS_SECTION_NIT</doc>
+            <type name="Section" c:type="GstMpegTsSection*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_pat" c:identifier="gst_mpegts_section_get_pat">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.c"
+             line="380">Parses a Program Association Table (ITU H.222.0, ISO/IEC 13818-1).
+
+Returns the array of #GstMpegTsPatProgram contained in the section.
+
+Note: The PAT "transport_id" field corresponds to the "subtable_extension"
+field of the provided @section.</doc>
+        <source-position filename="gstmpegtssection.h" line="176"/>
+        <return-value transfer-ownership="container">
+          <doc xml:space="preserve"
+               filename="gstmpegtssection.c"
+               line="391">The
+#GstMpegTsPatProgram contained in the section, or %NULL if an error
+happened. Release with #g_ptr_array_unref when done.</doc>
+          <array name="GLib.PtrArray" c:type="GPtrArray*">
+            <type name="PatProgram"/>
+          </array>
+        </return-value>
+        <parameters>
+          <instance-parameter name="section" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gstmpegtssection.c"
+                 line="382">a #GstMpegTsSection of type %GST_MPEGTS_SECTION_PAT</doc>
+            <type name="Section" c:type="GstMpegTsSection*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_pmt" c:identifier="gst_mpegts_section_get_pmt">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.c"
+             line="543">Returns the #GstMpegTsPMT contained in the @section.</doc>
+        <source-position filename="gstmpegtssection.h" line="343"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gstmpegtssection.c"
+               line="549">The #GstMpegTsPMT contained in the section, or %NULL if an error
+happened.</doc>
+          <type name="PMT" c:type="const GstMpegTsPMT*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="section" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gstmpegtssection.c"
+                 line="545">a #GstMpegTsSection of type %GST_MPEGTS_SECTION_PMT</doc>
+            <type name="Section" c:type="GstMpegTsSection*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_sdt" c:identifier="gst_mpegts_section_get_sdt">
+        <doc xml:space="preserve"
+             filename="gst-dvb-section.c"
+             line="744">Returns the #GstMpegTsSDT contained in the @section.</doc>
+        <source-position filename="gst-dvb-section.h" line="238"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gst-dvb-section.c"
+               line="750">The #GstMpegTsSDT contained in the section, or %NULL if an error
+happened.</doc>
+          <type name="SDT" c:type="const GstMpegTsSDT*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="section" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-section.c"
+                 line="746">a #GstMpegTsSection of type %GST_MPEGTS_SECTION_SDT</doc>
+            <type name="Section" c:type="GstMpegTsSection*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_tdt" c:identifier="gst_mpegts_section_get_tdt">
+        <doc xml:space="preserve"
+             filename="gst-dvb-section.c"
+             line="774">Returns the #GstDateTime of the TDT</doc>
+        <source-position filename="gst-dvb-section.h" line="290"/>
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve"
+               filename="gst-dvb-section.c"
+               line="780">The #GstDateTime contained in the section, or %NULL
+if an error happened. Release with #gst_date_time_unref when done.</doc>
+          <type name="Gst.DateTime" c:type="GstDateTime*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="section" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-section.c"
+                 line="776">a #GstMpegTsSection of type %GST_MPEGTS_SECTION_TDT</doc>
+            <type name="Section" c:type="GstMpegTsSection*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_tot" c:identifier="gst_mpegts_section_get_tot">
+        <doc xml:space="preserve"
+             filename="gst-dvb-section.c"
+             line="848">Returns the #GstMpegTsTOT contained in the @section.</doc>
+        <source-position filename="gst-dvb-section.h" line="309"/>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gst-dvb-section.c"
+               line="854">The #GstMpegTsTOT contained in the section, or %NULL if an error
+happened.</doc>
+          <type name="TOT" c:type="const GstMpegTsTOT*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="section" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gst-dvb-section.c"
+                 line="850">a #GstMpegTsSection of type %GST_MPEGTS_SECTION_TOT</doc>
+            <type name="Section" c:type="GstMpegTsSection*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_tsdt" c:identifier="gst_mpegts_section_get_tsdt">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.c"
+             line="610">Returns the array of #GstMpegTsDescriptor contained in the section</doc>
+        <source-position filename="gstmpegtssection.h" line="347"/>
+        <return-value transfer-ownership="container">
+          <doc xml:space="preserve"
+               filename="gstmpegtssection.c"
+               line="616">The
+#GstMpegTsDescriptor contained in the section, or %NULL if an error
+happened. Release with #g_array_unref when done.</doc>
+          <array name="GLib.PtrArray" c:type="GPtrArray*">
+            <type name="Descriptor"/>
+          </array>
+        </return-value>
+        <parameters>
+          <instance-parameter name="section" transfer-ownership="none">
+            <doc xml:space="preserve"
+                 filename="gstmpegtssection.c"
+                 line="612">a #GstMpegTsSection of type %GST_MPEGTS_SECTION_TSDT</doc>
+            <type name="Section" c:type="GstMpegTsSection*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+    </record>
+    <enumeration name="SectionATSCTableID"
+                 c:type="GstMpegTsSectionATSCTableID">
+      <doc xml:space="preserve"
+           filename="gst-atsc-section.h"
+           line="31">Values for a #GstMpegTsSection table_id.
+
+These are the registered ATSC table_id variants.
+
+see also: #GstMpegTsSectionTableID</doc>
+      <source-position filename="gst-atsc-section.h" line="65"/>
+      <member name="master_guide"
+              value="199"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_MASTER_GUIDE">
+      </member>
+      <member name="terrestrial_virtual_channel"
+              value="200"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_TERRESTRIAL_VIRTUAL_CHANNEL">
+      </member>
+      <member name="cable_virtual_channel"
+              value="201"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_CABLE_VIRTUAL_CHANNEL">
+      </member>
+      <member name="rating_region"
+              value="202"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_RATING_REGION">
+      </member>
+      <member name="event_information"
+              value="203"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_EVENT_INFORMATION">
+      </member>
+      <member name="channel_or_event_extended_text"
+              value="204"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_CHANNEL_OR_EVENT_EXTENDED_TEXT">
+      </member>
+      <member name="system_time"
+              value="205"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_SYSTEM_TIME">
+      </member>
+      <member name="data_event"
+              value="206"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_DATA_EVENT">
+      </member>
+      <member name="data_service"
+              value="207"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_DATA_SERVICE">
+      </member>
+      <member name="network_resource"
+              value="209"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_NETWORK_RESOURCE">
+      </member>
+      <member name="long_term_service"
+              value="210"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_LONG_TERM_SERVICE">
+      </member>
+      <member name="directed_channel_change"
+              value="211"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_DIRECTED_CHANNEL_CHANGE">
+      </member>
+      <member name="directed_channel_change_section_code"
+              value="212"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_DIRECTED_CHANNEL_CHANGE_SECTION_CODE">
+      </member>
+      <member name="aggregate_event_information"
+              value="214"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_AGGREGATE_EVENT_INFORMATION">
+      </member>
+      <member name="aggregate_extended_text"
+              value="215"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_AGGREGATE_EXTENDED_TEXT">
+      </member>
+      <member name="aggregate_data_event"
+              value="217"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_AGGREGATE_DATA_EVENT">
+      </member>
+      <member name="satellite_virtual_channel"
+              value="218"
+              c:identifier="GST_MTS_TABLE_ID_ATSC_SATELLITE_VIRTUAL_CHANNEL">
+      </member>
+    </enumeration>
+    <enumeration name="SectionDVBTableID" c:type="GstMpegTsSectionDVBTableID">
+      <doc xml:space="preserve"
+           filename="gst-dvb-section.h"
+           line="31">Values for a #GstMpegTsSection table_id.
+
+These are the registered DVB table_id variants.
+
+see also: #GstMpegTsSectionTableID</doc>
+      <source-position filename="gst-dvb-section.h" line="99"/>
+      <member name="network_information_actual_network"
+              value="64"
+              c:identifier="GST_MTS_TABLE_ID_NETWORK_INFORMATION_ACTUAL_NETWORK">
+      </member>
+      <member name="network_information_other_network"
+              value="65"
+              c:identifier="GST_MTS_TABLE_ID_NETWORK_INFORMATION_OTHER_NETWORK">
+      </member>
+      <member name="service_description_actual_ts"
+              value="66"
+              c:identifier="GST_MTS_TABLE_ID_SERVICE_DESCRIPTION_ACTUAL_TS">
+      </member>
+      <member name="service_description_other_ts"
+              value="70"
+              c:identifier="GST_MTS_TABLE_ID_SERVICE_DESCRIPTION_OTHER_TS">
+      </member>
+      <member name="bouquet_association"
+              value="74"
+              c:identifier="GST_MTS_TABLE_ID_BOUQUET_ASSOCIATION">
+      </member>
+      <member name="event_information_actual_ts_present"
+              value="78"
+              c:identifier="GST_MTS_TABLE_ID_EVENT_INFORMATION_ACTUAL_TS_PRESENT">
+      </member>
+      <member name="event_information_other_ts_present"
+              value="79"
+              c:identifier="GST_MTS_TABLE_ID_EVENT_INFORMATION_OTHER_TS_PRESENT">
+      </member>
+      <member name="event_information_actual_ts_schedule_1"
+              value="80"
+              c:identifier="GST_MTS_TABLE_ID_EVENT_INFORMATION_ACTUAL_TS_SCHEDULE_1">
+      </member>
+      <member name="event_information_actual_ts_schedule_n"
+              value="95"
+              c:identifier="GST_MTS_TABLE_ID_EVENT_INFORMATION_ACTUAL_TS_SCHEDULE_N">
+      </member>
+      <member name="event_information_other_ts_schedule_1"
+              value="96"
+              c:identifier="GST_MTS_TABLE_ID_EVENT_INFORMATION_OTHER_TS_SCHEDULE_1">
+      </member>
+      <member name="event_information_other_ts_schedule_n"
+              value="111"
+              c:identifier="GST_MTS_TABLE_ID_EVENT_INFORMATION_OTHER_TS_SCHEDULE_N">
+      </member>
+      <member name="time_date"
+              value="112"
+              c:identifier="GST_MTS_TABLE_ID_TIME_DATE">
+      </member>
+      <member name="running_status"
+              value="113"
+              c:identifier="GST_MTS_TABLE_ID_RUNNING_STATUS">
+      </member>
+      <member name="stuffing"
+              value="114"
+              c:identifier="GST_MTS_TABLE_ID_STUFFING">
+      </member>
+      <member name="time_offset"
+              value="115"
+              c:identifier="GST_MTS_TABLE_ID_TIME_OFFSET">
+      </member>
+      <member name="application_information_table"
+              value="116"
+              c:identifier="GST_MTS_TABLE_ID_APPLICATION_INFORMATION_TABLE">
+      </member>
+      <member name="container"
+              value="117"
+              c:identifier="GST_MTS_TABLE_ID_CONTAINER">
+      </member>
+      <member name="related_content"
+              value="118"
+              c:identifier="GST_MTS_TABLE_ID_RELATED_CONTENT">
+      </member>
+      <member name="content_identifier"
+              value="119"
+              c:identifier="GST_MTS_TABLE_ID_CONTENT_IDENTIFIER">
+      </member>
+      <member name="mpe_fec"
+              value="120"
+              c:identifier="GST_MTS_TABLE_ID_MPE_FEC">
+      </member>
+      <member name="resolution_notification"
+              value="121"
+              c:identifier="GST_MTS_TABLE_ID_RESOLUTION_NOTIFICATION">
+      </member>
+      <member name="mpe_ifec"
+              value="122"
+              c:identifier="GST_MTS_TABLE_ID_MPE_IFEC">
+      </member>
+      <member name="discontinuity_information"
+              value="126"
+              c:identifier="GST_MTS_TABLE_ID_DISCONTINUITY_INFORMATION">
+      </member>
+      <member name="selection_information"
+              value="127"
+              c:identifier="GST_MTS_TABLE_ID_SELECTION_INFORMATION">
+      </member>
+      <member name="ca_message_ecm_0"
+              value="128"
+              c:identifier="GST_MTS_TABLE_ID_CA_MESSAGE_ECM_0">
+      </member>
+      <member name="ca_message_ecm_1"
+              value="129"
+              c:identifier="GST_MTS_TABLE_ID_CA_MESSAGE_ECM_1">
+      </member>
+      <member name="ca_message_system_private_1"
+              value="130"
+              c:identifier="GST_MTS_TABLE_ID_CA_MESSAGE_SYSTEM_PRIVATE_1">
+      </member>
+      <member name="ca_message_system_private_n"
+              value="143"
+              c:identifier="GST_MTS_TABLE_ID_CA_MESSAGE_SYSTEM_PRIVATE_N">
+      </member>
+      <member name="sct" value="160" c:identifier="GST_MTS_TABLE_ID_SCT">
+      </member>
+      <member name="fct" value="161" c:identifier="GST_MTS_TABLE_ID_FCT">
+      </member>
+      <member name="tct" value="162" c:identifier="GST_MTS_TABLE_ID_TCT">
+      </member>
+      <member name="spt" value="163" c:identifier="GST_MTS_TABLE_ID_SPT">
+      </member>
+      <member name="cmt" value="164" c:identifier="GST_MTS_TABLE_ID_CMT">
+      </member>
+      <member name="tbtp" value="165" c:identifier="GST_MTS_TABLE_ID_TBTP">
+      </member>
+      <member name="pcr_packet_payload"
+              value="166"
+              c:identifier="GST_MTS_TABLE_ID_PCR_PACKET_PAYLOAD">
+      </member>
+      <member name="transmission_mode_support_payload"
+              value="170"
+              c:identifier="GST_MTS_TABLE_ID_TRANSMISSION_MODE_SUPPORT_PAYLOAD">
+      </member>
+      <member name="tim" value="176" c:identifier="GST_MTS_TABLE_ID_TIM">
+      </member>
+      <member name="ll_fec_parity_data_table"
+              value="177"
+              c:identifier="GST_MTS_TABLE_ID_LL_FEC_PARITY_DATA_TABLE">
+      </member>
+    </enumeration>
+    <enumeration name="SectionTableID" c:type="GstMpegTsSectionTableID">
+      <doc xml:space="preserve"
+           filename="gstmpegtssection.h"
+           line="69">Values for a #GstMpegTsSection table_id
+
+These are the registered ITU H.222.0 | ISO/IEC 13818-1 table_id variants.
+
+see also #GstMpegTsSectionATSCTableID and #GstMpegTsSectionDVBTableID.</doc>
+      <source-position filename="gstmpegtssection.h" line="102"/>
+      <member name="program_association"
+              value="0"
+              c:identifier="GST_MTS_TABLE_ID_PROGRAM_ASSOCIATION">
+      </member>
+      <member name="conditional_access"
+              value="1"
+              c:identifier="GST_MTS_TABLE_ID_CONDITIONAL_ACCESS">
+      </member>
+      <member name="ts_program_map"
+              value="2"
+              c:identifier="GST_MTS_TABLE_ID_TS_PROGRAM_MAP">
+      </member>
+      <member name="ts_description"
+              value="3"
+              c:identifier="GST_MTS_TABLE_ID_TS_DESCRIPTION">
+      </member>
+      <member name="14496_scene_description"
+              value="4"
+              c:identifier="GST_MTS_TABLE_ID_14496_SCENE_DESCRIPTION">
+      </member>
+      <member name="14496_objet_descriptor"
+              value="5"
+              c:identifier="GST_MTS_TABLE_ID_14496_OBJET_DESCRIPTOR">
+      </member>
+      <member name="metadata"
+              value="6"
+              c:identifier="GST_MTS_TABLE_ID_METADATA">
+      </member>
+      <member name="ipmp_control_information"
+              value="7"
+              c:identifier="GST_MTS_TABLE_ID_IPMP_CONTROL_INFORMATION">
+      </member>
+      <member name="dsm_cc_multiproto_encapsulated_data"
+              value="58"
+              c:identifier="GST_MTS_TABLE_ID_DSM_CC_MULTIPROTO_ENCAPSULATED_DATA">
+      </member>
+      <member name="dsm_cc_u_n_messages"
+              value="59"
+              c:identifier="GST_MTS_TABLE_ID_DSM_CC_U_N_MESSAGES">
+      </member>
+      <member name="dsm_cc_download_data_messages"
+              value="60"
+              c:identifier="GST_MTS_TABLE_ID_DSM_CC_DOWNLOAD_DATA_MESSAGES">
+      </member>
+      <member name="dsm_cc_stream_descriptors"
+              value="61"
+              c:identifier="GST_MTS_TABLE_ID_DSM_CC_STREAM_DESCRIPTORS">
+      </member>
+      <member name="dsm_cc_private_data"
+              value="62"
+              c:identifier="GST_MTS_TABLE_ID_DSM_CC_PRIVATE_DATA">
+      </member>
+      <member name="dsm_cc_addressable_sections"
+              value="63"
+              c:identifier="GST_MTS_TABLE_ID_DSM_CC_ADDRESSABLE_SECTIONS">
+      </member>
+      <member name="unset" value="255" c:identifier="GST_MTS_TABLE_ID_UNSET">
+      </member>
+    </enumeration>
+    <enumeration name="SectionType" c:type="GstMpegTsSectionType">
+      <doc xml:space="preserve"
+           filename="gstmpegtssection.h"
+           line="39">Types of #GstMpegTsSection that the library handles.</doc>
+      <source-position filename="gstmpegtssection.h" line="67"/>
+      <member name="unknown"
+              value="0"
+              c:identifier="GST_MPEGTS_SECTION_UNKNOWN">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="41">Unknown section type</doc>
+      </member>
+      <member name="pat" value="1" c:identifier="GST_MPEGTS_SECTION_PAT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="42">Program Association Table (ISO/IEC 13818-1)</doc>
+      </member>
+      <member name="pmt" value="2" c:identifier="GST_MPEGTS_SECTION_PMT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="43">Program Map Table (ISO/IEC 13818-1)</doc>
+      </member>
+      <member name="cat" value="3" c:identifier="GST_MPEGTS_SECTION_CAT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="44">Conditional Access Table (ISO/IEC 13818-1)</doc>
+      </member>
+      <member name="tsdt" value="4" c:identifier="GST_MPEGTS_SECTION_TSDT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="45">Transport Stream Description Table (ISO/IEC 13818-1)</doc>
+      </member>
+      <member name="eit" value="5" c:identifier="GST_MPEGTS_SECTION_EIT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="46">Event Information Table (EN 300 468)</doc>
+      </member>
+      <member name="nit" value="6" c:identifier="GST_MPEGTS_SECTION_NIT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="47">Network Information Table (ISO/IEC 13818-1 / EN 300 468)</doc>
+      </member>
+      <member name="bat" value="7" c:identifier="GST_MPEGTS_SECTION_BAT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="48">Bouquet Association Table ((EN 300 468)</doc>
+      </member>
+      <member name="sdt" value="8" c:identifier="GST_MPEGTS_SECTION_SDT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="49">Service Description Table (EN 300 468)</doc>
+      </member>
+      <member name="tdt" value="9" c:identifier="GST_MPEGTS_SECTION_TDT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="50">Time and Date Table (EN 300 468)</doc>
+      </member>
+      <member name="tot" value="10" c:identifier="GST_MPEGTS_SECTION_TOT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="51">Time Offset Table (EN 300 468)</doc>
+      </member>
+    </enumeration>
+    <enumeration name="StreamType" c:type="GstMpegTsStreamType">
+      <doc xml:space="preserve"
+           filename="gstmpegtssection.h"
+           line="189">Type of mpeg-ts stream type.
+
+These values correspond to the base standard registered types. Depending
+on the variant of mpeg-ts being used (Bluray, ATSC, DVB, ...), other
+types might also be used, but will not conflict with these.
+
+Corresponds to table 2-34 of ITU H.222.0 | ISO/IEC 13818-1</doc>
+      <source-position filename="gstmpegtssection.h" line="302"/>
+      <member name="reserved_00"
+              value="0"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_RESERVED_00">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="191">ITU-T | ISO/IEC Reserved</doc>
+      </member>
+      <member name="video_mpeg1"
+              value="1"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_VIDEO_MPEG1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="192">ISO/IEC 11172-2 Video</doc>
+      </member>
+      <member name="video_mpeg2"
+              value="2"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_VIDEO_MPEG2">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="193">Rec. ITU-T H.262 | ISO/IEC 13818-2
+Video or ISO/IEC 11172-2 constrained parameter video stream</doc>
+      </member>
+      <member name="audio_mpeg1"
+              value="3"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_AUDIO_MPEG1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="195">ISO/IEC 11172-3 Audio</doc>
+      </member>
+      <member name="audio_mpeg2"
+              value="4"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_AUDIO_MPEG2">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="196">ISO/IEC 13818-3 Audio</doc>
+      </member>
+      <member name="private_sections"
+              value="5"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_PRIVATE_SECTIONS">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="197">private sections</doc>
+      </member>
+      <member name="private_pes_packets"
+              value="6"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_PRIVATE_PES_PACKETS">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="198">PES packets containing private data</doc>
+      </member>
+      <member name="mheg"
+              value="7"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_MHEG">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="199">ISO/IEC 13522 MHEG</doc>
+      </member>
+      <member name="dsm_cc"
+              value="8"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_DSM_CC">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="200">Annex A DSM-CC</doc>
+      </member>
+      <member name="h_222_1"
+              value="9"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_H_222_1">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="201">Rec. ITU-T H.222.1</doc>
+      </member>
+      <member name="dsmcc_a"
+              value="10"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_DSMCC_A">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="202">ISO/IEC 13818-6 type A</doc>
+      </member>
+      <member name="dsmcc_b"
+              value="11"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_DSMCC_B">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="203">ISO/IEC 13818-6 type B</doc>
+      </member>
+      <member name="dsmcc_c"
+              value="12"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_DSMCC_C">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="204">ISO/IEC 13818-6 type C</doc>
+      </member>
+      <member name="dsmcc_d"
+              value="13"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_DSMCC_D">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="205">ISO/IEC 13818-6 type D</doc>
+      </member>
+      <member name="auxiliary"
+              value="14"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_AUXILIARY">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="206">auxiliary streams</doc>
+      </member>
+      <member name="audio_aac_adts"
+              value="15"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_AUDIO_AAC_ADTS">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="207">ISO/IEC 13818-7 Audio with ADTS
+transport syntax</doc>
+      </member>
+      <member name="video_mpeg4"
+              value="16"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_VIDEO_MPEG4">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="209">ISO/IEC 14496-2 Visual</doc>
+      </member>
+      <member name="audio_aac_latm"
+              value="17"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_AUDIO_AAC_LATM">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="210">ISO/IEC 14496-3 Audio with the LATM
+transport syntax as defined in ISO/IEC 14496-3</doc>
+      </member>
+      <member name="sl_flexmux_pes_packets"
+              value="18"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_SL_FLEXMUX_PES_PACKETS">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="212">ISO/IEC 14496-1
+SL-packetized stream or FlexMux stream carried in PES packets</doc>
+      </member>
+      <member name="sl_flexmux_sections"
+              value="19"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_SL_FLEXMUX_SECTIONS">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="214">ISO/IEC 14496-1 SL-packetized
+stream or FlexMux stream carried in ISO/IEC 14496_sections</doc>
+      </member>
+      <member name="synchronized_download"
+              value="20"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_SYNCHRONIZED_DOWNLOAD">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="216">ISO/IEC 13818-6 Synchronized
+Download Protocol</doc>
+      </member>
+      <member name="metadata_pes_packets"
+              value="21"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_METADATA_PES_PACKETS">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="218">Metadata carried in PES packets</doc>
+      </member>
+      <member name="metadata_sections"
+              value="22"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_METADATA_SECTIONS">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="219">Metadata carried in metadata_sections</doc>
+      </member>
+      <member name="metadata_data_carousel"
+              value="23"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_METADATA_DATA_CAROUSEL">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="220">Metadata carried in ISO/IEC
+13818-6 Data Carousel</doc>
+      </member>
+      <member name="metadata_object_carousel"
+              value="24"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_METADATA_OBJECT_CAROUSEL">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="222">Metadata carried in
+ISO/IEC 13818-6 Object Carousel</doc>
+      </member>
+      <member name="metadata_synchronized_download"
+              value="25"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_METADATA_SYNCHRONIZED_DOWNLOAD">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="224">Metadata carried in
+ISO/IEC 13818-6 Synchronized Download Protocol</doc>
+      </member>
+      <member name="mpeg2_ipmp"
+              value="26"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_MPEG2_IPMP">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="226">IPMP stream (defined in ISO/IEC 13818-11,
+MPEG-2 IPMP)</doc>
+      </member>
+      <member name="video_h264"
+              value="27"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_VIDEO_H264">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="228">AVC video stream conforming to one or
+more profiles defined in Annex A of Rec. ITU-T H.264 | ISO/IEC 14496-10 or
+AVC video sub-bitstream of SVC as defined in 2.1.78 or MVC base view
+sub-bitstream, as defined in 2.1.85, or AVC video sub-bitstream of MVC, as
+defined in 2.1.88</doc>
+      </member>
+      <member name="audio_aac_clean"
+              value="28"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_AUDIO_AAC_CLEAN">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="233">ISO/IEC 14496-3 Audio, without
+using any additional transport syntax, such as DST, ALS and SLS</doc>
+      </member>
+      <member name="mpeg4_timed_text"
+              value="29"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_MPEG4_TIMED_TEXT">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="235">ISO/IEC 14496-17 Text</doc>
+      </member>
+      <member name="video_rvc"
+              value="30"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_VIDEO_RVC">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="236">Auxiliary video stream as defined in
+ISO/IEC 23002-3</doc>
+      </member>
+      <member name="video_h264_svc_sub_bitstream"
+              value="31"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_VIDEO_H264_SVC_SUB_BITSTREAM">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="238">SVC video sub-bitstream
+of an AVC video stream conforming to one or more profiles defined in Annex G
+of Rec. ITU-T H.264 | ISO/IEC 14496-10</doc>
+      </member>
+      <member name="video_h264_mvc_sub_bitstream"
+              value="32"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_VIDEO_H264_MVC_SUB_BITSTREAM">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="241">MVC video sub-bitstream
+of an AVC video stream conforming to one or more profiles defined in Annex H
+of Rec. ITU-T H.264 | ISO/IEC 14496-10</doc>
+      </member>
+      <member name="video_jp2k"
+              value="33"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_VIDEO_JP2K">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="244">Video stream conforming to one or more
+profiles as defined in Rec. ITU-T T.800 | ISO/IEC 15444-1</doc>
+      </member>
+      <member name="video_mpeg2_stereo_additional_view"
+              value="34"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_VIDEO_MPEG2_STEREO_ADDITIONAL_VIEW">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="246">Additional view
+Rec. ITU-T H.262 | ISO/IEC 13818-2 video stream for service-compatible
+stereoscopic 3D services</doc>
+      </member>
+      <member name="video_h264_stereo_additional_view"
+              value="35"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_VIDEO_H264_STEREO_ADDITIONAL_VIEW">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="249">Additional view
+Rec. ITU-T H.264 | ISO/IEC 14496-10 video stream conforming to one or more
+profiles defined in Annex A for service-compatible stereoscopic 3D services</doc>
+      </member>
+      <member name="ipmp_stream"
+              value="127"
+              c:identifier="GST_MPEG_TS_STREAM_TYPE_IPMP_STREAM">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.h"
+             line="252">IPMP stream</doc>
+      </member>
+    </enumeration>
+    <record name="TOT"
+            c:type="GstMpegTsTOT"
+            glib:type-name="GstMpegTsTOT"
+            glib:get-type="gst_mpegts_tot_get_type"
+            c:symbol-prefix="tot">
+      <doc xml:space="preserve"
+           filename="gst-dvb-section.h"
+           line="296">Time Offset Table (EN 300 468)</doc>
+      <source-position filename="gst-dvb-section.h" line="306"/>
+      <field name="utc_time" writable="1">
+        <type name="Gst.DateTime" c:type="GstDateTime*"/>
+      </field>
+      <field name="descriptors" writable="1">
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="gpointer" c:type="gpointer"/>
+        </array>
+      </field>
+    </record>
+    <function name="find_descriptor" c:identifier="gst_mpegts_find_descriptor">
+      <doc xml:space="preserve"
+           filename="gstmpegtsdescriptor.c"
+           line="571">Finds the first descriptor of type @tag in the array.
+
+Note: To look for descriptors that can be present more than once in an
+array of descriptors, iterate the #GArray manually.</doc>
+      <source-position filename="gstmpegtsdescriptor.h" line="260"/>
+      <return-value transfer-ownership="none">
+        <doc xml:space="preserve"
+             filename="gstmpegtsdescriptor.c"
+             line="582">the first descriptor matchin @tag, else %NULL.</doc>
+        <type name="Descriptor" c:type="const GstMpegTsDescriptor*"/>
+      </return-value>
+      <parameters>
+        <parameter name="descriptors" transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gstmpegtsdescriptor.c"
+               line="573">an array
+of #GstMpegTsDescriptor</doc>
+          <array name="GLib.PtrArray" c:type="GPtrArray*">
+            <type name="Descriptor"/>
+          </array>
+        </parameter>
+        <parameter name="tag" transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gstmpegtsdescriptor.c"
+               line="575">the tag to look for</doc>
+          <type name="guint8" c:type="guint8"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="initialize" c:identifier="gst_mpegts_initialize">
+      <doc xml:space="preserve"
+           filename="gstmpegtssection.c"
+           line="634">Initializes the MPEG-TS helper library. Must be called before any
+usage.</doc>
+      <source-position filename="mpegts.h" line="39"/>
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+    </function>
+    <function name="message_new_mpegts_section"
+              c:identifier="gst_message_new_mpegts_section">
+      <doc xml:space="preserve"
+           filename="gstmpegtssection.c"
+           line="260">Creates a new #GstMessage for a @GstMpegTsSection.</doc>
+      <source-position filename="gstmpegtssection.h" line="355"/>
+      <return-value transfer-ownership="full">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.c"
+             line="267">The new #GstMessage to be posted, or %NULL if the
+section is not valid.</doc>
+        <type name="Gst.Message" c:type="GstMessage*"/>
+      </return-value>
+      <parameters>
+        <parameter name="parent" transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gstmpegtssection.c"
+               line="262">The creator of the message</doc>
+          <type name="Gst.Object" c:type="GstObject*"/>
+        </parameter>
+        <parameter name="section" transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gstmpegtssection.c"
+               line="263">The #GstMpegTsSection to put in a message</doc>
+          <type name="Section" c:type="GstMpegTsSection*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="message_parse_mpegts_section"
+              c:identifier="gst_message_parse_mpegts_section">
+      <doc xml:space="preserve"
+           filename="gstmpegtssection.c"
+           line="234">Returns the #GstMpegTsSection contained in a message.</doc>
+      <source-position filename="gstmpegtssection.h" line="357"/>
+      <return-value transfer-ownership="full">
+        <doc xml:space="preserve"
+             filename="gstmpegtssection.c"
+             line="240">the contained #GstMpegTsSection, or %NULL.</doc>
+        <type name="Section" c:type="GstMpegTsSection*"/>
+      </return-value>
+      <parameters>
+        <parameter name="message" transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gstmpegtssection.c"
+               line="236">a #GstMessage</doc>
+          <type name="Gst.Message" c:type="GstMessage*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="parse_descriptors"
+              c:identifier="gst_mpegts_parse_descriptors">
+      <doc xml:space="preserve"
+           filename="gstmpegtsdescriptor.c"
+           line="489">Parses the descriptors present in @buffer and returns them as an
+array.
+
+Note: The data provided in @buffer will not be copied.</doc>
+      <source-position filename="gstmpegtsdescriptor.h" line="258"/>
+      <return-value transfer-ownership="full">
+        <doc xml:space="preserve"
+             filename="gstmpegtsdescriptor.c"
+             line="499">an
+array of the parsed descriptors or %NULL if there was an error.
+Release with #g_array_unref when done with it.</doc>
+        <array name="GLib.PtrArray" c:type="GPtrArray*">
+          <type name="Descriptor"/>
+        </array>
+      </return-value>
+      <parameters>
+        <parameter name="buffer" transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gstmpegtsdescriptor.c"
+               line="491">descriptors to parse</doc>
+          <type name="guint8" c:type="guint8*"/>
+        </parameter>
+        <parameter name="buf_len" transfer-ownership="none">
+          <doc xml:space="preserve"
+               filename="gstmpegtsdescriptor.c"
+               line="492">Size of @buffer</doc>
+          <type name="gsize" c:type="gsize"/>
+        </parameter>
+      </parameters>
+    </function>
+  </namespace>
+</repository>

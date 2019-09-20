@@ -1,0 +1,14 @@
+prefix=
+exec_prefix=
+libdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/video/.libs
+includedir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs
+girdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/video
+typelibdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/video
+
+Name: GStreamer bad video library, uninstalled
+Description: Bad video library for GStreamer elements, Not Installed
+Version: 1.10.4
+Requires: gstreamer-1.0 gstreamer-bad-base-1.0
+
+Libs: -L${libdir} -lgstbadvideo-1.0
+Cflags: -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs

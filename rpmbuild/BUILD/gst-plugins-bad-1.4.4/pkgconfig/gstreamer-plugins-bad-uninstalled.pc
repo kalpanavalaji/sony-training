@@ -1,0 +1,14 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs
+pluginsdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4
+
+Name: GStreamer Bad Plugin libraries, Uninstalled
+Description: Streaming media framework, bad plugins libraries, uninstalled
+Version: 1.4.4
+Requires: gstreamer-1.0
+Libs: -L/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/basecamerabinsrc -L/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/codecparsers -L/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/egl -L/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/insertbin -L/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/interfaces -L/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/mpegts -L/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/signalprocessor -L/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs/gst/video
+Cflags: -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.4.4/gst-libs

@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_frei0r_get_desc;
+gst_plugin_frei0r_register;
+local: *; };

@@ -1,0 +1,3 @@
+<!ENTITY GST_API_VERSION "1.0">
+<!ENTITY GST_VERSION "1.4.4">
+<!ENTITY GST_PLUGINS_DIR "/usr/lib64/gstreamer-1.0">

@@ -1,0 +1,161 @@
+10:36:30.889311 == Info:   Trying ::1:8991...
+10:36:30.911497 == Info: TCP_NODELAY set
+10:36:30.919449 == Info: connect to ::1 port 8991 failed: Connection refused
+10:36:30.921341 == Info:   Trying 127.0.0.1:8991...
+10:36:30.921427 == Info: TCP_NODELAY set
+10:36:30.926438 == Info: Connected to localhost (127.0.0.1) port 8991 (#0)
+10:36:31.053696 == Info: ALPN, offering h2
+10:36:31.054159 == Info: ALPN, offering http/1.1
+10:36:31.130741 == Info: successfully set certificate verify locations:
+10:36:31.131049 == Info:   CAfile: ../../tests/certs/EdelCurlRoot-ca.crt
+  CApath: none
+10:36:31.261757 => Send SSL data, 5 bytes (0x5)
+0000: .....
+10:36:31.268125 == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+10:36:31.268376 => Send SSL data, 512 bytes (0x200)
+0000: .......>:........P$.+..L....k.N.....p. [^u...b2Xa......Qh.......
+0040: ......U.>.......,.0.........+./...$.(.k.#.'.g.....9.....3.....=.
+0080: <.5./.....u.........localhost........................3t.........
+00c0: h2.http/1.1.........1.....0.....................................
+0100: ............+............-.....3.&.$... X..x.....O.t.\.)8...q..I
+0140: 9..i-.I........................................................
+0180: ................................................................
+01c0: ................................................................
+10:36:31.295354 <= Recv SSL data, 5 bytes (0x5)
+0000: ....X
+10:36:31.303075 == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+10:36:31.303154 <= Recv SSL data, 88 bytes (0x58)
+0000: ...T...!.t..a......e......z..^......3. [^u...b2Xa......Qh.......
+0040: ......U......+.....3....
+10:36:31.336245 => Send SSL data, 5 bytes (0x5)
+0000: .....
+10:36:31.337027 == Info: TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+10:36:31.337106 => Send SSL data, 1 bytes (0x1)
+0000: .
+10:36:31.447202 => Send SSL data, 5 bytes (0x5)
+0000: .....
+10:36:31.447422 == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+10:36:31.447492 => Send SSL data, 512 bytes (0x200)
+0000: .......>:........P$.+..L....k.N.....p. [^u...b2Xa......Qh.......
+0040: ......U.>.......,.0.........+./...$.(.k.#.'.g.....9.....3.....=.
+0080: <.5./.....u.........localhost........................3t.........
+00c0: h2.http/1.1.........1.....0.....................................
+0100: ............+............-.....3.G.E...A.6.t..0:.5...j.,....3x\.
+0140: .,..!W...)jK..._.3...5....s..Z.z...y.Mi.........................
+0180: ................................................................
+01c0: ................................................................
+10:36:31.449253 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+10:36:31.455040 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+10:36:31.455400 == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+10:36:31.455473 <= Recv SSL data, 155 bytes (0x9b)
+0000: ......V.....T..N3.-%......JK.....T.... [^u...b2Xa......Qh.......
+0040: ......U....O.+.....3.E...A..uz.N7..UZ.C.$..B...M.d.....O.W..6me.
+0080: 5..}..D.t.........4.fG..6.
+10:36:31.543939 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+10:36:31.553363 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+10:36:31.554272 == Info: TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+10:36:31.554350 <= Recv SSL data, 10 bytes (0xa)
+0000: ..........
+10:36:31.556419 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+10:36:31.569258 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+10:36:31.570429 == Info: TLSv1.3 (IN), TLS handshake, Certificate (11):
+10:36:31.570513 <= Recv SSL data, 1007 bytes (0x3ef)
+0000: ...........0...0..............*.0...*.H........0h1.0...U....NN11
+0040: 0/..U...(Edel Curl Arctic Illudium Research Cloud1&0$..U....Nort
+0080: hern Nowhere Trust Anchor0...180905232901Z..261122232901Z0W1.0..
+00c0: .U....NN110/..U...(Edel Curl Arctic Illudium Research Cloud1.0..
+0100: .U....localhost.nn0.."0...*.H.............0..........._*.P.:.yn"
+0140: ....M}..Om-z}..OS{_..\.l.t&5.xh.`%.{....3..^..!....(.a@<4...p.m.
+0180: .|.L.y.7.$ns.a1q....e.=.. oV..B.=.a1..L..1.%.@......!..R-Q1....
+01c0: ......q....{H..(...Am2.EY.d.....j.eqf.B.g..I u.....\~.._.......\
+0200: .......ih?..yO.?y...W0gM=v5.O.]5...kW..#5...ow..X.........0..0,
+0240: ..U...%0#..localhost1..localhost2..localhost0...U........0...U.%
+0280: ..0...+.......0...U......|......w%......4..$.0...U.#..0......KF.
+02c0: .u.,..T...e.{.0...U....0.0...*.H...............`G/"....Z...T1...
+0300: .-...$.s0.F.L..8....^.....DfsC.F..L@N...A..a.oE.Z.@B.....mJ..eI.
+0340: /...Yk[...F.b.."..l..T^FS....D..n..L7\1..7..5.<../dO.....J...%..
+0380: .\...kt......'...$.j.d..1.5....8.9.......%.....p3B..3*..........
+03c0: ...l"./.HH+\.0.K'...!w...U4...+...D.......3....
+10:36:31.698402 <= Recv SSL data, 5 bytes (0x5)
+0000: .....
+10:36:31.698924 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+10:36:31.699347 == Info: TLSv1.3 (IN), TLS handshake, CERT verify (15):
+10:36:31.699421 <= Recv SSL data, 264 bytes (0x108)
+0000: ........t.NVb..."x.w..b..a..1.!.:Q.w[lu.v>.T3.Y.....E...........
+0040: ..(.....P......|.dv...C.A.P..N...SK]U..v.g.$...V...>H..e5..B*..;
+0080: ..B.......H...|.%W-.......j$.P...>..:..uH.x....Y^.'....V=G7..X..
+00c0: h.6E+y..F_i4...g!DR.......P...=....m)..%Qx.@..73F.$..2....`.2s0.
+0100: 9O..-.!.
+10:36:31.713832 <= Recv SSL data, 5 bytes (0x5)
+0000: ....E
+10:36:31.714704 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+10:36:31.722326 == Info: TLSv1.3 (IN), TLS handshake, Finished (20):
+10:36:31.722407 <= Recv SSL data, 52 bytes (0x34)
+0000: ...0!=.b8.-......R....mI.mx.mF...!d...Yf../..;.l....
+10:36:31.735615 => Send SSL data, 5 bytes (0x5)
+0000: ....E
+10:36:31.735919 => Send SSL data, 1 bytes (0x1)
+0000: .
+10:36:31.736409 == Info: TLSv1.3 (OUT), TLS handshake, Finished (20):
+10:36:31.736482 => Send SSL data, 52 bytes (0x34)
+0000: ...0h.F<.L.&.....'...........X......5 ..c..*..K4..O9
+10:36:31.742237 == Info: SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+10:36:31.742781 == Info: ALPN, server did not agree to a protocol
+10:36:31.744297 == Info: Server certificate:
+10:36:31.750897 == Info:  subject: C=NN; O=Edel Curl Arctic Illudium Research Cloud; CN=localhost.nn
+10:36:31.755099 == Info:  start date: Sep  5 23:29:01 2018 GMT
+10:36:31.755845 == Info:  expire date: Nov 22 23:29:01 2026 GMT
+10:36:31.758269 == Info:  subjectAltName: host "localhost" matched cert's "localhost"
+10:36:31.759919 == Info:  issuer: C=NN; O=Edel Curl Arctic Illudium Research Cloud; CN=Northern Nowhere Trust Anchor
+10:36:31.760374 == Info:  SSL certificate verify ok.
+10:36:31.772724 => Send SSL data, 5 bytes (0x5)
+0000: ....c
+10:36:31.772860 => Send SSL data, 1 bytes (0x1)
+0000: .
+10:36:31.773820 => Send header, 82 bytes (0x52)
+0000: GET /3001 HTTP/1.1
+0014: Host: localhost:8991
+002a: User-Agent: curl/7.66.0
+0043: Accept: */*
+0050: 
+10:36:31.778717 <= Recv SSL data, 5 bytes (0x5)
+0000: ....J
+10:36:31.778935 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+10:36:31.780583 == Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+10:36:31.780667 <= Recv SSL data, 57 bytes (0x39)
+0000: ...5...,.$.-.......... .....H.C...5.o...Zc.a..v{.c.G\....
+10:36:31.790268 <= Recv SSL data, 5 bytes (0x5)
+0000: ....J
+10:36:31.790458 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+10:36:31.790658 == Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+10:36:31.790732 <= Recv SSL data, 57 bytes (0x39)
+0000: ...5...,...a.......... .K.`.pB.>#l.y.y.......y..[)S.8....
+10:36:31.792988 == Info: old SSL session ID is stale, removing
+10:36:31.793993 <= Recv SSL data, 5 bytes (0x5)
+0000: ....x
+10:36:31.794166 <= Recv SSL data, 1 bytes (0x1)
+0000: .
+10:36:31.799431 == Info: Mark bundle as not supporting multiuse
+10:36:31.801569 <= Recv header, 16 bytes (0x10)
+0000: HTTP/1.1 200 OK.
+10:36:31.806116 <= Recv header, 36 bytes (0x24)
+0000: Date: Thu, 09 Nov 2010 14:49:00 GMT.
+10:36:31.806697 <= Recv header, 25 bytes (0x19)
+0000: Server: test-server/fake.
+10:36:31.807860 <= Recv header, 18 bytes (0x12)
+0000: Content-Length: 7.
+10:36:31.809795 <= Recv header, 1 bytes (0x1)
+0000: .
+10:36:31.810688 <= Recv data, 7 bytes (0x7)
+0000: MooMoo.
+10:36:31.821804 == Info: Connection #0 to host localhost left intact

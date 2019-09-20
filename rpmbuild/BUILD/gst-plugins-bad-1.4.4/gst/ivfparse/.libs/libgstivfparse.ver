@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_ivfparse_get_desc;
+gst_plugin_ivfparse_register;
+local: *; };

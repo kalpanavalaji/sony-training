@@ -1,0 +1,15 @@
+error: Failed build dependencies:
+	buildreq-meson is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	docbook-xml is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	gobject-introspection-dev is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	gst-plugins-bad-dev is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	gst-plugins-base-dev is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	gstreamer-dev is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	gtk-doc-dev is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	libxslt-bin is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	pkgconfig(glesv2) is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	pkgconfig(libudev) is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	pkgconfig(libva) is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	pkgconfig(libva-drm) is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	pkgconfig(libva-wayland) is needed by gstreamer-vaapi-1.16.0-30.x86_64
+	pkgconfig(libva-x11) is needed by gstreamer-vaapi-1.16.0-30.x86_64

@@ -1,0 +1,19 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/.dwz
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/lib64
+%dir /usr/lib/debug/usr/lib64/gstreamer-1.0
+/usr/lib/debug/.dwz/gstreamer1-plugins-ugly-1.8.3-1.x86_64
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstdvdread.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstrmdemux.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstmad.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstasf.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgsttwolame.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstdvdlpcmdec.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstxingmux.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstlame.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstdvdsub.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstmpeg2dec.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstmpg123.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstsid.so-1.8.3-1.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgsta52dec.so-1.8.3-1.x86_64.debug

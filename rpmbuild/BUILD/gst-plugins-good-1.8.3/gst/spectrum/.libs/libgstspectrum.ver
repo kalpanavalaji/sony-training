@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_spectrum_get_desc;
+gst_plugin_spectrum_register;
+local: *; };

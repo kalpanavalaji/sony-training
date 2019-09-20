@@ -1,0 +1,47 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/.dwz
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/lib64
+%dir /usr/lib/debug/usr/lib64/gstreamer-1.0
+%dir /usr/lib/debug/usr/bin
+/usr/lib/debug/.dwz/gstreamer1-plugins-base-1.8.0-1.gst.x86_64
+/usr/lib/debug/usr/lib64/libgstsdp-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstvideo-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/libgsttag-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstaudio-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstriff-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstapp-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstrtp-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstpbutils-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstapp.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstaudiorate.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstplayback.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstaudiotestsrc.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgsttypefindfunctions.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstaudioconvert.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstgio.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstencodebin.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstalsa.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstcdparanoia.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstvideorate.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstximagesink.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstsubparse.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgsttheora.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstvideoscale.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstxvimagesink.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstlibvisual.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstpango.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstaudioresample.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstvideotestsrc.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstvolume.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgsttcp.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstadder.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstogg.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstvorbis.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/gstreamer-1.0/libgstvideoconvert.so-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstrtsp-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstallocators-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/lib64/libgstfft-1.0.so.0.800.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/bin/gst-discoverer-1.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/bin/gst-device-monitor-1.0-1.8.0-1.gst.x86_64.debug
+/usr/lib/debug/usr/bin/gst-play-1.0-1.8.0-1.gst.x86_64.debug

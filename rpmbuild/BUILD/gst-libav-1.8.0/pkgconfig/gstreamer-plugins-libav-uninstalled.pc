@@ -1,0 +1,13 @@
+prefix=
+exec_prefix=
+libdir=/home/kalpana/rpmbuild/BUILD/gst-libav-1.8.0/gst-libs/gst
+includedir=/home/kalpana/rpmbuild/BUILD/gst-libav-1.8.0/gst-libs
+pluginsdir=/home/kalpana/rpmbuild/BUILD/gst-libav-1.8.0
+
+Name: GStreamer Libav Plugins, Uninstalled
+Description: Streaming media framework, libav plugins, uninstalled
+Version: 1.8.0
+Requires: gstreamer-1.0 gstreamer-plugins-base-1.0
+
+Libs:
+Cflags:

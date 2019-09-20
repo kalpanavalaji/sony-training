@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_theora_get_desc;
+gst_plugin_theora_register;
+local: *; };

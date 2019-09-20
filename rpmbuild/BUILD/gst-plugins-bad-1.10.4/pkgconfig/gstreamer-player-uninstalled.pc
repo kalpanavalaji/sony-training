@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../gst-libs/gst/player/.libs
+includedir=${pcfiledir}/../gst-libs
+
+Name: GStreamer Player, Uninstalled
+Description: GStreamer Player convenience library, uninstalled
+Requires: gstreamer-1.0 gstreamer-video-1.0
+Version: 1.10.4
+Libs: -L${libdir} -lgstplayer-1.0
+Cflags: -I${includedir}
+

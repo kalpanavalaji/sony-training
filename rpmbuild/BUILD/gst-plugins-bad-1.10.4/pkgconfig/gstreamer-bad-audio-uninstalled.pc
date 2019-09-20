@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs/gst/audio/.libs
+includedir=/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs
+
+Name: GStreamer bad audio library, uninstalled
+Description: Bad audio library for GStreamer, Not Installed
+Version: 1.10.4
+Requires: gstreamer-1.0 gstreamer-bad-base-1.0
+
+Libs: -L${libdir} -lgstbadaudio-1.0
+Cflags: -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs -I/home/kalpana/rpmbuild/BUILD/gst-plugins-bad-1.10.4/gst-libs

@@ -1,0 +1,4 @@
+{ global:
+gst_plugin_dvdsub_get_desc;
+gst_plugin_dvdsub_register;
+local: *; };
